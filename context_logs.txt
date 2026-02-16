@@ -1,0 +1,69 @@
+--- Context Extraction Log 1 ---
+Source File: test1.c
+Compiler Error:
+test1.c:4:5: error: expected ‘;’ before ‘return’
+
+Extracted Context:
+2: int main(){
+3:     int x = 10
+4:     return 0;
+5: }
+
+Token near error: return
+
+
+--- Context Extraction Log 2 ---
+Source File: test2.c
+Compiler Error:
+test2.c:3:9: error: ‘x’ undeclared
+
+Extracted Context:
+1: int main(){
+2:     x = 5;
+3:     return 0;
+4: }
+
+Token near error: x
+
+
+--- Context Extraction Log 3 ---
+Source File: test3.c
+Compiler Error:
+test3.c:4:13: error: invalid conversion from ‘const char*’ to ‘int’
+
+Extracted Context:
+2: int main(){
+3:     int a = "hello";
+4:     return 0;
+5: }
+
+Token near error: int
+
+
+--- Context Extraction Log 4 ---
+Source File: test4.c
+Compiler Error:
+test4.c:5:5: error: ‘i’ undeclared
+
+Extracted Context:
+3:     for(int i=0;i<5;i++){
+4:     }
+5:     i = 10;
+6: }
+
+Token near error: i
+
+
+--- Context Extraction Log 5 ---
+Source File: test5.c
+Compiler Error:
+test5.c:3:12: error: expected ‘)’ before ‘{’
+
+Extracted Context:
+1: int main(){
+2:     if(1 {
+3:         return 0;
+4:     }
+5: }
+
+Token near error: return
