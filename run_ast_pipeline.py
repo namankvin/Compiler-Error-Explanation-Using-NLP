@@ -1,11 +1,11 @@
 import sys
-import re
 
 from context_extractor import extract_context, extract_token
 from compiler_ast.generate_ast import generate_ast
 from compiler_ast.parse_ast import parse_ast
 from compiler_ast.ast_utils import get_error_line
 from compiler_ast.ast_logger import log_unified
+from error_classifier import classify_error
 
 
 def main():
@@ -17,7 +17,7 @@ def main():
     source_file = sys.argv[1]
 
     # Detect compiler error
-    error_line, error_output = get_error_line(source_file)
+    error_line, error_column, error_output = get_error_line(source_file)
 
     if not error_line:
         print("No compiler error detected.")
@@ -25,10 +25,20 @@ def main():
 
     print(f"Error detected at line {error_line}")
 
+    # Classify error
+    classification = classify_error(error_output)
+
+    cleaned_message = classification["cleaned_message"]
+    category = classification["category"]
+    phase = classification["phase"]
+    violated_rule = classification["violated_rule"]
+
+    print(f"Classified as: {category} | Phase: {phase}")
+
     # Extract text context
     context = extract_context(source_file, error_line)
 
-    # Read actual source line for token extraction
+    # Extract token
     with open(source_file, "r") as f:
         source_lines = f.readlines()
 
@@ -37,7 +47,7 @@ def main():
     else:
         actual_line = ""
 
-    token = extract_token(actual_line)
+    token = extract_token(actual_line, error_column)
 
     # Generate AST
     generate_ast(source_file)
@@ -50,10 +60,14 @@ def main():
         source_file,
         error_line,
         error_output.strip(),
+        cleaned_message,
         context,
         token,
         node,
-        parent
+        parent,
+        category,
+        phase,
+        violated_rule
     )
 
 

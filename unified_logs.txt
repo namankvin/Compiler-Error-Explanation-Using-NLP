@@ -1,0 +1,34 @@
+
+=== Error Context Entry 1 ===
+Error ID: ERR_001
+Source File: test.c
+Error Line: 4
+
+Raw Compiler Error:
+test.c:4:15: error: expected ';' at end of declaration
+    4 |     int x = 10
+      |               ^
+      |               ;
+1 error generated.
+
+Cleaned Error Message:
+expected ';' at end of declaration
+
+--- TEXT CONTEXT ---
+2: 
+3: int main() {
+4:     int x = 10
+5:     return 0;
+6: }
+
+Token Near Error: End of line
+
+--- CLASSIFICATION ---
+Error Category: Missing token
+Compiler Phase: Parsing
+Violated Rule: Statements in C must end with a semicolon.
+
+--- AST CONTEXT ---
+AST Node Type: DeclStmt
+Parent Node Type: ParmVarDecl
+========================================

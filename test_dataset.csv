@@ -1,0 +1,1801 @@
+input_text,target_text
+"Explain the following compiler error:
+
+Error:
+initializing 'double' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     double num = ""hello"";
+4:     return 0;
+5: }
+","This error indicates that the variable 'num' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'x'
+
+Code:
+4:         double x = 37;
+5:     }
+6:     x = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'x' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'total'
+
+Code:
+4:         double total = 43;
+5:     }
+6:     total = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'total' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'value'
+
+Code:
+1: 
+2: int main() {
+3:     value = 58;
+4:     return 0;
+5: }
+","This message means that the variable 'value' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'num'
+
+Code:
+4:         float num = 58;
+5:     }
+6:     num = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'num' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'x'
+
+Code:
+1: 
+2: int main() {
+3:     x = 71;
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'x' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     float score = 5
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'x'
+
+Code:
+1: 
+2: int main() {
+3:     x = 89;
+4:     return 0;
+5: }
+","This error indicates that the variable 'x' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float num = ""hello"";
+4:     return 0;
+5: }
+","This message means that the variable 'num' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'num'
+
+Code:
+1: 
+2: int main() {
+3:     num = 10;
+4:     return 0;
+5: }
+","This message means that the variable 'num' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float value = ""hello"";
+4:     return 0;
+5: }
+","This error indicates that the variable 'value' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float value = ""hello"";
+4:     return 0;
+5: }
+","This error indicates that the variable 'value' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     double num = 46
+4:     return 0;
+5: }
+","This error indicates that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'temp'
+
+Code:
+1: 
+2: int main() {
+3:     temp = 94;
+4:     return 0;
+5: }
+","This error indicates that the variable 'temp' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+incompatible pointer to integer conversion initializing 'int' with an expression of type 'char[6]' [-wint-conversion]
+
+Code:
+1: 
+2: int main() {
+3:     int total = ""hello"";
+4:     return 0;
+5: }
+","This error indicates that the variable 'total' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+incompatible pointer to integer conversion initializing 'int' with an expression of type 'char[6]' [-wint-conversion]
+
+Code:
+1: 
+2: int main() {
+3:     int count = ""hello"";
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'count' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     int total = 9
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     int score = 22
+4:     return 0;
+5: }
+","This error indicates that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'total'
+
+Code:
+1: 
+2: int main() {
+3:     total = 83;
+4:     return 0;
+5: }
+","This message means that the variable 'total' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'value'
+
+Code:
+1: 
+2: int main() {
+3:     value = 5;
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'value' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'num'
+
+Code:
+1: 
+2: int main() {
+3:     num = 96;
+4:     return 0;
+5: }
+","This message means that the variable 'num' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'count'
+
+Code:
+4:         int count = 55;
+5:     }
+6:     count = 5;
+7:     return 0;
+8: }
+","This error indicates that the variable 'count' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'score'
+
+Code:
+4:         double score = 71;
+5:     }
+6:     score = 5;
+7:     return 0;
+8: }
+","The compiler is reporting that the variable 'score' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'num'
+
+Code:
+4:         int num = 27;
+5:     }
+6:     num = 5;
+7:     return 0;
+8: }
+","This error indicates that the variable 'num' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     int value = 100
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     float score = 95
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'score'
+
+Code:
+4:         float score = 47;
+5:     }
+6:     score = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'score' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'value'
+
+Code:
+4:         float value = 22;
+5:     }
+6:     value = 5;
+7:     return 0;
+8: }
+","The compiler is reporting that the variable 'value' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'temp'
+
+Code:
+4:         double temp = 89;
+5:     }
+6:     temp = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'temp' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'score'
+
+Code:
+1: 
+2: int main() {
+3:     score = 36;
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'score' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float temp = ""hello"";
+4:     return 0;
+5: }
+","This message means that the variable 'temp' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     float total = 30
+4:     return 0;
+5: }
+","This error indicates that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+initializing 'double' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     double score = ""hello"";
+4:     return 0;
+5: }
+","This message means that the variable 'score' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float total = ""hello"";
+4:     return 0;
+5: }
+","This error indicates that the variable 'total' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float count = ""hello"";
+4:     return 0;
+5: }
+","This error indicates that the variable 'count' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'score'
+
+Code:
+1: 
+2: int main() {
+3:     score = 2;
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'score' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'temp'
+
+Code:
+1: 
+2: int main() {
+3:     temp = 81;
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'temp' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'x'
+
+Code:
+1: 
+2: int main() {
+3:     x = 22;
+4:     return 0;
+5: }
+","This error indicates that the variable 'x' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     float score = 17
+4:     return 0;
+5: }
+","This error indicates that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'count'
+
+Code:
+4:         double count = 13;
+5:     }
+6:     count = 5;
+7:     return 0;
+8: }
+","The compiler is reporting that the variable 'count' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+initializing 'double' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     double score = ""hello"";
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'score' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+initializing 'double' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     double x = ""hello"";
+4:     return 0;
+5: }
+","This error indicates that the variable 'x' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     double score = 15
+4:     return 0;
+5: }
+","The compiler is reporting that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'value'
+
+Code:
+4:         double value = 92;
+5:     }
+6:     value = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'value' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float count = ""hello"";
+4:     return 0;
+5: }
+","This error indicates that the variable 'count' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     float total = 52
+4:     return 0;
+5: }
+","This error indicates that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+incompatible pointer to integer conversion initializing 'int' with an expression of type 'char[6]' [-wint-conversion]
+
+Code:
+1: 
+2: int main() {
+3:     int x = ""hello"";
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'x' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+initializing 'double' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     double count = ""hello"";
+4:     return 0;
+5: }
+","This message means that the variable 'count' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'total'
+
+Code:
+4:         double total = 31;
+5:     }
+6:     total = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'total' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'value'
+
+Code:
+1: 
+2: int main() {
+3:     value = 31;
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'value' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+incompatible pointer to integer conversion initializing 'int' with an expression of type 'char[6]' [-wint-conversion]
+
+Code:
+1: 
+2: int main() {
+3:     int value = ""hello"";
+4:     return 0;
+5: }
+","This message means that the variable 'value' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     float temp = 54
+4:     return 0;
+5: }
+","The compiler is reporting that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'count'
+
+Code:
+1: 
+2: int main() {
+3:     count = 68;
+4:     return 0;
+5: }
+","This message means that the variable 'count' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'x'
+
+Code:
+1: 
+2: int main() {
+3:     x = 62;
+4:     return 0;
+5: }
+","This error indicates that the variable 'x' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     double x = 46
+4:     return 0;
+5: }
+","This error indicates that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'count'
+
+Code:
+1: 
+2: int main() {
+3:     count = 39;
+4:     return 0;
+5: }
+","This error indicates that the variable 'count' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'temp'
+
+Code:
+4:         float temp = 74;
+5:     }
+6:     temp = 5;
+7:     return 0;
+8: }
+","The compiler is reporting that the variable 'temp' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+incompatible pointer to integer conversion initializing 'int' with an expression of type 'char[6]' [-wint-conversion]
+
+Code:
+1: 
+2: int main() {
+3:     int count = ""hello"";
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'count' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'count'
+
+Code:
+1: 
+2: int main() {
+3:     count = 75;
+4:     return 0;
+5: }
+","This message means that the variable 'count' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'total'
+
+Code:
+4:         float total = 64;
+5:     }
+6:     total = 5;
+7:     return 0;
+8: }
+","The compiler is reporting that the variable 'total' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'score'
+
+Code:
+4:         float score = 6;
+5:     }
+6:     score = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'score' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     int count = 16
+4:     return 0;
+5: }
+","The compiler is reporting that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'score'
+
+Code:
+4:         int score = 64;
+5:     }
+6:     score = 5;
+7:     return 0;
+8: }
+","The compiler is reporting that the variable 'score' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'temp'
+
+Code:
+4:         float temp = 32;
+5:     }
+6:     temp = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'temp' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'count'
+
+Code:
+4:         double count = 87;
+5:     }
+6:     count = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'count' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     double total = 39
+4:     return 0;
+5: }
+","This error indicates that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'score'
+
+Code:
+1: 
+2: int main() {
+3:     score = 3;
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'score' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'count'
+
+Code:
+4:         float count = 67;
+5:     }
+6:     count = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'count' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     int temp = 67
+4:     return 0;
+5: }
+","The compiler is reporting that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float num = ""hello"";
+4:     return 0;
+5: }
+","This message means that the variable 'num' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     int count = 95
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     int x = 39
+4:     return 0;
+5: }
+","This error indicates that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float count = ""hello"";
+4:     return 0;
+5: }
+","This message means that the variable 'count' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     int x = 44
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+incompatible pointer to integer conversion initializing 'int' with an expression of type 'char[6]' [-wint-conversion]
+
+Code:
+1: 
+2: int main() {
+3:     int count = ""hello"";
+4:     return 0;
+5: }
+","This error indicates that the variable 'count' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'total'
+
+Code:
+1: 
+2: int main() {
+3:     total = 49;
+4:     return 0;
+5: }
+","This error indicates that the variable 'total' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'num'
+
+Code:
+4:         float num = 35;
+5:     }
+6:     num = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'num' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'count'
+
+Code:
+4:         double count = 44;
+5:     }
+6:     count = 5;
+7:     return 0;
+8: }
+","The compiler is reporting that the variable 'count' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+incompatible pointer to integer conversion initializing 'int' with an expression of type 'char[6]' [-wint-conversion]
+
+Code:
+1: 
+2: int main() {
+3:     int score = ""hello"";
+4:     return 0;
+5: }
+","This message means that the variable 'score' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float value = ""hello"";
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'value' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'num'
+
+Code:
+4:         int num = 62;
+5:     }
+6:     num = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'num' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'num'
+
+Code:
+1: 
+2: int main() {
+3:     num = 14;
+4:     return 0;
+5: }
+","This message means that the variable 'num' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float temp = ""hello"";
+4:     return 0;
+5: }
+","This message means that the variable 'temp' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     double count = 44
+4:     return 0;
+5: }
+","This error indicates that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'count'
+
+Code:
+1: 
+2: int main() {
+3:     count = 90;
+4:     return 0;
+5: }
+","This message means that the variable 'count' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     float score = 41
+4:     return 0;
+5: }
+","The compiler is reporting that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+initializing 'double' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     double score = ""hello"";
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'score' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'total'
+
+Code:
+1: 
+2: int main() {
+3:     total = 16;
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'total' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+incompatible pointer to integer conversion initializing 'int' with an expression of type 'char[6]' [-wint-conversion]
+
+Code:
+1: 
+2: int main() {
+3:     int score = ""hello"";
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'score' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     float count = 67
+4:     return 0;
+5: }
+","The compiler is reporting that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'count'
+
+Code:
+4:         float count = 91;
+5:     }
+6:     count = 5;
+7:     return 0;
+8: }
+","The compiler is reporting that the variable 'count' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'x'
+
+Code:
+1: 
+2: int main() {
+3:     x = 64;
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'x' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+initializing 'double' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     double num = ""hello"";
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'num' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'score'
+
+Code:
+1: 
+2: int main() {
+3:     score = 75;
+4:     return 0;
+5: }
+","This error indicates that the variable 'score' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'value'
+
+Code:
+4:         int value = 44;
+5:     }
+6:     value = 5;
+7:     return 0;
+8: }
+","The compiler is reporting that the variable 'value' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'value'
+
+Code:
+1: 
+2: int main() {
+3:     value = 96;
+4:     return 0;
+5: }
+","This error indicates that the variable 'value' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     double score = 4
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'value'
+
+Code:
+1: 
+2: int main() {
+3:     value = 66;
+4:     return 0;
+5: }
+","This message means that the variable 'value' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     double count = 7
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'count'
+
+Code:
+4:         double count = 99;
+5:     }
+6:     count = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'count' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'temp'
+
+Code:
+1: 
+2: int main() {
+3:     temp = 20;
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'temp' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'temp'
+
+Code:
+4:         double temp = 7;
+5:     }
+6:     temp = 5;
+7:     return 0;
+8: }
+","This error indicates that the variable 'temp' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     int count = 7
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     int num = 78
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'value'
+
+Code:
+4:         double value = 40;
+5:     }
+6:     value = 5;
+7:     return 0;
+8: }
+","The compiler is reporting that the variable 'value' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'count'
+
+Code:
+1: 
+2: int main() {
+3:     count = 100;
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'count' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'value'
+
+Code:
+4:         int value = 66;
+5:     }
+6:     value = 5;
+7:     return 0;
+8: }
+","The compiler is reporting that the variable 'value' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+incompatible pointer to integer conversion initializing 'int' with an expression of type 'char[6]' [-wint-conversion]
+
+Code:
+1: 
+2: int main() {
+3:     int num = ""hello"";
+4:     return 0;
+5: }
+","This error indicates that the variable 'num' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     float x = 35
+4:     return 0;
+5: }
+","The compiler is reporting that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'value'
+
+Code:
+4:         int value = 7;
+5:     }
+6:     value = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'value' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'temp'
+
+Code:
+4:         float temp = 32;
+5:     }
+6:     temp = 5;
+7:     return 0;
+8: }
+","This error indicates that the variable 'temp' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     double value = 54
+4:     return 0;
+5: }
+","The compiler is reporting that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'num'
+
+Code:
+4:         double num = 42;
+5:     }
+6:     num = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'num' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'total'
+
+Code:
+4:         int total = 92;
+5:     }
+6:     total = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'total' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'score'
+
+Code:
+1: 
+2: int main() {
+3:     score = 24;
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'score' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+incompatible pointer to integer conversion initializing 'int' with an expression of type 'char[6]' [-wint-conversion]
+
+Code:
+1: 
+2: int main() {
+3:     int count = ""hello"";
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'count' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'value'
+
+Code:
+1: 
+2: int main() {
+3:     value = 42;
+4:     return 0;
+5: }
+","This message means that the variable 'value' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     float num = 22
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'score'
+
+Code:
+1: 
+2: int main() {
+3:     score = 42;
+4:     return 0;
+5: }
+","This message means that the variable 'score' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'count'
+
+Code:
+4:         int count = 65;
+5:     }
+6:     count = 5;
+7:     return 0;
+8: }
+","The compiler is reporting that the variable 'count' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float temp = ""hello"";
+4:     return 0;
+5: }
+","This error indicates that the variable 'temp' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float count = ""hello"";
+4:     return 0;
+5: }
+","This error indicates that the variable 'count' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+initializing 'double' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     double score = ""hello"";
+4:     return 0;
+5: }
+","This message means that the variable 'score' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     float score = 42
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+initializing 'double' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     double value = ""hello"";
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'value' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     int value = 100
+4:     return 0;
+5: }
+","This error indicates that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float total = ""hello"";
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'total' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float x = ""hello"";
+4:     return 0;
+5: }
+","This message means that the variable 'x' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     int score = 75
+4:     return 0;
+5: }
+","The compiler is reporting that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     double count = 42
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     double temp = 100
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     int score = 86
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     int score = 69
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'score'
+
+Code:
+1: 
+2: int main() {
+3:     score = 3;
+4:     return 0;
+5: }
+","This error indicates that the variable 'score' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float x = ""hello"";
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'x' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     double x = 99
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+incompatible pointer to integer conversion initializing 'int' with an expression of type 'char[6]' [-wint-conversion]
+
+Code:
+1: 
+2: int main() {
+3:     int num = ""hello"";
+4:     return 0;
+5: }
+","This error indicates that the variable 'num' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'x'
+
+Code:
+4:         float x = 85;
+5:     }
+6:     x = 5;
+7:     return 0;
+8: }
+","This error indicates that the variable 'x' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'x'
+
+Code:
+4:         int x = 54;
+5:     }
+6:     x = 5;
+7:     return 0;
+8: }
+","This message means that the variable 'x' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+initializing 'double' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     double num = ""hello"";
+4:     return 0;
+5: }
+","This error indicates that the variable 'num' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     float num = 94
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'count'
+
+Code:
+4:         int count = 44;
+5:     }
+6:     count = 5;
+7:     return 0;
+8: }
+","The compiler is reporting that the variable 'count' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     int temp = 48
+4:     return 0;
+5: }
+","This error indicates that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     double score = 83
+4:     return 0;
+5: }
+","The compiler is reporting that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'num'
+
+Code:
+1: 
+2: int main() {
+3:     num = 91;
+4:     return 0;
+5: }
+","The compiler is reporting that the variable 'num' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'count'
+
+Code:
+1: 
+2: int main() {
+3:     count = 67;
+4:     return 0;
+5: }
+","This message means that the variable 'count' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+use of undeclared identifier 'temp'
+
+Code:
+4:         double temp = 91;
+5:     }
+6:     temp = 5;
+7:     return 0;
+8: }
+","The compiler is reporting that the variable 'temp' is being used before it has been declared. In C, variables must be declared with a data type before they can be used."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     double count = 82
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+expected ';' at end of declaration
+
+Code:
+1: 
+2: int main() {
+3:     double x = 87
+4:     return 0;
+5: }
+","This message means that a semicolon is missing at the end of a statement. In C, every statement must end with a semicolon so the compiler can properly understand where the statement finishes."
+"Explain the following compiler error:
+
+Error:
+initializing 'float' with an expression of incompatible type 'char[6]'
+
+Code:
+1: 
+2: int main() {
+3:     float count = ""hello"";
+4:     return 0;
+5: }
+","This message means that the variable 'count' is assigned a value of an incompatible data type. In C, assignments must use compatible types, otherwise the compiler cannot safely perform the conversion."

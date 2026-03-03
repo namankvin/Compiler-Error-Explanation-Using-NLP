@@ -1,5 +1,6 @@
 import re
 
+
 def extract_context(source_file, line_number, window=2):
     with open(source_file, 'r') as f:
         lines = f.readlines()
@@ -13,6 +14,17 @@ def extract_context(source_file, line_number, window=2):
 
     return context
 
-def extract_token(line):
-    tokens = re.findall(r'\w+|[^\s\w]', line)
-    return tokens[0] if tokens else "N/A"
+
+def extract_token(line, column):
+    if not line.strip():
+        return "N/A"
+
+    if column > len(line):
+        return "End of line"
+
+    for match in re.finditer(r'\w+|[^\s\w]', line):
+        start, end = match.span()
+        if start <= column - 1 < end:
+            return match.group()
+
+    return "End of line"
