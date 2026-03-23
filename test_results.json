@@ -1,0 +1,431 @@
+{
+  "test_run": {
+    "timestamp": "2026-03-16T10:46:21.818097",
+    "total_tests": 21,
+    "categories": [
+      "beginner_programs",
+      "student_errors",
+      "edge_cases"
+    ]
+  },
+  "results": [
+    {
+      "file": "test_suite/beginner_programs/test1_missing_semicolon.c",
+      "category": "beginner_programs",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/beginner_programs/test1_missing_semicolon.c:7:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n    7 | int main() {\n      |         ^\n      |          void\ntest_suite/beginner_programs/test1_missing_semicolon.c:8:15: error: expected ';' at end of declaration\n    8 |     int x = 10\n      |               ^\n      |               ;\n1 warning and 1 error generated.\n",
+      "return_code": 1,
+      "warnings": [
+        "test_suite/beginner_programs/test1_missing_semicolon.c:7:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]"
+      ],
+      "errors": [
+        "test_suite/beginner_programs/test1_missing_semicolon.c:8:15: error: expected ';' at end of declaration"
+      ],
+      "timestamp": "2026-03-16T10:46:21.373006"
+    },
+    {
+      "file": "test_suite/beginner_programs/test2_undeclared_variable.c",
+      "category": "beginner_programs",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/beginner_programs/test2_undeclared_variable.c:7:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n    7 | int main() {\n      |         ^\n      |          void\ntest_suite/beginner_programs/test2_undeclared_variable.c:8:5: error: use of undeclared identifier 'count'\n    8 |     count = 5;\n      |     ^\ntest_suite/beginner_programs/test2_undeclared_variable.c:9:28: error: use of undeclared identifier 'count'\n    9 |     printf(\"Count = %d\\n\", count);\n      |                            ^\n1 warning and 2 errors generated.\n",
+      "return_code": 1,
+      "warnings": [
+        "test_suite/beginner_programs/test2_undeclared_variable.c:7:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]"
+      ],
+      "errors": [
+        "test_suite/beginner_programs/test2_undeclared_variable.c:8:5: error: use of undeclared identifier 'count'",
+        "test_suite/beginner_programs/test2_undeclared_variable.c:9:28: error: use of undeclared identifier 'count'"
+      ],
+      "timestamp": "2026-03-16T10:46:21.392850"
+    },
+    {
+      "file": "test_suite/beginner_programs/test3_type_mismatch.c",
+      "category": "beginner_programs",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/beginner_programs/test3_type_mismatch.c:7:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n    7 | int main() {\n      |         ^\n      |          void\ntest_suite/beginner_programs/test3_type_mismatch.c:9:11: error: incompatible integer to pointer conversion initializing 'char *' with an expression of type 'int' [-Wint-conversion]\n    9 |     char *str = num;  // Wrong: assigning int to char pointer\n      |           ^     ~~~\n1 warning and 1 error generated.\n",
+      "return_code": 1,
+      "warnings": [
+        "test_suite/beginner_programs/test3_type_mismatch.c:7:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]"
+      ],
+      "errors": [
+        "test_suite/beginner_programs/test3_type_mismatch.c:9:11: error: incompatible integer to pointer conversion initializing 'char *' with an expression of type 'int' [-Wint-conversion]"
+      ],
+      "timestamp": "2026-03-16T10:46:21.413486"
+    },
+    {
+      "file": "test_suite/beginner_programs/test4_wrong_format.c",
+      "category": "beginner_programs",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/beginner_programs/test4_wrong_format.c:7:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n    7 | int main() {\n      |         ^\n      |          void\ntest_suite/beginner_programs/test4_wrong_format.c:9:25: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]\n    9 |     printf(\"Age: %s\\n\", age);  // Wrong: %s expects char*, got int\n      |                  ~~     ^~~\n      |                  %d\n2 warnings generated.\n",
+      "return_code": 0,
+      "warnings": [
+        "test_suite/beginner_programs/test4_wrong_format.c:7:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]",
+        "test_suite/beginner_programs/test4_wrong_format.c:9:25: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]"
+      ],
+      "errors": [],
+      "timestamp": "2026-03-16T10:46:21.434911"
+    },
+    {
+      "file": "test_suite/beginner_programs/test5_missing_header.c",
+      "category": "beginner_programs",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/beginner_programs/test5_missing_header.c:5:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n    5 | int main() {\n      |         ^\n      |          void\ntest_suite/beginner_programs/test5_missing_header.c:7:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]\n    7 |     printf(\"Hello World\\n\");\n      |     ^\ntest_suite/beginner_programs/test5_missing_header.c:7:5: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'\n1 warning and 1 error generated.\n",
+      "return_code": 1,
+      "warnings": [
+        "test_suite/beginner_programs/test5_missing_header.c:5:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]"
+      ],
+      "errors": [
+        "test_suite/beginner_programs/test5_missing_header.c:7:5: error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]"
+      ],
+      "timestamp": "2026-03-16T10:46:21.455339"
+    },
+    {
+      "file": "test_suite/student_errors/test1_array_bounds.c",
+      "category": "student_errors",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/student_errors/test1_array_bounds.c:8:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n    8 | int main() {\n      |         ^\n      |          void\n1 warning generated.\n",
+      "return_code": 0,
+      "warnings": [
+        "test_suite/student_errors/test1_array_bounds.c:8:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]"
+      ],
+      "errors": [],
+      "timestamp": "2026-03-16T10:46:21.472022"
+    },
+    {
+      "file": "test_suite/student_errors/test2_unchecked_malloc.c",
+      "category": "student_errors",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/student_errors/test2_unchecked_malloc.c:10:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n   10 | int main() {\n      |         ^\n      |          void\n1 warning generated.\n",
+      "return_code": 0,
+      "warnings": [
+        "test_suite/student_errors/test2_unchecked_malloc.c:10:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]"
+      ],
+      "errors": [],
+      "timestamp": "2026-03-16T10:46:21.492320"
+    },
+    {
+      "file": "test_suite/student_errors/test3_buffer_overflow.c",
+      "category": "student_errors",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/student_errors/test3_buffer_overflow.c:9:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n    9 | int main() {\n      |         ^\n      |          void\n1 warning generated.\n",
+      "return_code": 0,
+      "warnings": [
+        "test_suite/student_errors/test3_buffer_overflow.c:9:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]"
+      ],
+      "errors": [],
+      "timestamp": "2026-03-16T10:46:21.517337"
+    },
+    {
+      "file": "test_suite/student_errors/test4_format_string.c",
+      "category": "student_errors",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/student_errors/test4_format_string.c:8:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n    8 | int main() {\n      |         ^\n      |          void\ntest_suite/student_errors/test4_format_string.c:15:12: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]\n   15 |     printf(user_input);\n      |            ^~~~~~~~~~\ntest_suite/student_errors/test4_format_string.c:15:12: note: treat the string as an argument to avoid this\n   15 |     printf(user_input);\n      |            ^\n      |            \"%s\", \n1 warning and 1 error generated.\n",
+      "return_code": 1,
+      "warnings": [
+        "test_suite/student_errors/test4_format_string.c:8:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]"
+      ],
+      "errors": [
+        "test_suite/student_errors/test4_format_string.c:15:12: error: format string is not a string literal (potentially insecure) [-Werror,-Wformat-security]"
+      ],
+      "timestamp": "2026-03-16T10:46:21.537411"
+    },
+    {
+      "file": "test_suite/student_errors/test5_sign_compare.c",
+      "category": "student_errors",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/student_errors/test5_sign_compare.c:9:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n    9 | int main() {\n      |         ^\n      |          void\ntest_suite/student_errors/test5_sign_compare.c:14:19: warning: comparison of integers of different signs: 'int' and 'unsigned long' [-Wsign-compare]\n   14 |     for (i = 0; i < strlen(str); i++) {\n      |                 ~ ^ ~~~~~~~~~~~\ntest_suite/student_errors/test5_sign_compare.c:21:15: warning: comparison of integers of different signs: 'int' and 'unsigned long' [-Wsign-compare]\n   21 |     if (index < strlen(str)) {  // Always true! -1 becomes large positive\n      |         ~~~~~ ^ ~~~~~~~~~~~\n3 warnings generated.\n",
+      "return_code": 0,
+      "warnings": [
+        "test_suite/student_errors/test5_sign_compare.c:9:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]",
+        "test_suite/student_errors/test5_sign_compare.c:14:19: warning: comparison of integers of different signs: 'int' and 'unsigned long' [-Wsign-compare]",
+        "test_suite/student_errors/test5_sign_compare.c:21:15: warning: comparison of integers of different signs: 'int' and 'unsigned long' [-Wsign-compare]"
+      ],
+      "errors": [],
+      "timestamp": "2026-03-16T10:46:21.558224"
+    },
+    {
+      "file": "test_suite/student_errors/test6_double_free.c",
+      "category": "student_errors",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/student_errors/test6_double_free.c:9:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n    9 | int main() {\n      |         ^\n      |          void\n1 warning generated.\n",
+      "return_code": 0,
+      "warnings": [
+        "test_suite/student_errors/test6_double_free.c:9:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]"
+      ],
+      "errors": [],
+      "timestamp": "2026-03-16T10:46:21.580882"
+    },
+    {
+      "file": "test_suite/student_errors/test7_uninitialized.c",
+      "category": "student_errors",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/student_errors/test7_uninitialized.c:8:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n    8 | int main() {\n      |         ^\n      |          void\ntest_suite/student_errors/test7_uninitialized.c:13:9: warning: variable 'result' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]\n   13 |     if (divisor != 0) {\n      |         ^~~~~~~~~~~~\ntest_suite/student_errors/test7_uninitialized.c:18:28: note: uninitialized use occurs here\n   18 |     printf(\"Result: %d\\n\", result);\n      |                            ^~~~~~\ntest_suite/student_errors/test7_uninitialized.c:13:5: note: remove the 'if' if its condition is always true\n   13 |     if (divisor != 0) {\n      |     ^~~~~~~~~~~~~~~~~\ntest_suite/student_errors/test7_uninitialized.c:9:15: note: initialize the variable 'result' to silence this warning\n    9 |     int result;\n      |               ^\n      |                = 0\n2 warnings generated.\n",
+      "return_code": 0,
+      "warnings": [
+        "test_suite/student_errors/test7_uninitialized.c:8:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]",
+        "test_suite/student_errors/test7_uninitialized.c:13:9: warning: variable 'result' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]"
+      ],
+      "errors": [],
+      "timestamp": "2026-03-16T10:46:21.603465"
+    },
+    {
+      "file": "test_suite/student_errors/test8_ignored_return.c",
+      "category": "student_errors",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/student_errors/test8_ignored_return.c:10:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n   10 | int main() {\n      |         ^\n      |          void\n1 warning generated.\n",
+      "return_code": 0,
+      "warnings": [
+        "test_suite/student_errors/test8_ignored_return.c:10:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]"
+      ],
+      "errors": [],
+      "timestamp": "2026-03-16T10:46:21.623999"
+    },
+    {
+      "file": "test_suite/edge_cases/test1_complex_pointers.c",
+      "category": "edge_cases",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/edge_cases/test1_complex_pointers.c:8:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n    8 | int main() {\n      |         ^\n      |          void\n1 warning generated.\n",
+      "return_code": 0,
+      "warnings": [
+        "test_suite/edge_cases/test1_complex_pointers.c:8:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]"
+      ],
+      "errors": [],
+      "timestamp": "2026-03-16T10:46:21.646769"
+    },
+    {
+      "file": "test_suite/edge_cases/test2_const_correctness.c",
+      "category": "edge_cases",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/edge_cases/test2_const_correctness.c:12:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n   12 | int main() {\n      |         ^\n      |          void\n1 warning generated.\n",
+      "return_code": 0,
+      "warnings": [
+        "test_suite/edge_cases/test2_const_correctness.c:12:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]"
+      ],
+      "errors": [],
+      "timestamp": "2026-03-16T10:46:21.667471"
+    },
+    {
+      "file": "test_suite/edge_cases/test3_vla.c",
+      "category": "edge_cases",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/edge_cases/test3_vla.c:19:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n   19 | int main() {\n      |         ^\n      |          void\n1 warning generated.\n",
+      "return_code": 0,
+      "warnings": [
+        "test_suite/edge_cases/test3_vla.c:19:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]"
+      ],
+      "errors": [],
+      "timestamp": "2026-03-16T10:46:21.687800"
+    },
+    {
+      "file": "test_suite/edge_cases/test4_enum.c",
+      "category": "edge_cases",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/edge_cases/test4_enum.c:20:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n   20 | int main() {\n      |         ^\n      |          void\ntest_suite/edge_cases/test4_enum.c:25:11: warning: comparison of different enumeration types ('Color' and 'Size') [-Wenum-compare]\n   25 |     if (c == s) {\n      |         ~ ^  ~\n2 warnings generated.\n",
+      "return_code": 0,
+      "warnings": [
+        "test_suite/edge_cases/test4_enum.c:20:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]",
+        "test_suite/edge_cases/test4_enum.c:25:11: warning: comparison of different enumeration types ('Color' and 'Size') [-Wenum-compare]"
+      ],
+      "errors": [],
+      "timestamp": "2026-03-16T10:46:21.717227"
+    },
+    {
+      "file": "test_suite/edge_cases/test5_function_pointer.c",
+      "category": "edge_cases",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/edge_cases/test5_function_pointer.c:16:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n   16 | int main() {\n      |         ^\n      |          void\ntest_suite/edge_cases/test5_function_pointer.c:18:13: error: incompatible function pointer types passing 'int (int, int)' to parameter of type 'void (*)(int, int)' [-Wincompatible-function-pointer-types]\n   18 |     process(add);\n      |             ^~~\ntest_suite/edge_cases/test5_function_pointer.c:12:21: note: passing argument to parameter 'callback' here\n   12 | void process(void (*callback)(int, int)) {\n      |                     ^\n1 warning and 1 error generated.\n",
+      "return_code": 1,
+      "warnings": [
+        "test_suite/edge_cases/test5_function_pointer.c:16:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]"
+      ],
+      "errors": [
+        "test_suite/edge_cases/test5_function_pointer.c:18:13: error: incompatible function pointer types passing 'int (int, int)' to parameter of type 'void (*)(int, int)' [-Wincompatible-function-pointer-types]"
+      ],
+      "timestamp": "2026-03-16T10:46:21.737039"
+    },
+    {
+      "file": "test_suite/edge_cases/test6_aliasing.c",
+      "category": "edge_cases",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/edge_cases/test6_aliasing.c:8:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n    8 | int main() {\n      |         ^\n      |          void\n1 warning generated.\n",
+      "return_code": 0,
+      "warnings": [
+        "test_suite/edge_cases/test6_aliasing.c:8:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]"
+      ],
+      "errors": [],
+      "timestamp": "2026-03-16T10:46:21.756537"
+    },
+    {
+      "file": "test_suite/edge_cases/test7_sequence_point.c",
+      "category": "edge_cases",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/edge_cases/test7_sequence_point.c:8:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n    8 | int main() {\n      |         ^\n      |          void\ntest_suite/edge_cases/test7_sequence_point.c:12:14: warning: multiple unsequenced modifications to 'x' [-Wunsequenced]\n   12 |     int y = x++ + ++x;\n      |              ^    ~~\n2 warnings generated.\n",
+      "return_code": 0,
+      "warnings": [
+        "test_suite/edge_cases/test7_sequence_point.c:8:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]",
+        "test_suite/edge_cases/test7_sequence_point.c:12:14: warning: multiple unsequenced modifications to 'x' [-Wunsequenced]"
+      ],
+      "errors": [],
+      "timestamp": "2026-03-16T10:46:21.777214"
+    },
+    {
+      "file": "test_suite/edge_cases/test8_macros.c",
+      "category": "edge_cases",
+      "compiler": "clang",
+      "flags": [
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror=format-security"
+      ],
+      "stdout": "",
+      "stderr": "test_suite/edge_cases/test8_macros.c:11:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]\n   11 | int main() {\n      |         ^\n      |          void\n1 warning generated.\n",
+      "return_code": 0,
+      "warnings": [
+        "test_suite/edge_cases/test8_macros.c:11:9: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]"
+      ],
+      "errors": [],
+      "timestamp": "2026-03-16T10:46:21.797122"
+    }
+  ]
+}

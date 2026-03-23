@@ -35,7 +35,9 @@ for example in tqdm(dataset):
     with torch.no_grad():
         outputs = model.generate(
             **inputs,
-            max_new_tokens=150
+            max_new_tokens=150,
+            num_beams=4,
+            early_stopping=True
         )
 
     prediction = tokenizer.decode(outputs[0], skip_special_tokens=True)
@@ -48,6 +50,15 @@ results = rouge.compute(
     predictions=predictions,
     references=references
 )
+
+# Save outputs
+results_df = pd.DataFrame({
+    "input": df["input_text"],
+    "prediction": predictions,
+    "reference": references
+})
+
+results_df.to_csv("model_outputs.csv", index=False)
 
 print("\nEvaluation Results:")
 for key, value in results.items():

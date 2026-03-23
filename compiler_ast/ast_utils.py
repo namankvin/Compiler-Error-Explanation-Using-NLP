@@ -8,7 +8,7 @@ def get_error_line(source_file):
 
     error_output = result.stderr
 
-    line_match = re.search(r":(\d+):(\d+): error:", error_output)
+    line_match = re.search(r":(\d+):(\d+): (error|warning):", error_output)
 
     if line_match:
         error_line = int(line_match.group(1))

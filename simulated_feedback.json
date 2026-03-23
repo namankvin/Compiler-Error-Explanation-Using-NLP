@@ -1,0 +1,26 @@
+{
+  "survey_responses": 50,
+  "questions": {
+    "How much did the NLP explanations help compared to raw errors?": {
+      "Significantly": 35,
+      "Moderately": 12,
+      "Slightly": 3,
+      "Not at all": 0
+    },
+    "Was the tone appropriate for a beginner?": {
+      "Yes": 48,
+      "No": 2
+    },
+    "Did you find the security warnings useful?": {
+      "Very useful": 40,
+      "Somewhat": 8,
+      "Not relevant": 2
+    }
+  },
+  "representative_comments": [
+    "The explanations actually tell me HOW to fix it, not just that it's broken.",
+    "I like the analogy about the water and the cup for type conversions.",
+    "Sometimes the explanations are a bit wordy, but still better than standard GCC.",
+    "The security flags made me realize I was using strcpy unsafely!"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "total_cases": 150,
+  "average_comprehension_improvement": "105.92%",
+  "average_fix_efficiency_improvement": "161.33%",
+  "average_nlp_quality_score": "4.29/5",
+  "improvement_by_type": {
+    "type_mismatch": "122.10%",
+    "undeclared": "128.34%",
+    "syntax_error": "52.11%"
+  }
+}

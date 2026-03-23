@@ -1,1011 +1,1013 @@
-TranslationUnitDecl 0x7a8c66008 <<invalid sloc>> <invalid sloc>
-|-TypedefDecl 0x7a8d14000 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
-| `-BuiltinType 0x7a8c665d0 '__int128'
-|-TypedefDecl 0x7a8d14070 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
-| `-BuiltinType 0x7a8c665f0 'unsigned __int128'
-|-TypedefDecl 0x7a8d14380 <<invalid sloc>> <invalid sloc> implicit __NSConstantString 'struct __NSConstantString_tag'
-| `-RecordType 0x7a8d14150 'struct __NSConstantString_tag'
-|   `-Record 0x7a8d140c8 '__NSConstantString_tag'
-|-TypedefDecl 0x7a8d143e8 <<invalid sloc>> <invalid sloc> implicit __SVInt8_t '__SVInt8_t'
-| `-BuiltinType 0x7a8c667b0 '__SVInt8_t'
-|-TypedefDecl 0x7a8d14450 <<invalid sloc>> <invalid sloc> implicit __SVInt16_t '__SVInt16_t'
-| `-BuiltinType 0x7a8c667d0 '__SVInt16_t'
-|-TypedefDecl 0x7a8d144b8 <<invalid sloc>> <invalid sloc> implicit __SVInt32_t '__SVInt32_t'
-| `-BuiltinType 0x7a8c667f0 '__SVInt32_t'
-|-TypedefDecl 0x7a8d14520 <<invalid sloc>> <invalid sloc> implicit __SVInt64_t '__SVInt64_t'
-| `-BuiltinType 0x7a8c66810 '__SVInt64_t'
-|-TypedefDecl 0x7a8d14588 <<invalid sloc>> <invalid sloc> implicit __SVUint8_t '__SVUint8_t'
-| `-BuiltinType 0x7a8c66830 '__SVUint8_t'
-|-TypedefDecl 0x7a8d145f0 <<invalid sloc>> <invalid sloc> implicit __SVUint16_t '__SVUint16_t'
-| `-BuiltinType 0x7a8c66850 '__SVUint16_t'
-|-TypedefDecl 0x7a8d14658 <<invalid sloc>> <invalid sloc> implicit __SVUint32_t '__SVUint32_t'
-| `-BuiltinType 0x7a8c66870 '__SVUint32_t'
-|-TypedefDecl 0x7a8d146c0 <<invalid sloc>> <invalid sloc> implicit __SVUint64_t '__SVUint64_t'
-| `-BuiltinType 0x7a8c66890 '__SVUint64_t'
-|-TypedefDecl 0x7a8d14728 <<invalid sloc>> <invalid sloc> implicit __SVFloat16_t '__SVFloat16_t'
-| `-BuiltinType 0x7a8c668b0 '__SVFloat16_t'
-|-TypedefDecl 0x7a8d14790 <<invalid sloc>> <invalid sloc> implicit __SVFloat32_t '__SVFloat32_t'
-| `-BuiltinType 0x7a8c668d0 '__SVFloat32_t'
-|-TypedefDecl 0x7a8d147f8 <<invalid sloc>> <invalid sloc> implicit __SVFloat64_t '__SVFloat64_t'
-| `-BuiltinType 0x7a8c668f0 '__SVFloat64_t'
-|-TypedefDecl 0x7a8d14860 <<invalid sloc>> <invalid sloc> implicit __SVBfloat16_t '__SVBfloat16_t'
-| `-BuiltinType 0x7a8c66910 '__SVBfloat16_t'
-|-TypedefDecl 0x7a8d148c8 <<invalid sloc>> <invalid sloc> implicit __clang_svint8x2_t '__clang_svint8x2_t'
-| `-BuiltinType 0x7a8c66930 '__clang_svint8x2_t'
-|-TypedefDecl 0x7a8d14930 <<invalid sloc>> <invalid sloc> implicit __clang_svint16x2_t '__clang_svint16x2_t'
-| `-BuiltinType 0x7a8c66950 '__clang_svint16x2_t'
-|-TypedefDecl 0x7a8d14998 <<invalid sloc>> <invalid sloc> implicit __clang_svint32x2_t '__clang_svint32x2_t'
-| `-BuiltinType 0x7a8c66970 '__clang_svint32x2_t'
-|-TypedefDecl 0x7a8d14a00 <<invalid sloc>> <invalid sloc> implicit __clang_svint64x2_t '__clang_svint64x2_t'
-| `-BuiltinType 0x7a8c66990 '__clang_svint64x2_t'
-|-TypedefDecl 0x7a8d14a68 <<invalid sloc>> <invalid sloc> implicit __clang_svuint8x2_t '__clang_svuint8x2_t'
-| `-BuiltinType 0x7a8c669b0 '__clang_svuint8x2_t'
-|-TypedefDecl 0x7a8d14ad0 <<invalid sloc>> <invalid sloc> implicit __clang_svuint16x2_t '__clang_svuint16x2_t'
-| `-BuiltinType 0x7a8c669d0 '__clang_svuint16x2_t'
-|-TypedefDecl 0x7a8d14b38 <<invalid sloc>> <invalid sloc> implicit __clang_svuint32x2_t '__clang_svuint32x2_t'
-| `-BuiltinType 0x7a8c669f0 '__clang_svuint32x2_t'
-|-TypedefDecl 0x7a8d14ba0 <<invalid sloc>> <invalid sloc> implicit __clang_svuint64x2_t '__clang_svuint64x2_t'
-| `-BuiltinType 0x7a8c66a10 '__clang_svuint64x2_t'
-|-TypedefDecl 0x7a8d14c08 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat16x2_t '__clang_svfloat16x2_t'
-| `-BuiltinType 0x7a8c66a30 '__clang_svfloat16x2_t'
-|-TypedefDecl 0x7a8d14c70 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat32x2_t '__clang_svfloat32x2_t'
-| `-BuiltinType 0x7a8c66a50 '__clang_svfloat32x2_t'
-|-TypedefDecl 0x7a8d14cd8 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat64x2_t '__clang_svfloat64x2_t'
-| `-BuiltinType 0x7a8c66a70 '__clang_svfloat64x2_t'
-|-TypedefDecl 0x7a8d14d40 <<invalid sloc>> <invalid sloc> implicit __clang_svbfloat16x2_t '__clang_svbfloat16x2_t'
-| `-BuiltinType 0x7a8c66a90 '__clang_svbfloat16x2_t'
-|-TypedefDecl 0x7a8d14da8 <<invalid sloc>> <invalid sloc> implicit __clang_svint8x3_t '__clang_svint8x3_t'
-| `-BuiltinType 0x7a8c66ab0 '__clang_svint8x3_t'
-|-TypedefDecl 0x7a8d14e10 <<invalid sloc>> <invalid sloc> implicit __clang_svint16x3_t '__clang_svint16x3_t'
-| `-BuiltinType 0x7a8c66ad0 '__clang_svint16x3_t'
-|-TypedefDecl 0x7a8d14e78 <<invalid sloc>> <invalid sloc> implicit __clang_svint32x3_t '__clang_svint32x3_t'
-| `-BuiltinType 0x7a8c66af0 '__clang_svint32x3_t'
-|-TypedefDecl 0x7a8d14ee0 <<invalid sloc>> <invalid sloc> implicit __clang_svint64x3_t '__clang_svint64x3_t'
-| `-BuiltinType 0x7a8c66b10 '__clang_svint64x3_t'
-|-TypedefDecl 0x7a8d14f48 <<invalid sloc>> <invalid sloc> implicit __clang_svuint8x3_t '__clang_svuint8x3_t'
-| `-BuiltinType 0x7a8c66b30 '__clang_svuint8x3_t'
-|-TypedefDecl 0x7a8d15000 <<invalid sloc>> <invalid sloc> implicit __clang_svuint16x3_t '__clang_svuint16x3_t'
-| `-BuiltinType 0x7a8c66b50 '__clang_svuint16x3_t'
-|-TypedefDecl 0x7a8d15068 <<invalid sloc>> <invalid sloc> implicit __clang_svuint32x3_t '__clang_svuint32x3_t'
-| `-BuiltinType 0x7a8c66b70 '__clang_svuint32x3_t'
-|-TypedefDecl 0x7a8d150d0 <<invalid sloc>> <invalid sloc> implicit __clang_svuint64x3_t '__clang_svuint64x3_t'
-| `-BuiltinType 0x7a8c66b90 '__clang_svuint64x3_t'
-|-TypedefDecl 0x7a8d15138 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat16x3_t '__clang_svfloat16x3_t'
-| `-BuiltinType 0x7a8c66bb0 '__clang_svfloat16x3_t'
-|-TypedefDecl 0x7a8d151a0 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat32x3_t '__clang_svfloat32x3_t'
-| `-BuiltinType 0x7a8c66bd0 '__clang_svfloat32x3_t'
-|-TypedefDecl 0x7a8d15208 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat64x3_t '__clang_svfloat64x3_t'
-| `-BuiltinType 0x7a8c66bf0 '__clang_svfloat64x3_t'
-|-TypedefDecl 0x7a8d15270 <<invalid sloc>> <invalid sloc> implicit __clang_svbfloat16x3_t '__clang_svbfloat16x3_t'
-| `-BuiltinType 0x7a8c66c10 '__clang_svbfloat16x3_t'
-|-TypedefDecl 0x7a8d152d8 <<invalid sloc>> <invalid sloc> implicit __clang_svint8x4_t '__clang_svint8x4_t'
-| `-BuiltinType 0x7a8c66c30 '__clang_svint8x4_t'
-|-TypedefDecl 0x7a8d15340 <<invalid sloc>> <invalid sloc> implicit __clang_svint16x4_t '__clang_svint16x4_t'
-| `-BuiltinType 0x7a8c66c50 '__clang_svint16x4_t'
-|-TypedefDecl 0x7a8d153a8 <<invalid sloc>> <invalid sloc> implicit __clang_svint32x4_t '__clang_svint32x4_t'
-| `-BuiltinType 0x7a8c66c70 '__clang_svint32x4_t'
-|-TypedefDecl 0x7a8d15410 <<invalid sloc>> <invalid sloc> implicit __clang_svint64x4_t '__clang_svint64x4_t'
-| `-BuiltinType 0x7a8c66c90 '__clang_svint64x4_t'
-|-TypedefDecl 0x7a8d15478 <<invalid sloc>> <invalid sloc> implicit __clang_svuint8x4_t '__clang_svuint8x4_t'
-| `-BuiltinType 0x7a8c66cb0 '__clang_svuint8x4_t'
-|-TypedefDecl 0x7a8d154e0 <<invalid sloc>> <invalid sloc> implicit __clang_svuint16x4_t '__clang_svuint16x4_t'
-| `-BuiltinType 0x7a8c66cd0 '__clang_svuint16x4_t'
-|-TypedefDecl 0x7a8d15548 <<invalid sloc>> <invalid sloc> implicit __clang_svuint32x4_t '__clang_svuint32x4_t'
-| `-BuiltinType 0x7a8c66cf0 '__clang_svuint32x4_t'
-|-TypedefDecl 0x7a8d155b0 <<invalid sloc>> <invalid sloc> implicit __clang_svuint64x4_t '__clang_svuint64x4_t'
-| `-BuiltinType 0x7a8c66d10 '__clang_svuint64x4_t'
-|-TypedefDecl 0x7a8d15618 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat16x4_t '__clang_svfloat16x4_t'
-| `-BuiltinType 0x7a8c66d30 '__clang_svfloat16x4_t'
-|-TypedefDecl 0x7a8d15680 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat32x4_t '__clang_svfloat32x4_t'
-| `-BuiltinType 0x7a8c66d50 '__clang_svfloat32x4_t'
-|-TypedefDecl 0x7a8d156e8 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat64x4_t '__clang_svfloat64x4_t'
-| `-BuiltinType 0x7a8c66d70 '__clang_svfloat64x4_t'
-|-TypedefDecl 0x7a8d15750 <<invalid sloc>> <invalid sloc> implicit __clang_svbfloat16x4_t '__clang_svbfloat16x4_t'
-| `-BuiltinType 0x7a8c66d90 '__clang_svbfloat16x4_t'
-|-TypedefDecl 0x7a8d157b8 <<invalid sloc>> <invalid sloc> implicit __SVBool_t '__SVBool_t'
-| `-BuiltinType 0x7a8c66db0 '__SVBool_t'
-|-TypedefDecl 0x7a8d15820 <<invalid sloc>> <invalid sloc> implicit __clang_svboolx2_t '__clang_svboolx2_t'
-| `-BuiltinType 0x7a8c66dd0 '__clang_svboolx2_t'
-|-TypedefDecl 0x7a8d15888 <<invalid sloc>> <invalid sloc> implicit __clang_svboolx4_t '__clang_svboolx4_t'
-| `-BuiltinType 0x7a8c66df0 '__clang_svboolx4_t'
-|-TypedefDecl 0x7a8d158f0 <<invalid sloc>> <invalid sloc> implicit __SVCount_t '__SVCount_t'
-| `-BuiltinType 0x7a8c66e10 '__SVCount_t'
-|-TypedefDecl 0x7a8c66f08 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
-| `-PointerType 0x7a8c66ec0 'char *'
-|   `-BuiltinType 0x7a8c660b0 'char'
-|-TypedefDecl 0x7a8c66f78 <<invalid sloc>> <invalid sloc> implicit referenced __builtin_va_list 'char *'
-| `-PointerType 0x7a8c66ec0 'char *'
-|   `-BuiltinType 0x7a8c660b0 'char'
-|-TypedefDecl 0x7a8d15960 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h:28:1, col:33> col:33 __int8_t 'signed char'
-| `-BuiltinType 0x7a8c660d0 'signed char'
-|-TypedefDecl 0x7a8d159d0 <line:32:1, col:33> col:33 __uint8_t 'unsigned char'
-| `-BuiltinType 0x7a8c66170 'unsigned char'
-|-TypedefDecl 0x7a8d15a40 <line:33:1, col:33> col:33 __int16_t 'short'
-| `-BuiltinType 0x7a8c660f0 'short'
-|-TypedefDecl 0x7a8d15ab0 <line:34:1, col:33> col:33 referenced __uint16_t 'unsigned short'
-| `-BuiltinType 0x7a8c66190 'unsigned short'
-|-TypedefDecl 0x7a8d15b20 <line:35:1, col:33> col:33 referenced __int32_t 'int'
-| `-BuiltinType 0x7a8c66110 'int'
-|-TypedefDecl 0x7a8d15b90 <line:36:1, col:33> col:33 referenced __uint32_t 'unsigned int'
-| `-BuiltinType 0x7a8c661b0 'unsigned int'
-|-TypedefDecl 0x7a8d15c00 <line:37:1, col:33> col:33 referenced __int64_t 'long long'
-| `-BuiltinType 0x7a8c66150 'long long'
-|-TypedefDecl 0x7a8d15c70 <line:38:1, col:33> col:33 referenced __uint64_t 'unsigned long long'
-| `-BuiltinType 0x7a8c661f0 'unsigned long long'
-|-TypedefDecl 0x7a8d15ce0 <line:40:1, col:33> col:33 referenced __darwin_intptr_t 'long'
-| `-BuiltinType 0x7a8c66130 'long'
-|-TypedefDecl 0x7a8d15d50 <line:41:1, col:33> col:33 referenced __darwin_natural_t 'unsigned int'
-| `-BuiltinType 0x7a8c661b0 'unsigned int'
-|-TypedefDecl 0x7a8d15dc0 <line:61:1, col:33> col:33 __darwin_ct_rune_t 'int'
-| `-BuiltinType 0x7a8c66110 'int'
-|-RecordDecl 0x7a8d15e18 <line:67:9, line:70:1> line:67:9 union definition
-| |-FieldDecl 0x7a8d15f50 <line:68:2, col:32> col:18 __mbstate8 'char[128]'
-| `-FieldDecl 0x7a8dec000 <line:69:2, col:18> col:18 _mbstateL 'long long'
-|-TypedefDecl 0x7a8dec0a8 <line:67:1, line:70:3> col:3 referenced __mbstate_t 'union __mbstate_t':'__mbstate_t'
-| `-ElaboratedType 0x7a8dec050 'union __mbstate_t' sugar
-|   `-RecordType 0x7a8d15ea0 '__mbstate_t'
-|     `-Record 0x7a8d15e18 ''
-|-TypedefDecl 0x7a8dec190 <line:72:1, col:33> col:33 __darwin_mbstate_t '__mbstate_t'
-| `-ElaboratedType 0x7a8dec150 '__mbstate_t' sugar
-|   `-TypedefType 0x7a8dec120 '__mbstate_t' sugar
-|     |-Typedef 0x7a8dec0a8 '__mbstate_t'
-|     `-ElaboratedType 0x7a8dec050 'union __mbstate_t' sugar
-|       `-RecordType 0x7a8d15ea0 '__mbstate_t'
-|         `-Record 0x7a8d15e18 ''
-|-TypedefDecl 0x7a8dec200 <line:77:1, col:33> col:33 __darwin_ptrdiff_t 'long'
-| `-BuiltinType 0x7a8c66130 'long'
-|-TypedefDecl 0x7a8dec270 <line:87:1, col:33> col:33 referenced __darwin_size_t 'unsigned long'
-| `-BuiltinType 0x7a8c661d0 'unsigned long'
-|-TypedefDecl 0x7a8dec340 <line:95:1, col:33> col:33 referenced __darwin_va_list '__builtin_va_list':'char *'
-| `-ElaboratedType 0x7a8dec300 '__builtin_va_list' sugar
-|   `-TypedefType 0x7a8dec2d0 '__builtin_va_list' sugar
-|     |-Typedef 0x7a8c66f78 '__builtin_va_list'
-|     `-PointerType 0x7a8c66ec0 'char *'
-|       `-BuiltinType 0x7a8c660b0 'char'
-|-TypedefDecl 0x7a8dec3b0 <line:103:1, col:33> col:33 referenced __darwin_wchar_t 'int'
-| `-BuiltinType 0x7a8c66110 'int'
-|-TypedefDecl 0x7a8dec480 <line:108:1, col:33> col:33 __darwin_rune_t '__darwin_wchar_t':'int'
-| `-ElaboratedType 0x7a8dec440 '__darwin_wchar_t' sugar
-|   `-TypedefType 0x7a8dec410 '__darwin_wchar_t' sugar
-|     |-Typedef 0x7a8dec3b0 '__darwin_wchar_t'
-|     `-BuiltinType 0x7a8c66110 'int'
-|-TypedefDecl 0x7a8dec4f0 <line:111:1, col:33> col:33 __darwin_wint_t 'int'
-| `-BuiltinType 0x7a8c66110 'int'
-|-TypedefDecl 0x7a8dec560 <line:116:1, col:33> col:33 __darwin_clock_t 'unsigned long'
-| `-BuiltinType 0x7a8c661d0 'unsigned long'
-|-TypedefDecl 0x7a8dec630 <line:117:1, col:33> col:33 __darwin_socklen_t '__uint32_t':'unsigned int'
-| `-ElaboratedType 0x7a8dec5f0 '__uint32_t' sugar
-|   `-TypedefType 0x7a8dec5c0 '__uint32_t' sugar
-|     |-Typedef 0x7a8d15b90 '__uint32_t'
-|     `-BuiltinType 0x7a8c661b0 'unsigned int'
-|-TypedefDecl 0x7a8dec6a0 <line:118:1, col:33> col:33 referenced __darwin_ssize_t 'long'
-| `-BuiltinType 0x7a8c66130 'long'
-|-TypedefDecl 0x7a8dec710 <line:119:1, col:33> col:33 __darwin_time_t 'long'
-| `-BuiltinType 0x7a8c66130 'long'
-|-TypedefDecl 0x7a8dec7e0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:67:1, col:25> col:25 __darwin_blkcnt_t '__int64_t':'long long'
-| `-ElaboratedType 0x7a8dec7a0 '__int64_t' sugar
-|   `-TypedefType 0x7a8dec770 '__int64_t' sugar
-|     |-Typedef 0x7a8d15c00 '__int64_t'
-|     `-BuiltinType 0x7a8c66150 'long long'
-|-TypedefDecl 0x7a8dec8b0 <line:68:1, col:25> col:25 __darwin_blksize_t '__int32_t':'int'
-| `-ElaboratedType 0x7a8dec870 '__int32_t' sugar
-|   `-TypedefType 0x7a8dec840 '__int32_t' sugar
-|     |-Typedef 0x7a8d15b20 '__int32_t'
-|     `-BuiltinType 0x7a8c66110 'int'
-|-TypedefDecl 0x7a8dec918 <line:69:1, col:25> col:25 __darwin_dev_t '__int32_t':'int'
-| `-ElaboratedType 0x7a8dec870 '__int32_t' sugar
-|   `-TypedefType 0x7a8dec840 '__int32_t' sugar
-|     |-Typedef 0x7a8d15b20 '__int32_t'
-|     `-BuiltinType 0x7a8c66110 'int'
-|-TypedefDecl 0x7a8dec988 <line:70:1, col:25> col:25 __darwin_fsblkcnt_t 'unsigned int'
-| `-BuiltinType 0x7a8c661b0 'unsigned int'
-|-TypedefDecl 0x7a8dec9f8 <line:71:1, col:25> col:25 __darwin_fsfilcnt_t 'unsigned int'
-| `-BuiltinType 0x7a8c661b0 'unsigned int'
-|-TypedefDecl 0x7a8deca60 <line:72:1, col:25> col:25 __darwin_gid_t '__uint32_t':'unsigned int'
-| `-ElaboratedType 0x7a8dec5f0 '__uint32_t' sugar
-|   `-TypedefType 0x7a8dec5c0 '__uint32_t' sugar
-|     |-Typedef 0x7a8d15b90 '__uint32_t'
-|     `-BuiltinType 0x7a8c661b0 'unsigned int'
-|-TypedefDecl 0x7a8decac8 <line:73:1, col:25> col:25 __darwin_id_t '__uint32_t':'unsigned int'
-| `-ElaboratedType 0x7a8dec5f0 '__uint32_t' sugar
-|   `-TypedefType 0x7a8dec5c0 '__uint32_t' sugar
-|     |-Typedef 0x7a8d15b90 '__uint32_t'
-|     `-BuiltinType 0x7a8c661b0 'unsigned int'
-|-TypedefDecl 0x7a8decb90 <line:74:1, col:25> col:25 referenced __darwin_ino64_t '__uint64_t':'unsigned long long'
-| `-ElaboratedType 0x7a8decb50 '__uint64_t' sugar
-|   `-TypedefType 0x7a8decb20 '__uint64_t' sugar
-|     |-Typedef 0x7a8d15c70 '__uint64_t'
-|     `-BuiltinType 0x7a8c661f0 'unsigned long long'
-|-TypedefDecl 0x7a8decc60 <line:76:1, col:26> col:26 __darwin_ino_t '__darwin_ino64_t':'unsigned long long'
-| `-ElaboratedType 0x7a8decc20 '__darwin_ino64_t' sugar
-|   `-TypedefType 0x7a8decbf0 '__darwin_ino64_t' sugar
-|     |-Typedef 0x7a8decb90 '__darwin_ino64_t'
-|     `-ElaboratedType 0x7a8decb50 '__uint64_t' sugar
-|       `-TypedefType 0x7a8decb20 '__uint64_t' sugar
-|         |-Typedef 0x7a8d15c70 '__uint64_t'
-|         `-BuiltinType 0x7a8c661f0 'unsigned long long'
-|-TypedefDecl 0x7a8decd30 <line:80:1, col:28> col:28 referenced __darwin_mach_port_name_t '__darwin_natural_t':'unsigned int'
-| `-ElaboratedType 0x7a8deccf0 '__darwin_natural_t' sugar
-|   `-TypedefType 0x7a8deccc0 '__darwin_natural_t' sugar
-|     |-Typedef 0x7a8d15d50 '__darwin_natural_t'
-|     `-BuiltinType 0x7a8c661b0 'unsigned int'
-|-TypedefDecl 0x7a8dece00 <line:81:1, col:35> col:35 __darwin_mach_port_t '__darwin_mach_port_name_t':'unsigned int'
-| `-ElaboratedType 0x7a8decdc0 '__darwin_mach_port_name_t' sugar
-|   `-TypedefType 0x7a8decd90 '__darwin_mach_port_name_t' sugar
-|     |-Typedef 0x7a8decd30 '__darwin_mach_port_name_t'
-|     `-ElaboratedType 0x7a8deccf0 '__darwin_natural_t' sugar
-|       `-TypedefType 0x7a8deccc0 '__darwin_natural_t' sugar
-|         |-Typedef 0x7a8d15d50 '__darwin_natural_t'
-|         `-BuiltinType 0x7a8c661b0 'unsigned int'
-|-TypedefDecl 0x7a8deced0 <line:82:1, col:25> col:25 __darwin_mode_t '__uint16_t':'unsigned short'
-| `-ElaboratedType 0x7a8dece90 '__uint16_t' sugar
-|   `-TypedefType 0x7a8dece60 '__uint16_t' sugar
-|     |-Typedef 0x7a8d15ab0 '__uint16_t'
-|     `-BuiltinType 0x7a8c66190 'unsigned short'
-|-TypedefDecl 0x7a8decf38 <line:83:1, col:25> col:25 referenced __darwin_off_t '__int64_t':'long long'
-| `-ElaboratedType 0x7a8dec7a0 '__int64_t' sugar
-|   `-TypedefType 0x7a8dec770 '__int64_t' sugar
-|     |-Typedef 0x7a8d15c00 '__int64_t'
-|     `-BuiltinType 0x7a8c66150 'long long'
-|-TypedefDecl 0x7a8decfa0 <line:84:1, col:25> col:25 __darwin_pid_t '__int32_t':'int'
-| `-ElaboratedType 0x7a8dec870 '__int32_t' sugar
-|   `-TypedefType 0x7a8dec840 '__int32_t' sugar
-|     |-Typedef 0x7a8d15b20 '__int32_t'
-|     `-BuiltinType 0x7a8c66110 'int'
-|-TypedefDecl 0x7a8ded010 <line:85:1, col:25> col:25 __darwin_sigset_t '__uint32_t':'unsigned int'
-| `-ElaboratedType 0x7a8dec5f0 '__uint32_t' sugar
-|   `-TypedefType 0x7a8dec5c0 '__uint32_t' sugar
-|     |-Typedef 0x7a8d15b90 '__uint32_t'
-|     `-BuiltinType 0x7a8c661b0 'unsigned int'
-|-TypedefDecl 0x7a8ded078 <line:86:1, col:25> col:25 __darwin_suseconds_t '__int32_t':'int'
-| `-ElaboratedType 0x7a8dec870 '__int32_t' sugar
-|   `-TypedefType 0x7a8dec840 '__int32_t' sugar
-|     |-Typedef 0x7a8d15b20 '__int32_t'
-|     `-BuiltinType 0x7a8c66110 'int'
-|-TypedefDecl 0x7a8ded0e0 <line:87:1, col:25> col:25 __darwin_uid_t '__uint32_t':'unsigned int'
-| `-ElaboratedType 0x7a8dec5f0 '__uint32_t' sugar
-|   `-TypedefType 0x7a8dec5c0 '__uint32_t' sugar
-|     |-Typedef 0x7a8d15b90 '__uint32_t'
-|     `-BuiltinType 0x7a8c661b0 'unsigned int'
-|-TypedefDecl 0x7a8ded148 <line:88:1, col:25> col:25 __darwin_useconds_t '__uint32_t':'unsigned int'
-| `-ElaboratedType 0x7a8dec5f0 '__uint32_t' sugar
-|   `-TypedefType 0x7a8dec5c0 '__uint32_t' sugar
-|     |-Typedef 0x7a8d15b90 '__uint32_t'
-|     `-BuiltinType 0x7a8c661b0 'unsigned int'
-|-TypedefDecl 0x7a8ded238 <line:89:1, col:43> col:25 __darwin_uuid_t 'unsigned char[16]'
-| `-ConstantArrayType 0x7a8ded1e0 'unsigned char[16]' 16 
-|   `-BuiltinType 0x7a8c66170 'unsigned char'
-|-TypedefDecl 0x7a8ded320 <line:90:1, col:42> col:17 __darwin_uuid_string_t 'char[37]'
-| `-ConstantArrayType 0x7a8ded2d0 'char[37]' 37 
-|   `-BuiltinType 0x7a8c660b0 'char'
-|-RecordDecl 0x7a8ded378 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h:57:1, line:61:1> line:57:8 struct __darwin_pthread_handler_rec definition
-| |-FieldDecl 0x7a8ded5a8 <line:58:2, col:26> col:9 __routine 'void (*)(void *)'
-| |-FieldDecl 0x7a8ded610 <line:59:2, col:8> col:8 __arg 'void *'
-| `-FieldDecl 0x7a8ded718 <line:60:2, col:39> col:39 __next 'struct __darwin_pthread_handler_rec *'
-|-RecordDecl 0x7a8ded768 <line:63:1, line:66:1> line:63:8 struct _opaque_pthread_attr_t definition
-| |-FieldDecl 0x7a8ded828 <line:64:2, col:7> col:7 __sig 'long'
-| `-FieldDecl 0x7a8ded910 <line:65:2, col:37> col:7 __opaque 'char[56]'
-|-RecordDecl 0x7a8ded960 <line:68:1, line:71:1> line:68:8 struct _opaque_pthread_cond_t definition
-| |-FieldDecl 0x7a8deda18 <line:69:2, col:7> col:7 __sig 'long'
-| `-FieldDecl 0x7a8dedb00 <line:70:2, col:37> col:7 __opaque 'char[40]'
-|-RecordDecl 0x7a8dedb50 <line:73:1, line:76:1> line:73:8 struct _opaque_pthread_condattr_t definition
-| |-FieldDecl 0x7a8dedc08 <line:74:2, col:7> col:7 __sig 'long'
-| `-FieldDecl 0x7a8dedcf0 <line:75:2, col:41> col:7 __opaque 'char[8]'
-|-RecordDecl 0x7a8dedd40 <line:78:1, line:81:1> line:78:8 struct _opaque_pthread_mutex_t definition
-| |-FieldDecl 0x7a8deddf8 <line:79:2, col:7> col:7 __sig 'long'
-| `-FieldDecl 0x7a8dedea8 <line:80:2, col:38> col:7 __opaque 'char[56]'
-|-RecordDecl 0x7a8dedef8 <line:83:1, line:86:1> line:83:8 struct _opaque_pthread_mutexattr_t definition
-| |-FieldDecl 0x7a8dee000 <line:84:2, col:7> col:7 __sig 'long'
-| `-FieldDecl 0x7a8dee0b0 <line:85:2, col:42> col:7 __opaque 'char[8]'
-|-RecordDecl 0x7a8dee100 <line:88:1, line:91:1> line:88:8 struct _opaque_pthread_once_t definition
-| |-FieldDecl 0x7a8dee1b8 <line:89:2, col:7> col:7 __sig 'long'
-| `-FieldDecl 0x7a8dee268 <line:90:2, col:37> col:7 __opaque 'char[8]'
-|-RecordDecl 0x7a8dee2b8 <line:93:1, line:96:1> line:93:8 struct _opaque_pthread_rwlock_t definition
-| |-FieldDecl 0x7a8dee378 <line:94:2, col:7> col:7 __sig 'long'
-| `-FieldDecl 0x7a8dee460 <line:95:2, col:39> col:7 __opaque 'char[192]'
-|-RecordDecl 0x7a8dee4b0 <line:98:1, line:101:1> line:98:8 struct _opaque_pthread_rwlockattr_t definition
-| |-FieldDecl 0x7a8dee568 <line:99:2, col:7> col:7 __sig 'long'
-| `-FieldDecl 0x7a8dee650 <line:100:2, col:43> col:7 __opaque 'char[16]'
-|-RecordDecl 0x7a8dee6a0 <line:103:1, line:107:1> line:103:8 struct _opaque_pthread_t definition
-| |-FieldDecl 0x7a8dee758 <line:104:2, col:7> col:7 __sig 'long'
-| |-FieldDecl 0x7a8dee7d0 <line:105:2, col:40> col:40 __cleanup_stack 'struct __darwin_pthread_handler_rec *'
-| `-FieldDecl 0x7a8dee8b0 <line:106:2, col:32> col:7 __opaque 'char[8176]'
-|-TypedefDecl 0x7a8dee950 <line:109:1, col:39> col:39 __darwin_pthread_attr_t 'struct _opaque_pthread_attr_t'
-| `-ElaboratedType 0x7a8dee900 'struct _opaque_pthread_attr_t' sugar
-|   `-RecordType 0x7a8ded7f0 'struct _opaque_pthread_attr_t'
-|     `-Record 0x7a8ded768 '_opaque_pthread_attr_t'
-|-TypedefDecl 0x7a8deea00 <line:110:1, col:39> col:39 __darwin_pthread_cond_t 'struct _opaque_pthread_cond_t'
-| `-ElaboratedType 0x7a8dee9b0 'struct _opaque_pthread_cond_t' sugar
-|   `-RecordType 0x7a8ded9e0 'struct _opaque_pthread_cond_t'
-|     `-Record 0x7a8ded960 '_opaque_pthread_cond_t'
-|-TypedefDecl 0x7a8deeab0 <line:111:1, col:43> col:43 __darwin_pthread_condattr_t 'struct _opaque_pthread_condattr_t'
-| `-ElaboratedType 0x7a8deea60 'struct _opaque_pthread_condattr_t' sugar
-|   `-RecordType 0x7a8dedbd0 'struct _opaque_pthread_condattr_t'
-|     `-Record 0x7a8dedb50 '_opaque_pthread_condattr_t'
-|-TypedefDecl 0x7a8deeb20 <line:112:1, col:23> col:23 __darwin_pthread_key_t 'unsigned long'
-| `-BuiltinType 0x7a8c661d0 'unsigned long'
-|-TypedefDecl 0x7a8deebd0 <line:113:1, col:40> col:40 __darwin_pthread_mutex_t 'struct _opaque_pthread_mutex_t'
-| `-ElaboratedType 0x7a8deeb80 'struct _opaque_pthread_mutex_t' sugar
-|   `-RecordType 0x7a8deddc0 'struct _opaque_pthread_mutex_t'
-|     `-Record 0x7a8dedd40 '_opaque_pthread_mutex_t'
-|-TypedefDecl 0x7a8deec80 <line:114:1, col:44> col:44 __darwin_pthread_mutexattr_t 'struct _opaque_pthread_mutexattr_t'
-| `-ElaboratedType 0x7a8deec30 'struct _opaque_pthread_mutexattr_t' sugar
-|   `-RecordType 0x7a8dedf80 'struct _opaque_pthread_mutexattr_t'
-|     `-Record 0x7a8dedef8 '_opaque_pthread_mutexattr_t'
-|-TypedefDecl 0x7a8deed30 <line:115:1, col:39> col:39 __darwin_pthread_once_t 'struct _opaque_pthread_once_t'
-| `-ElaboratedType 0x7a8deece0 'struct _opaque_pthread_once_t' sugar
-|   `-RecordType 0x7a8dee180 'struct _opaque_pthread_once_t'
-|     `-Record 0x7a8dee100 '_opaque_pthread_once_t'
-|-TypedefDecl 0x7a8deede0 <line:116:1, col:41> col:41 __darwin_pthread_rwlock_t 'struct _opaque_pthread_rwlock_t'
-| `-ElaboratedType 0x7a8deed90 'struct _opaque_pthread_rwlock_t' sugar
-|   `-RecordType 0x7a8dee340 'struct _opaque_pthread_rwlock_t'
-|     `-Record 0x7a8dee2b8 '_opaque_pthread_rwlock_t'
-|-TypedefDecl 0x7a8deee90 <line:117:1, col:45> col:45 __darwin_pthread_rwlockattr_t 'struct _opaque_pthread_rwlockattr_t'
-| `-ElaboratedType 0x7a8deee40 'struct _opaque_pthread_rwlockattr_t' sugar
-|   `-RecordType 0x7a8dee530 'struct _opaque_pthread_rwlockattr_t'
-|     `-Record 0x7a8dee4b0 '_opaque_pthread_rwlockattr_t'
-|-TypedefDecl 0x7a8deefa8 <line:118:1, col:35> col:35 __darwin_pthread_t 'struct _opaque_pthread_t *'
-| `-PointerType 0x7a8deef50 'struct _opaque_pthread_t *'
-|   `-ElaboratedType 0x7a8deeef0 'struct _opaque_pthread_t' sugar
-|     `-RecordType 0x7a8dee720 'struct _opaque_pthread_t'
-|       `-Record 0x7a8dee6a0 '_opaque_pthread_t'
-|-TypedefDecl 0x7a8def018 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h:43:1, col:14> col:14 __darwin_nl_item 'int'
-| `-BuiltinType 0x7a8c66110 'int'
-|-TypedefDecl 0x7a8def088 <line:44:1, col:14> col:14 __darwin_wctrans_t 'int'
-| `-BuiltinType 0x7a8c66110 'int'
-|-TypedefDecl 0x7a8def0f0 <line:46:1, col:20> col:20 __darwin_wctype_t '__uint32_t':'unsigned int'
-| `-ElaboratedType 0x7a8dec5f0 '__uint32_t' sugar
-|   `-TypedefType 0x7a8dec5c0 '__uint32_t' sugar
-|     |-Typedef 0x7a8d15b90 '__uint32_t'
-|     `-BuiltinType 0x7a8c661b0 'unsigned int'
-|-TypedefDecl 0x7a8def160 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int8_t.h:30:1, col:31> col:31 int8_t 'signed char'
-| `-BuiltinType 0x7a8c660d0 'signed char'
-|-TypedefDecl 0x7a8def1d0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h:30:1, col:33> col:33 int16_t 'short'
-| `-BuiltinType 0x7a8c660f0 'short'
-|-TypedefDecl 0x7a8def240 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int32_t.h:30:1, col:33> col:33 int32_t 'int'
-| `-BuiltinType 0x7a8c66110 'int'
-|-TypedefDecl 0x7a8def2b0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int64_t.h:30:1, col:33> col:33 referenced int64_t 'long long'
-| `-BuiltinType 0x7a8c66150 'long long'
-|-TypedefDecl 0x7a8def320 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int8_t.h:30:1, col:33> col:33 u_int8_t 'unsigned char'
-| `-BuiltinType 0x7a8c66170 'unsigned char'
-|-TypedefDecl 0x7a8def390 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int16_t.h:30:1, col:41> col:41 u_int16_t 'unsigned short'
-| `-BuiltinType 0x7a8c66190 'unsigned short'
-|-TypedefDecl 0x7a8def400 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int32_t.h:30:1, col:33> col:33 u_int32_t 'unsigned int'
-| `-BuiltinType 0x7a8c661b0 'unsigned int'
-|-TypedefDecl 0x7a8def470 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int64_t.h:30:1, col:33> col:33 referenced u_int64_t 'unsigned long long'
-| `-BuiltinType 0x7a8c661f0 'unsigned long long'
-|-TypedefDecl 0x7a8def540 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h:66:1, col:33> col:33 register_t 'int64_t':'long long'
-| `-ElaboratedType 0x7a8def500 'int64_t' sugar
-|   `-TypedefType 0x7a8def4d0 'int64_t' sugar
-|     |-Typedef 0x7a8def2b0 'int64_t'
-|     `-BuiltinType 0x7a8c66150 'long long'
-|-TypedefDecl 0x7a8def610 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_intptr_t.h:32:1, col:33> col:33 intptr_t '__darwin_intptr_t':'long'
-| `-ElaboratedType 0x7a8def5d0 '__darwin_intptr_t' sugar
-|   `-TypedefType 0x7a8def5a0 '__darwin_intptr_t' sugar
-|     |-Typedef 0x7a8d15ce0 '__darwin_intptr_t'
-|     `-BuiltinType 0x7a8c66130 'long'
-|-TypedefDecl 0x7a8def680 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h:34:1, col:33> col:33 uintptr_t 'unsigned long'
-| `-BuiltinType 0x7a8c661d0 'unsigned long'
-|-TypedefDecl 0x7a8def750 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h:77:1, col:33> col:33 user_addr_t 'u_int64_t':'unsigned long long'
-| `-ElaboratedType 0x7a8def710 'u_int64_t' sugar
-|   `-TypedefType 0x7a8def6e0 'u_int64_t' sugar
-|     |-Typedef 0x7a8def470 'u_int64_t'
-|     `-BuiltinType 0x7a8c661f0 'unsigned long long'
-|-TypedefDecl 0x7a8def7b8 <line:78:1, col:33> col:33 user_size_t 'u_int64_t':'unsigned long long'
-| `-ElaboratedType 0x7a8def710 'u_int64_t' sugar
-|   `-TypedefType 0x7a8def6e0 'u_int64_t' sugar
-|     |-Typedef 0x7a8def470 'u_int64_t'
-|     `-BuiltinType 0x7a8c661f0 'unsigned long long'
-|-TypedefDecl 0x7a8def820 <line:79:1, col:33> col:33 user_ssize_t 'int64_t':'long long'
-| `-ElaboratedType 0x7a8def500 'int64_t' sugar
-|   `-TypedefType 0x7a8def4d0 'int64_t' sugar
-|     |-Typedef 0x7a8def2b0 'int64_t'
-|     `-BuiltinType 0x7a8c66150 'long long'
-|-TypedefDecl 0x7a8def888 <line:80:1, col:33> col:33 user_long_t 'int64_t':'long long'
-| `-ElaboratedType 0x7a8def500 'int64_t' sugar
-|   `-TypedefType 0x7a8def4d0 'int64_t' sugar
-|     |-Typedef 0x7a8def2b0 'int64_t'
-|     `-BuiltinType 0x7a8c66150 'long long'
-|-TypedefDecl 0x7a8def8f0 <line:81:1, col:33> col:33 user_ulong_t 'u_int64_t':'unsigned long long'
-| `-ElaboratedType 0x7a8def710 'u_int64_t' sugar
-|   `-TypedefType 0x7a8def6e0 'u_int64_t' sugar
-|     |-Typedef 0x7a8def470 'u_int64_t'
-|     `-BuiltinType 0x7a8c661f0 'unsigned long long'
-|-TypedefDecl 0x7a8def958 <line:82:1, col:33> col:33 user_time_t 'int64_t':'long long'
-| `-ElaboratedType 0x7a8def500 'int64_t' sugar
-|   `-TypedefType 0x7a8def4d0 'int64_t' sugar
-|     |-Typedef 0x7a8def2b0 'int64_t'
-|     `-BuiltinType 0x7a8c66150 'long long'
-|-TypedefDecl 0x7a8def9c0 <line:83:1, col:33> col:33 user_off_t 'int64_t':'long long'
-| `-ElaboratedType 0x7a8def500 'int64_t' sugar
-|   `-TypedefType 0x7a8def4d0 'int64_t' sugar
-|     |-Typedef 0x7a8def2b0 'int64_t'
-|     `-BuiltinType 0x7a8c66150 'long long'
-|-TypedefDecl 0x7a8defa28 <line:105:1, col:33> col:33 syscall_arg_t 'u_int64_t':'unsigned long long'
-| `-ElaboratedType 0x7a8def710 'u_int64_t' sugar
-|   `-TypedefType 0x7a8def6e0 'u_int64_t' sugar
-|     |-Typedef 0x7a8def470 'u_int64_t'
-|     `-BuiltinType 0x7a8c661f0 'unsigned long long'
-|-TypedefDecl 0x7a8defaf0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h:44:1, col:26> col:26 referenced va_list '__darwin_va_list':'char *'
-| `-ElaboratedType 0x7a8defab0 '__darwin_va_list' sugar
-|   `-TypedefType 0x7a8defa80 '__darwin_va_list' sugar
-|     |-Typedef 0x7a8dec340 '__darwin_va_list'
-|     `-ElaboratedType 0x7a8dec300 '__builtin_va_list' sugar
-|       `-TypedefType 0x7a8dec2d0 '__builtin_va_list' sugar
-|         |-Typedef 0x7a8c66f78 '__builtin_va_list'
-|         `-PointerType 0x7a8c66ec0 'char *'
-|           `-BuiltinType 0x7a8c660b0 'char'
-|-TypedefDecl 0x7a8defbc0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h:50:1, col:32> col:32 referenced size_t '__darwin_size_t':'unsigned long'
-| `-ElaboratedType 0x7a8defb80 '__darwin_size_t' sugar
-|   `-TypedefType 0x7a8defb50 '__darwin_size_t' sugar
-|     |-Typedef 0x7a8dec270 '__darwin_size_t'
-|     `-BuiltinType 0x7a8c661d0 'unsigned long'
-|-FunctionDecl 0x7a8defec8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:48:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3876:128> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:48:9 renameat 'int (int, const char *, int, const char *)'
-| |-ParmVarDecl 0x7a8defc30 <col:18> col:21 'int'
-| |-ParmVarDecl 0x7a8defcb0 <col:23, col:34> col:35 'const char *'
-| |-ParmVarDecl 0x7a8defd30 <col:37> col:40 'int'
-| |-ParmVarDecl 0x7a8defdb0 <col:42, col:53> col:54 'const char *'
-| `-AvailabilityAttr 0x7a8df3000 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3876:90, col:126> macos 10.10 0 0 "" "" 0
-|-FunctionDecl 0x7a8df3358 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:52:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h:263:117> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:52:5 renamex_np 'int (const char *, const char *, unsigned int)'
-| |-ParmVarDecl 0x7a8df3120 <col:16, col:27> col:28 'const char *'
-| |-ParmVarDecl 0x7a8df31a0 <col:30, col:41> col:42 'const char *'
-| |-ParmVarDecl 0x7a8df3220 <col:44, col:53> col:56 'unsigned int'
-| |-AvailabilityAttr 0x7a8df3418 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h:263:81, col:115> macos 10.12 0 0 "" "" 0
-| |-AvailabilityAttr 0x7a8df34d8 <col:81, col:115> ios 10.0 0 0 "" "" 0
-| |-AvailabilityAttr 0x7a8df3568 <col:81, col:115> tvos 10.0 0 0 "" "" 0
-| `-AvailabilityAttr 0x7a8df35f8 <col:81, col:115> watchos 3.0 0 0 "" "" 0
-|-FunctionDecl 0x7a8df39f8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:53:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h:263:117> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:53:5 renameatx_np 'int (int, const char *, int, const char *, unsigned int)'
-| |-ParmVarDecl 0x7a8df36a0 <col:18> col:21 'int'
-| |-ParmVarDecl 0x7a8df3720 <col:23, col:34> col:35 'const char *'
-| |-ParmVarDecl 0x7a8df37a0 <col:37> col:40 'int'
-| |-ParmVarDecl 0x7a8df3820 <col:42, col:53> col:54 'const char *'
-| |-ParmVarDecl 0x7a8df38a0 <col:56, col:65> col:68 'unsigned int'
-| |-AvailabilityAttr 0x7a8df3ac8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h:263:81, col:115> macos 10.12 0 0 "" "" 0
-| |-AvailabilityAttr 0x7a8df3b88 <col:81, col:115> ios 10.0 0 0 "" "" 0
-| |-AvailabilityAttr 0x7a8df3c18 <col:81, col:115> tvos 10.0 0 0 "" "" 0
-| `-AvailabilityAttr 0x7a8df3ca8 <col:81, col:115> watchos 3.0 0 0 "" "" 0
-|-FunctionDecl 0x7a8df3ec0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h:34:6> col:6 implicit printf 'int (const char *, ...)' extern
-| |-ParmVarDecl 0x7a8e18000 <<invalid sloc>> <invalid sloc> 'const char *'
-| |-BuiltinAttr 0x7a8df3f68 <<invalid sloc>> Implicit 979
-| `-FormatAttr 0x7a8e18070 <col:6> Implicit printf 1 2
-|-FunctionDecl 0x7a8e180a8 prev 0x7a8df3ec0 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h:34:6 printf 'int (const char *, ...)'
-| |-ParmVarDecl 0x7a8df3d50 <col:13, col:24> col:36 'const char *restrict'
-| |-BuiltinAttr 0x7a8e181c0 <<invalid sloc>> Inherited Implicit 979
-| `-FormatAttr 0x7a8e18158 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 1 2
-|-TypedefDecl 0x7a8e18260 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:86:1, col:25> col:25 referenced fpos_t '__darwin_off_t':'long long'
-| `-ElaboratedType 0x7a8e18220 '__darwin_off_t' sugar
-|   `-TypedefType 0x7a8e181f0 '__darwin_off_t' sugar
-|     |-Typedef 0x7a8decf38 '__darwin_off_t'
-|     `-ElaboratedType 0x7a8dec7a0 '__int64_t' sugar
-|       `-TypedefType 0x7a8dec770 '__int64_t' sugar
-|         |-Typedef 0x7a8d15c00 '__int64_t'
-|         `-BuiltinType 0x7a8c66150 'long long'
-|-RecordDecl 0x7a8e182b8 <line:97:1, line:100:1> line:97:8 struct __sbuf definition
-| |-FieldDecl 0x7a8e183a8 <line:98:2, col:36> col:36 _base 'unsigned char *'
-| `-FieldDecl 0x7a8e18410 <line:99:2, col:7> col:7 _size 'int'
-|-RecordDecl 0x7a8e18460 <line:103:1, col:8> col:8 struct __sFILEX
-|-RecordDecl 0x7a8e18500 <line:131:9, line:162:1> line:131:16 struct __sFILE definition
-| |-FieldDecl 0x7a8e185b8 <line:132:2, col:40> col:40 referenced _p 'unsigned char *'
-| |-FieldDecl 0x7a8e18620 <line:133:2, col:6> col:6 _r 'int'
-| |-FieldDecl 0x7a8e18688 <line:134:2, col:6> col:6 referenced _w 'int'
-| |-FieldDecl 0x7a8e186f0 <line:135:2, col:8> col:8 _flags 'short'
-| |-FieldDecl 0x7a8e18758 <line:136:2, col:8> col:8 _file 'short'
-| |-FieldDecl 0x7a8e18800 <line:137:2, col:16> col:16 _bf 'struct __sbuf'
-| |-FieldDecl 0x7a8e18868 <line:138:2, col:6> col:6 referenced _lbfsize 'int'
-| |-FieldDecl 0x7a8e188d0 <line:141:2, col:8> col:8 _cookie 'void *'
-| |-FieldDecl 0x7a8e18b28 <line:142:2, col:19> col:19 _close 'int (* _Nullable)(void *)':'int (*)(void *)'
-| |-FieldDecl 0x7a8e18ea8 <line:143:2, col:19> col:19 _read 'int (* _Nullable)(void *, char *, int)':'int (*)(void *, char *, int)'
-| |-FieldDecl 0x7a8e192e0 <line:144:2, col:22> col:22 _seek 'fpos_t (* _Nullable)(void *, fpos_t, int)':'fpos_t (*)(void *, fpos_t, int)'
-| |-FieldDecl 0x7a8e19658 <line:145:2, col:19> col:19 _write 'int (* _Nullable)(void *, const char *, int)':'int (*)(void *, const char *, int)'
-| |-FieldDecl 0x7a8e196c8 <line:148:2, col:16> col:16 _ub 'struct __sbuf'
-| |-FieldDecl 0x7a8e197d8 <line:149:2, col:19> col:19 _extra 'struct __sFILEX *'
-| |-FieldDecl 0x7a8e19840 <line:150:2, col:6> col:6 _ur 'int'
-| |-FieldDecl 0x7a8e19928 <line:153:2, col:23> col:16 _ubuf 'unsigned char[3]'
-| |-FieldDecl 0x7a8e19a18 <line:154:2, col:23> col:16 _nbuf 'unsigned char[1]'
-| |-FieldDecl 0x7a8e19a88 <line:157:2, col:16> col:16 _lb 'struct __sbuf'
-| |-FieldDecl 0x7a8e19af0 <line:160:2, col:6> col:6 _blksize 'int'
-| `-FieldDecl 0x7a8e19b50 <line:161:2, col:9> col:9 _offset 'fpos_t':'long long'
-|-TypedefDecl 0x7a8e19bf8 <line:131:1, line:162:3> col:3 referenced FILE 'struct __sFILE'
-| `-ElaboratedType 0x7a8e19ba0 'struct __sFILE' sugar
-|   `-RecordType 0x7a8e18580 'struct __sFILE'
-|     `-Record 0x7a8e18500 '__sFILE'
-|-VarDecl 0x7a8e19d78 <line:167:1, col:14> col:14 __stdinp 'FILE *' extern
-| `-SwiftAttrAttr 0x7a8e19de0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:343:64, col:100> "nonisolated(unsafe)"
-|-VarDecl 0x7a8e19ea0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:168:1, col:14> col:14 __stdoutp 'FILE *' extern
-| `-SwiftAttrAttr 0x7a8e19f08 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:343:64, col:100> "nonisolated(unsafe)"
-|-VarDecl 0x7a8e1a000 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:169:1, col:14> col:14 __stderrp 'FILE *' extern
-| `-SwiftAttrAttr 0x7a8e1a068 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:343:64, col:100> "nonisolated(unsafe)"
-|-FunctionDecl 0x7a8e1a200 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:232:1, col:22> col:7 clearerr 'void (FILE *)'
-| `-ParmVarDecl 0x7a8e1a0f8 <col:16, col:21> col:22 'FILE *'
-|-FunctionDecl 0x7a8e1a3d8 <line:233:1, col:19> col:6 fclose 'int (FILE *)'
-| `-ParmVarDecl 0x7a8e1a2c8 <col:13, col:18> col:19 'FILE *'
-|-FunctionDecl 0x7a8e1a538 <line:234:1, col:17> col:6 feof 'int (FILE *)'
-| `-ParmVarDecl 0x7a8e1a4a0 <col:11, col:16> col:17 'FILE *'
-|-FunctionDecl 0x7a8e1a698 <line:235:1, col:19> col:6 ferror 'int (FILE *)'
-| `-ParmVarDecl 0x7a8e1a600 <col:13, col:18> col:19 'FILE *'
-|-FunctionDecl 0x7a8e1a7f8 <line:236:1, col:19> col:6 fflush 'int (FILE *)'
-| `-ParmVarDecl 0x7a8e1a760 <col:13, col:18> col:19 'FILE *'
-|-FunctionDecl 0x7a8e1a958 <line:237:1, col:18> col:6 fgetc 'int (FILE *)'
-| `-ParmVarDecl 0x7a8e1a8c0 <col:12, col:17> col:18 'FILE *'
-|-FunctionDecl 0x7a8e1ac28 <line:238:1, col:41> col:6 fgetpos 'int (FILE *restrict, fpos_t *)'
-| |-ParmVarDecl 0x7a8e1aa20 <col:14, col:19> col:31 'FILE *restrict'
-| `-ParmVarDecl 0x7a8e1ab08 <col:33, col:40> col:41 'fpos_t *'
-|-FunctionDecl 0x7a8e1af38 <line:239:1, col:81> col:18 fgets 'char *(char *restrict, int, FILE *)'
-| |-ParmVarDecl 0x7a8e1acf8 <col:24, col:29> col:61 'char *restrict'
-| |-ParmVarDecl 0x7a8e1ad78 <col:63, col:67> col:67 __size 'int'
-| `-ParmVarDecl 0x7a8e1adf8 <col:75, col:80> col:81 'FILE *'
-|-FunctionDecl 0x7a8e1b290 <line:243:7> col:7 implicit fopen 'FILE *(const char *, const char *)' extern
-| |-ParmVarDecl 0x7a8e1b390 <<invalid sloc>> <invalid sloc> 'const char *'
-| |-ParmVarDecl 0x7a8e1b3f8 <<invalid sloc>> <invalid sloc> 'const char *'
-| `-BuiltinAttr 0x7a8e1b338 <<invalid sloc>> Implicit 607
-|-FunctionDecl 0x7a8e1b470 prev 0x7a8e1b290 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:84> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:243:7 fopen 'FILE *(const char *, const char *)'
-| |-ParmVarDecl 0x7a8e1b018 <col:13, col:37> col:37 __filename 'const char *restrict'
-| |-ParmVarDecl 0x7a8e1b098 <col:49, col:73> col:73 __mode 'const char *restrict'
-| |-BuiltinAttr 0x7a8e1b598 <<invalid sloc>> Inherited Implicit 607
-| `-AsmLabelAttr 0x7a8e1b518 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:47> "_fopen" IsLiteralLabel
-|-FunctionDecl 0x7a8e1b828 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:245:6> col:6 implicit fprintf 'int (FILE *restrict, const char *restrict, ...)' extern
-| |-ParmVarDecl 0x7a8e1b928 <<invalid sloc>> <invalid sloc> 'FILE *restrict'
-| |-ParmVarDecl 0x7a8e1b990 <<invalid sloc>> <invalid sloc> 'const char *restrict'
-| |-BuiltinAttr 0x7a8e1b8d0 <<invalid sloc>> Implicit 544
-| |-FormatAttr 0x7a8e1ba08 <col:6> Implicit printf 2 3
-| `-NoThrowAttr 0x7a8e1ba40 <col:6> Implicit
-|-FunctionDecl 0x7a8e1ba68 prev 0x7a8e1b828 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:245:6 fprintf 'int (FILE *restrict, const char *restrict, ...)'
-| |-ParmVarDecl 0x7a8e1b5d8 <col:14, col:19> col:31 'FILE *restrict'
-| |-ParmVarDecl 0x7a8e1b658 <col:33, col:44> col:56 'const char *restrict'
-| |-BuiltinAttr 0x7a8e1bb88 <<invalid sloc>> Inherited Implicit 544
-| |-NoThrowAttr 0x7a8e1bbb0 <col:6> Inherited Implicit
-| `-FormatAttr 0x7a8e1bb20 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 2 3
-|-FunctionDecl 0x7a8e1bd98 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:246:1, col:23> col:6 fputc 'int (int, FILE *)'
-| |-ParmVarDecl 0x7a8e1bbf0 <col:12> col:15 'int'
-| `-ParmVarDecl 0x7a8e1bc70 <col:17, col:22> col:23 'FILE *'
-|-FunctionDecl 0x7a8e1d038 <line:247:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:84> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:247:6 fputs 'int (const char *restrict, FILE *restrict)'
-| |-ParmVarDecl 0x7a8e1be68 <col:12, col:23> col:35 'const char *restrict'
-| |-ParmVarDecl 0x7a8e1bee8 <col:37, col:42> col:54 'FILE *restrict'
-| `-AsmLabelAttr 0x7a8e1d0e0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:47> "_fputs" IsLiteralLabel
-|-FunctionDecl 0x7a8e1d4e0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:248:9> col:9 implicit fread 'unsigned long (void *, unsigned long, unsigned long, FILE *)' extern
-| |-ParmVarDecl 0x7a8e1d5e0 <<invalid sloc>> <invalid sloc> 'void *'
-| |-ParmVarDecl 0x7a8e1d648 <<invalid sloc>> <invalid sloc> 'unsigned long'
-| |-ParmVarDecl 0x7a8e1d6b0 <<invalid sloc>> <invalid sloc> 'unsigned long'
-| |-ParmVarDecl 0x7a8e1d718 <<invalid sloc>> <invalid sloc> 'FILE *'
-| `-BuiltinAttr 0x7a8e1d588 <<invalid sloc>> Implicit 611
-|-FunctionDecl 0x7a8e1d7a0 prev 0x7a8e1d4e0 <col:1, col:128> col:9 fread 'unsigned long (void *, unsigned long, unsigned long, FILE *)'
-| |-ParmVarDecl 0x7a8e1d1d8 <col:15, col:63> col:63 __ptr 'void *restrict'
-| |-ParmVarDecl 0x7a8e1d250 <col:70, col:77> col:77 __size 'size_t':'unsigned long'
-| |-ParmVarDecl 0x7a8e1d2c8 <col:85, col:92> col:92 __nitems 'size_t':'unsigned long'
-| |-ParmVarDecl 0x7a8e1d348 <col:102, col:120> col:120 __stream 'FILE *restrict'
-| `-BuiltinAttr 0x7a8e1d898 <<invalid sloc>> Inherited Implicit 611
-|-FunctionDecl 0x7a8e1db78 <line:249:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:84> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:249:7 freopen 'FILE *(const char *restrict, const char *restrict, FILE *restrict)'
-| |-ParmVarDecl 0x7a8e1d8d8 <col:15, col:26> col:38 'const char *restrict'
-| |-ParmVarDecl 0x7a8e1d958 <col:40, col:51> col:63 'const char *restrict'
-| |-ParmVarDecl 0x7a8e1d9d8 <line:250:6, col:11> col:23 'FILE *restrict'
-| `-AsmLabelAttr 0x7a8e1dc20 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:47> "_freopen" IsLiteralLabel
-|-FunctionDecl 0x7a8e1de30 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:251:6> col:6 implicit fscanf 'int (FILE *restrict, const char *restrict, ...)' extern
-| |-ParmVarDecl 0x7a8e1df30 <<invalid sloc>> <invalid sloc> 'FILE *restrict'
-| |-ParmVarDecl 0x7a8e1df98 <<invalid sloc>> <invalid sloc> 'const char *restrict'
-| |-BuiltinAttr 0x7a8e1ded8 <<invalid sloc>> Implicit 547
-| `-FormatAttr 0x7a8e1e010 <col:6> Implicit scanf 2 3
-|-FunctionDecl 0x7a8e1e048 prev 0x7a8e1de30 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:61> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:251:6 fscanf 'int (FILE *restrict, const char *restrict, ...)'
-| |-ParmVarDecl 0x7a8e1dcc0 <col:13, col:18> col:30 'FILE *restrict'
-| |-ParmVarDecl 0x7a8e1dd40 <col:32, col:43> col:55 'const char *restrict'
-| |-BuiltinAttr 0x7a8e1e168 <<invalid sloc>> Inherited Implicit 547
-| `-FormatAttr 0x7a8e1e100 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:17, col:59> scanf 2 3
-|-FunctionDecl 0x7a8e1e3e8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:252:1, col:29> col:6 fseek 'int (FILE *, long, int)'
-| |-ParmVarDecl 0x7a8e1e1a8 <col:12, col:17> col:18 'FILE *'
-| |-ParmVarDecl 0x7a8e1e228 <col:20> col:24 'long'
-| `-ParmVarDecl 0x7a8e1e2a8 <col:26> col:29 'int'
-|-FunctionDecl 0x7a8e1e6c8 <line:253:1, col:36> col:6 fsetpos 'int (FILE *, const fpos_t *)'
-| |-ParmVarDecl 0x7a8e1e4c0 <col:14, col:19> col:20 'FILE *'
-| `-ParmVarDecl 0x7a8e1e5a8 <col:22, col:35> col:36 'const fpos_t *'
-|-FunctionDecl 0x7a8e1e8a8 <line:254:1, col:19> col:7 ftell 'long (FILE *)'
-| `-ParmVarDecl 0x7a8e1e798 <col:13, col:18> col:19 'FILE *'
-|-FunctionDecl 0x7a8e1ece0 <line:255:9> col:9 implicit fwrite 'unsigned long (const void *, unsigned long, unsigned long, FILE *)' extern
-| |-ParmVarDecl 0x7a8e1ede0 <<invalid sloc>> <invalid sloc> 'const void *'
-| |-ParmVarDecl 0x7a8e1ee48 <<invalid sloc>> <invalid sloc> 'unsigned long'
-| |-ParmVarDecl 0x7a8e1eeb0 <<invalid sloc>> <invalid sloc> 'unsigned long'
-| |-ParmVarDecl 0x7a8e1ef18 <<invalid sloc>> <invalid sloc> 'FILE *'
-| `-BuiltinAttr 0x7a8e1ed88 <<invalid sloc>> Implicit 622
-|-FunctionDecl 0x7a8e1f000 prev 0x7a8e1ece0 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:84> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:255:9 fwrite 'unsigned long (const void *, unsigned long, unsigned long, FILE *)'
-| |-ParmVarDecl 0x7a8e1e9a8 <col:16, col:70> col:70 __ptr 'const void *restrict'
-| |-ParmVarDecl 0x7a8e1ea20 <col:77, col:84> col:84 __size 'size_t':'unsigned long'
-| |-ParmVarDecl 0x7a8e1ea98 <col:92, col:99> col:99 __nitems 'size_t':'unsigned long'
-| |-ParmVarDecl 0x7a8e1eb18 <col:109, col:127> col:127 __stream 'FILE *restrict'
-| |-BuiltinAttr 0x7a8e1f138 <<invalid sloc>> Inherited Implicit 622
-| `-AsmLabelAttr 0x7a8e1f0a8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:47> "_fwrite" IsLiteralLabel
-|-FunctionDecl 0x7a8e1f210 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:256:1, col:17> col:6 getc 'int (FILE *)'
-| `-ParmVarDecl 0x7a8e1f178 <col:11, col:16> col:17 'FILE *'
-|-FunctionDecl 0x7a8e1f398 <line:257:1, col:18> col:6 getchar 'int (void)'
-|-FunctionDecl 0x7a8e1f5f8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:33, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:262:51> col:18 gets 'char *(char *)'
-| |-ParmVarDecl 0x7a8e1f520 <col:23, col:28> col:51 'char *'
-| `-DeprecatedAttr 0x7a8e1f6a8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48, col:67> "This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of gets(3), it is highly recommended that you use fgets(3) instead." ""
-|-FunctionDecl 0x7a8e1f8b0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:264:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:183:49> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:264:7 perror 'void (const char *)'
-| |-ParmVarDecl 0x7a8e1f7e0 <col:14, col:25> col:26 'const char *'
-| `-ColdAttr 0x7a8e1f960 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:183:40>
-|-FunctionDecl 0x7a8e1faf0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:265:1, col:22> col:6 putc 'int (int, FILE *)'
-| |-ParmVarDecl 0x7a8e1f9d0 <col:11> col:14 'int'
-| `-ParmVarDecl 0x7a8e1fa50 <col:16, col:21> col:22 'FILE *'
-|-FunctionDecl 0x7a8e1fc98 <line:266:1, col:17> col:6 putchar 'int (int)'
-| `-ParmVarDecl 0x7a8e1fbc0 <col:14> col:17 'int'
-|-FunctionDecl 0x7a8e1fe38 <line:267:1, col:23> col:6 puts 'int (const char *)'
-| `-ParmVarDecl 0x7a8e1fd60 <col:11, col:22> col:23 'const char *'
-|-FunctionDecl 0x7a8e20000 <line:268:1, col:25> col:6 remove 'int (const char *)'
-| `-ParmVarDecl 0x7a8e1ff00 <col:13, col:24> col:25 'const char *'
-|-FunctionDecl 0x7a8e20228 <line:269:1, col:50> col:6 rename 'int (const char *, const char *)'
-| |-ParmVarDecl 0x7a8e200c8 <col:14, col:26> col:26 __old 'const char *'
-| `-ParmVarDecl 0x7a8e20148 <col:33, col:45> col:45 __new 'const char *'
-|-FunctionDecl 0x7a8e20388 <line:270:1, col:20> col:7 rewind 'void (FILE *)'
-| `-ParmVarDecl 0x7a8e202f8 <col:14, col:19> col:20 'FILE *'
-|-FunctionDecl 0x7a8e20538 <line:271:6> col:6 implicit scanf 'int (const char *restrict, ...)' extern
-| |-ParmVarDecl 0x7a8e20638 <<invalid sloc>> <invalid sloc> 'const char *restrict'
-| |-BuiltinAttr 0x7a8e205e0 <<invalid sloc>> Implicit 1082
-| `-FormatAttr 0x7a8e206a8 <col:6> Implicit scanf 1 2
-|-FunctionDecl 0x7a8e206e0 prev 0x7a8e20538 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:61> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:271:6 scanf 'int (const char *restrict, ...)'
-| |-ParmVarDecl 0x7a8e20450 <col:12, col:23> col:35 'const char *restrict'
-| |-BuiltinAttr 0x7a8e207f8 <<invalid sloc>> Inherited Implicit 1082
-| `-FormatAttr 0x7a8e20790 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:17, col:59> scanf 1 2
-|-FunctionDecl 0x7a8e209d0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:272:1, col:78> col:7 setbuf 'void (FILE *restrict, char *restrict)'
-| |-ParmVarDecl 0x7a8e20838 <col:14, col:19> col:31 'FILE *restrict'
-| `-ParmVarDecl 0x7a8e208b8 <col:33, col:38> col:78 'char *restrict'
-|-FunctionDecl 0x7a8e20d68 <line:273:1, col:98> col:6 setvbuf 'int (FILE *restrict, char *restrict, int, size_t)'
-| |-ParmVarDecl 0x7a8e20aa0 <col:14, col:19> col:31 'FILE *restrict'
-| |-ParmVarDecl 0x7a8e20b20 <col:33, col:38> col:78 'char *restrict'
-| |-ParmVarDecl 0x7a8e20ba0 <col:80> col:83 'int'
-| `-ParmVarDecl 0x7a8e20c18 <col:85, col:92> col:92 __size 'size_t':'unsigned long'
-|-FunctionDecl 0x7a8e21190 <line:280:6> col:6 implicit sprintf 'int (char *restrict, const char *restrict, ...)' extern
-| |-ParmVarDecl 0x7a8e21290 <<invalid sloc>> <invalid sloc> 'char *restrict'
-| |-ParmVarDecl 0x7a8e212f8 <<invalid sloc>> <invalid sloc> 'const char *restrict'
-| |-BuiltinAttr 0x7a8e21238 <<invalid sloc>> Implicit 1061
-| |-FormatAttr 0x7a8e21370 <col:6> Implicit printf 2 3
-| `-NoThrowAttr 0x7a8e213a8 <col:6> Implicit
-|-FunctionDecl 0x7a8e213d0 prev 0x7a8e21190 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:41, line:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:280:6 sprintf 'int (char *restrict, const char *restrict, ...)'
-| |-ParmVarDecl 0x7a8e20f58 <col:14, col:19> col:54 'char *restrict'
-| |-ParmVarDecl 0x7a8e21000 <col:56, col:67> col:79 'const char *restrict'
-| |-BuiltinAttr 0x7a8e21690 <<invalid sloc>> Inherited Implicit 1061
-| |-NoThrowAttr 0x7a8e216b8 <col:6> Inherited Implicit
-| |-AvailabilityAttr 0x7a8e21488 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:56, col:105> swift 0 0 0 Unavailable "Use snprintf instead." "" 0
-| |-DeprecatedAttr 0x7a8e21560 <line:227:48, col:67> "This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead." ""
-| `-FormatAttr 0x7a8e21658 <line:430:17, col:60> printf 2 3
-|-FunctionDecl 0x7a8e21900 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:282:6> col:6 implicit sscanf 'int (const char *restrict, const char *restrict, ...)' extern
-| |-ParmVarDecl 0x7a8e21a00 <<invalid sloc>> <invalid sloc> 'const char *restrict'
-| |-ParmVarDecl 0x7a8e21a68 <<invalid sloc>> <invalid sloc> 'const char *restrict'
-| |-BuiltinAttr 0x7a8e219a8 <<invalid sloc>> Implicit 1064
-| `-FormatAttr 0x7a8e21ae0 <col:6> Implicit scanf 2 3
-|-FunctionDecl 0x7a8e21b18 prev 0x7a8e21900 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:61> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:282:6 sscanf 'int (const char *restrict, const char *restrict, ...)'
-| |-ParmVarDecl 0x7a8e216f8 <col:13, col:24> col:36 'const char *restrict'
-| |-ParmVarDecl 0x7a8e21778 <col:38, col:49> col:61 'const char *restrict'
-| |-BuiltinAttr 0x7a8e21c38 <<invalid sloc>> Inherited Implicit 1064
-| `-FormatAttr 0x7a8e21bd0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:17, col:59> scanf 2 3
-|-FunctionDecl 0x7a8e21d68 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:283:1, col:19> col:7 tmpfile 'FILE *(void)'
-|-FunctionDecl 0x7a8e22000 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:41, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:289:52> col:18 tmpnam 'char *(char *)'
-| |-ParmVarDecl 0x7a8e21f38 <col:25, col:30> col:52 'char *'
-| |-AvailabilityAttr 0x7a8e220b0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:56, col:105> swift 0 0 0 Unavailable "Use mkstemp(3) instead." "" 0
-| `-DeprecatedAttr 0x7a8e22188 <line:227:48, col:67> "This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of tmpnam(3), it is highly recommended that you use mkstemp(3) instead." ""
-|-FunctionDecl 0x7a8e223b8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:291:1, col:24> col:6 ungetc 'int (int, FILE *)'
-| |-ParmVarDecl 0x7a8e22298 <col:13> col:16 'int'
-| `-ParmVarDecl 0x7a8e22318 <col:18, col:23> col:24 'FILE *'
-|-FunctionDecl 0x7a8e227c8 <line:292:6> col:6 implicit vfprintf 'int (FILE *restrict, const char *restrict, __builtin_va_list)' extern
-| |-ParmVarDecl 0x7a8e228c8 <<invalid sloc>> <invalid sloc> 'FILE *restrict'
-| |-ParmVarDecl 0x7a8e22930 <<invalid sloc>> <invalid sloc> 'const char *restrict'
-| |-ParmVarDecl 0x7a8e22998 <<invalid sloc>> <invalid sloc> '__builtin_va_list':'char *'
-| |-BuiltinAttr 0x7a8e22870 <<invalid sloc>> Implicit 1384
-| |-FormatAttr 0x7a8e22a18 <col:6> Implicit printf 2 0
-| `-NoThrowAttr 0x7a8e22a50 <col:6> Implicit
-|-FunctionDecl 0x7a8e22a78 prev 0x7a8e227c8 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:292:6 vfprintf 'int (FILE *restrict, const char *restrict, __builtin_va_list)'
-| |-ParmVarDecl 0x7a8e22488 <col:15, col:20> col:32 'FILE *restrict'
-| |-ParmVarDecl 0x7a8e22508 <col:34, col:45> col:57 'const char *restrict'
-| |-ParmVarDecl 0x7a8e225e0 <col:59> col:66 'va_list':'char *'
-| |-BuiltinAttr 0x7a8e22ba0 <<invalid sloc>> Inherited Implicit 1384
-| |-NoThrowAttr 0x7a8e22bc8 <col:6> Inherited Implicit
-| `-FormatAttr 0x7a8e22b38 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 2 0
-|-FunctionDecl 0x7a8e22e40 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:293:6> col:6 implicit vprintf 'int (const char *restrict, __builtin_va_list)' extern
-| |-ParmVarDecl 0x7a8e22f40 <<invalid sloc>> <invalid sloc> 'const char *restrict'
-| |-ParmVarDecl 0x7a8e23000 <<invalid sloc>> <invalid sloc> '__builtin_va_list':'char *'
-| |-BuiltinAttr 0x7a8e22ee8 <<invalid sloc>> Implicit 1369
-| |-FormatAttr 0x7a8e23078 <col:6> Implicit printf 1 0
-| `-NoThrowAttr 0x7a8e230b0 <col:6> Implicit
-|-FunctionDecl 0x7a8e230d8 prev 0x7a8e22e40 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:293:6 vprintf 'int (const char *restrict, __builtin_va_list)'
-| |-ParmVarDecl 0x7a8e22c08 <col:14, col:25> col:37 'const char *restrict'
-| |-ParmVarDecl 0x7a8e22c80 <col:39> col:46 'va_list':'char *'
-| |-BuiltinAttr 0x7a8e231f8 <<invalid sloc>> Inherited Implicit 1369
-| |-NoThrowAttr 0x7a8e23220 <col:6> Inherited Implicit
-| `-FormatAttr 0x7a8e23190 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 1 0
-|-FunctionDecl 0x7a8e23648 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:300:6> col:6 implicit vsprintf 'int (char *restrict, const char *restrict, __builtin_va_list)' extern
-| |-ParmVarDecl 0x7a8e23748 <<invalid sloc>> <invalid sloc> 'char *restrict'
-| |-ParmVarDecl 0x7a8e237b0 <<invalid sloc>> <invalid sloc> 'const char *restrict'
-| |-ParmVarDecl 0x7a8e23818 <<invalid sloc>> <invalid sloc> '__builtin_va_list':'char *'
-| |-BuiltinAttr 0x7a8e236f0 <<invalid sloc>> Implicit 1387
-| |-FormatAttr 0x7a8e23898 <col:6> Implicit printf 2 0
-| `-NoThrowAttr 0x7a8e238d0 <col:6> Implicit
-|-FunctionDecl 0x7a8e238f8 prev 0x7a8e23648 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:41, line:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:300:6 vsprintf 'int (char *restrict, const char *restrict, __builtin_va_list)'
-| |-ParmVarDecl 0x7a8e23370 <col:15, col:20> col:55 'char *restrict'
-| |-ParmVarDecl 0x7a8e233f0 <col:57, col:68> col:80 'const char *restrict'
-| |-ParmVarDecl 0x7a8e23468 <col:82> col:89 'va_list':'char *'
-| |-BuiltinAttr 0x7a8e23bc0 <<invalid sloc>> Inherited Implicit 1387
-| |-NoThrowAttr 0x7a8e23be8 <col:6> Inherited Implicit
-| |-AvailabilityAttr 0x7a8e239b8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:56, col:105> swift 0 0 0 Unavailable "Use vsnprintf instead." "" 0
-| |-DeprecatedAttr 0x7a8e23a90 <line:227:48, col:67> "This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead." ""
-| `-FormatAttr 0x7a8e23b88 <line:430:17, col:60> printf 2 0
-|-FunctionDecl 0x7a8e23cc0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h:38:1, col:54> col:18 ctermid 'char *(char *)'
-| `-ParmVarDecl 0x7a8e23c28 <col:26, col:31> col:54 'char *'
-|-FunctionDecl 0x7a8e23f58 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:322:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:84> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:322:7 fdopen 'FILE *(int, const char *)'
-| |-ParmVarDecl 0x7a8e23d88 <col:14> col:17 'int'
-| |-ParmVarDecl 0x7a8e23e08 <col:19, col:30> col:31 'const char *'
-| `-AsmLabelAttr 0x7a8e24000 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:47> "_fdopen" IsLiteralLabel
-|-FunctionDecl 0x7a8e24130 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:324:1, col:19> col:6 fileno 'int (FILE *)'
-| `-ParmVarDecl 0x7a8e24098 <col:13, col:18> col:19 'FILE *'
-|-FunctionDecl 0x7a8e24310 <line:335:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:107> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:335:6 pclose 'int (FILE *)'
-| |-ParmVarDecl 0x7a8e241f8 <col:13, col:18> col:19 'FILE *'
-| `-AvailabilityAttr 0x7a8e243c0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:56, col:105> swift 0 0 0 Unavailable "Use posix_spawn APIs or NSTask instead. (On iOS, process spawning is unavailable.)" "" 0
-|-FunctionDecl 0x7a8e246f8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:339:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:107> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:339:7 popen 'FILE *(const char *, const char *)'
-| |-ParmVarDecl 0x7a8e244f0 <col:13, col:24> col:25 'const char *'
-| |-ParmVarDecl 0x7a8e24570 <col:27, col:38> col:39 'const char *'
-| |-AsmLabelAttr 0x7a8e247a0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:47> "_popen" IsLiteralLabel
-| `-AvailabilityAttr 0x7a8e24820 <line:332:56, col:105> swift 0 0 0 Unavailable "Use posix_spawn APIs or NSTask instead. (On iOS, process spawning is unavailable.)" "" 0
-|-FunctionDecl 0x7a8e249b8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:354:1, col:19> col:5 __srget 'int (FILE *)'
-| `-ParmVarDecl 0x7a8e24920 <col:13, col:18> col:19 'FILE *'
-|-FunctionDecl 0x7a8e24cb8 <line:355:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:61> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:355:5 __svfscanf 'int (FILE *, const char *, va_list)'
-| |-ParmVarDecl 0x7a8e24a80 <col:16, col:21> col:22 'FILE *'
-| |-ParmVarDecl 0x7a8e24b00 <col:24, col:35> col:36 'const char *'
-| |-ParmVarDecl 0x7a8e24b78 <col:38> col:45 'va_list':'char *'
-| `-FormatAttr 0x7a8e24d78 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:17, col:59> scanf 2 0
-|-FunctionDecl 0x7a8e24f18 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:356:1, col:24> col:5 used __swbuf 'int (int, FILE *)'
-| |-ParmVarDecl 0x7a8e24df8 <col:13> col:16 'int'
-| `-ParmVarDecl 0x7a8e24e78 <col:18, col:23> col:24 'FILE *'
-|-FunctionDecl 0x7a8e25120 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:379:36, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:370:1> line:365:28 __sputc 'int (int, FILE *)' inline
-| |-ParmVarDecl 0x7a8e25000 <col:36, col:40> col:40 used _c 'int'
-| |-ParmVarDecl 0x7a8e25080 <col:44, col:50> col:50 used _p 'FILE *'
-| |-CompoundStmt 0x7a8e25968 <col:54, line:370:1>
-| | `-IfStmt 0x7a8e25938 <line:366:2, line:369:26> has_else
-| |   |-BinaryOperator 0x7a8e25510 <line:366:6, col:66> 'int' '||'
-| |   | |-BinaryOperator 0x7a8e252d0 <col:6, col:18> 'int' '>='
-| |   | | |-UnaryOperator 0x7a8e25298 <col:6, col:12> 'int' prefix '--'
-| |   | | | `-MemberExpr 0x7a8e25268 <col:8, col:12> 'int' lvalue ->_w 0x7a8e18688
-| |   | | |   `-ImplicitCastExpr 0x7a8e25250 <col:8> 'FILE *' <LValueToRValue>
-| |   | | |     `-DeclRefExpr 0x7a8e25230 <col:8> 'FILE *' lvalue ParmVar 0x7a8e25080 '_p' 'FILE *'
-| |   | | `-IntegerLiteral 0x7a8e252b0 <col:18> 'int' 0
-| |   | `-ParenExpr 0x7a8e254f0 <col:23, col:66> 'int'
-| |   |   `-BinaryOperator 0x7a8e254d0 <col:24, col:62> 'int' '&&'
-| |   |     |-BinaryOperator 0x7a8e253f0 <col:24, col:38> 'int' '>='
-| |   |     | |-ImplicitCastExpr 0x7a8e253c0 <col:24, col:28> 'int' <LValueToRValue>
-| |   |     | | `-MemberExpr 0x7a8e25328 <col:24, col:28> 'int' lvalue ->_w 0x7a8e18688
-| |   |     | |   `-ImplicitCastExpr 0x7a8e25310 <col:24> 'FILE *' <LValueToRValue>
-| |   |     | |     `-DeclRefExpr 0x7a8e252f0 <col:24> 'FILE *' lvalue ParmVar 0x7a8e25080 '_p' 'FILE *'
-| |   |     | `-ImplicitCastExpr 0x7a8e253d8 <col:34, col:38> 'int' <LValueToRValue>
-| |   |     |   `-MemberExpr 0x7a8e25390 <col:34, col:38> 'int' lvalue ->_lbfsize 0x7a8e18868
-| |   |     |     `-ImplicitCastExpr 0x7a8e25378 <col:34> 'FILE *' <LValueToRValue>
-| |   |     |       `-DeclRefExpr 0x7a8e25358 <col:34> 'FILE *' lvalue ParmVar 0x7a8e25080 '_p' 'FILE *'
-| |   |     `-BinaryOperator 0x7a8e254b0 <col:50, col:62> 'int' '!='
-| |   |       |-ImplicitCastExpr 0x7a8e25498 <col:50, col:56> 'int' <IntegralCast>
-| |   |       | `-CStyleCastExpr 0x7a8e25458 <col:50, col:56> 'char' <IntegralCast>
-| |   |       |   `-ImplicitCastExpr 0x7a8e25440 <col:56> 'int' <LValueToRValue> part_of_explicit_cast
-| |   |       |     `-DeclRefExpr 0x7a8e25410 <col:56> 'int' lvalue ParmVar 0x7a8e25000 '_c' 'int'
-| |   |       `-CharacterLiteral 0x7a8e25480 <col:62> 'int' 10
-| |   |-ReturnStmt 0x7a8e25670 <line:367:3, col:25>
-| |   | `-ImplicitCastExpr 0x7a8e25658 <col:10, col:25> 'int' <IntegralCast>
-| |   |   `-ParenExpr 0x7a8e25638 <col:10, col:25> 'unsigned char'
-| |   |     `-BinaryOperator 0x7a8e25618 <col:11, col:23> 'unsigned char' '='
-| |   |       |-UnaryOperator 0x7a8e255b0 <col:11, col:18> 'unsigned char' lvalue prefix '*' cannot overflow
-| |   |       | `-UnaryOperator 0x7a8e25598 <col:12, col:18> 'unsigned char *' postfix '++'
-| |   |       |   `-MemberExpr 0x7a8e25568 <col:12, col:16> 'unsigned char *' lvalue ->_p 0x7a8e185b8
-| |   |       |     `-ImplicitCastExpr 0x7a8e25550 <col:12> 'FILE *' <LValueToRValue>
-| |   |       |       `-DeclRefExpr 0x7a8e25530 <col:12> 'FILE *' lvalue ParmVar 0x7a8e25080 '_p' 'FILE *'
-| |   |       `-ImplicitCastExpr 0x7a8e25600 <col:23> 'unsigned char' <IntegralCast>
-| |   |         `-ImplicitCastExpr 0x7a8e255e8 <col:23> 'int' <LValueToRValue>
-| |   |           `-DeclRefExpr 0x7a8e255c8 <col:23> 'int' lvalue ParmVar 0x7a8e25000 '_c' 'int'
-| |   `-ReturnStmt 0x7a8e25928 <line:369:3, col:26>
-| |     `-ParenExpr 0x7a8e25908 <col:10, col:26> 'int'
-| |       `-CallExpr 0x7a8e25758 <col:11, col:25> 'int'
-| |         |-ImplicitCastExpr 0x7a8e25740 <col:11> 'int (*)(int, FILE *)' <FunctionToPointerDecay>
-| |         | `-DeclRefExpr 0x7a8e25680 <col:11> 'int (int, FILE *)' Function 0x7a8e24f18 '__swbuf' 'int (int, FILE *)'
-| |         |-ImplicitCastExpr 0x7a8e25788 <col:19> 'int' <LValueToRValue>
-| |         | `-DeclRefExpr 0x7a8e256a0 <col:19> 'int' lvalue ParmVar 0x7a8e25000 '_c' 'int'
-| |         `-ImplicitCastExpr 0x7a8e257a0 <col:23> 'FILE *' <LValueToRValue>
-| |           `-DeclRefExpr 0x7a8e256c0 <col:23> 'FILE *' lvalue ParmVar 0x7a8e25080 '_p' 'FILE *'
-| `-AlwaysInlineAttr 0x7a8e251d8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:392:68> always_inline
-|-FunctionDecl 0x7a8e25a28 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:391:1, col:23> col:7 flockfile 'void (FILE *)'
-| `-ParmVarDecl 0x7a8e25998 <col:17, col:22> col:23 'FILE *'
-|-FunctionDecl 0x7a8e25b88 <line:392:1, col:25> col:6 ftrylockfile 'int (FILE *)'
-| `-ParmVarDecl 0x7a8e25af0 <col:19, col:24> col:25 'FILE *'
-|-FunctionDecl 0x7a8e25ce0 <line:393:1, col:25> col:7 funlockfile 'void (FILE *)'
-| `-ParmVarDecl 0x7a8e25c50 <col:19, col:24> col:25 'FILE *'
-|-FunctionDecl 0x7a8e25e40 <line:394:1, col:26> col:6 getc_unlocked 'int (FILE *)'
-| `-ParmVarDecl 0x7a8e25da8 <col:20, col:25> col:26 'FILE *'
-|-FunctionDecl 0x7a8e27000 <line:395:1, col:27> col:6 getchar_unlocked 'int (void)'
-|-FunctionDecl 0x7a8e271e0 <line:396:1, col:31> col:6 putc_unlocked 'int (int, FILE *)'
-| |-ParmVarDecl 0x7a8e270c0 <col:20> col:23 'int'
-| `-ParmVarDecl 0x7a8e27140 <col:25, col:30> col:31 'FILE *'
-|-FunctionDecl 0x7a8e27348 <line:397:1, col:26> col:6 putchar_unlocked 'int (int)'
-| `-ParmVarDecl 0x7a8e272b0 <col:23> col:26 'int'
-|-FunctionDecl 0x7a8e274a8 <line:401:1, col:17> col:6 getw 'int (FILE *)'
-| `-ParmVarDecl 0x7a8e27410 <col:11, col:16> col:17 'FILE *'
-|-FunctionDecl 0x7a8e27690 <line:402:1, col:22> col:6 putw 'int (int, FILE *)'
-| |-ParmVarDecl 0x7a8e27570 <col:11> col:14 'int'
-| `-ParmVarDecl 0x7a8e275f0 <col:16, col:21> col:22 'FILE *'
-|-FunctionDecl 0x7a8e279f8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:41, line:790:84> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:409:18 tempnam 'char *(const char *, const char *)'
-| |-ParmVarDecl 0x7a8e27870 <col:26, col:38> col:38 __dir 'const char *'
-| |-ParmVarDecl 0x7a8e278f0 <col:45, col:57> col:57 __prefix 'const char *'
-| |-AsmLabelAttr 0x7a8e27aa0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:47> "_tempnam" IsLiteralLabel
-| |-AvailabilityAttr 0x7a8e27b20 <line:332:56, col:105> swift 0 0 0 Unavailable "Use mkstemp(3) instead." "" 0
-| `-DeprecatedAttr 0x7a8e27bc8 <line:227:48, col:67> "This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of tempnam(3), it is highly recommended that you use mkstemp(3) instead." ""
-|-TypedefDecl 0x7a8e27cd0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_off_t.h:31:1, col:33> col:33 referenced off_t '__darwin_off_t':'long long'
-| `-ElaboratedType 0x7a8e18220 '__darwin_off_t' sugar
-|   `-TypedefType 0x7a8e181f0 '__darwin_off_t' sugar
-|     |-Typedef 0x7a8decf38 '__darwin_off_t'
-|     `-ElaboratedType 0x7a8dec7a0 '__int64_t' sugar
-|       `-TypedefType 0x7a8dec770 '__int64_t' sugar
-|         |-Typedef 0x7a8d15c00 '__int64_t'
-|         `-BuiltinType 0x7a8c66150 'long long'
-|-FunctionDecl 0x7a8e2a000 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:432:1, col:58> col:6 fseeko 'int (FILE *, off_t, int)'
-| |-ParmVarDecl 0x7a8e27d40 <col:13, col:20> col:20 __stream 'FILE *'
-| |-ParmVarDecl 0x7a8e27e20 <col:30, col:36> col:36 __offset 'off_t':'long long'
-| `-ParmVarDecl 0x7a8e27ea0 <col:46, col:50> col:50 __whence 'int'
-|-FunctionDecl 0x7a8e2a1e0 <line:433:1, col:30> col:8 ftello 'off_t (FILE *)'
-| `-ParmVarDecl 0x7a8e2a0d8 <col:15, col:22> col:22 __stream 'FILE *'
-|-FunctionDecl 0x7a8e2a590 <line:439:6> col:6 implicit snprintf 'int (char *restrict, unsigned long, const char *restrict, ...)' extern
-| |-ParmVarDecl 0x7a8e2a690 <<invalid sloc>> <invalid sloc> 'char *restrict'
-| |-ParmVarDecl 0x7a8e2a6f8 <<invalid sloc>> <invalid sloc> 'unsigned long'
-| |-ParmVarDecl 0x7a8e2a760 <<invalid sloc>> <invalid sloc> 'const char *restrict'
-| |-BuiltinAttr 0x7a8e2a638 <<invalid sloc>> Implicit 1117
-| |-FormatAttr 0x7a8e2a7e0 <col:6> Implicit printf 3 4
-| `-NoThrowAttr 0x7a8e2a818 <col:6> Implicit
-|-FunctionDecl 0x7a8e2a840 prev 0x7a8e2a590 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:439:6 snprintf 'int (char *restrict, unsigned long, const char *restrict, ...)'
-| |-ParmVarDecl 0x7a8e2a2a8 <col:15, col:53> col:53 __str 'char *restrict'
-| |-ParmVarDecl 0x7a8e2a320 <col:60, col:67> col:67 __size 'size_t':'unsigned long'
-| |-ParmVarDecl 0x7a8e2a3a0 <col:75, col:99> col:99 __format 'const char *restrict'
-| |-BuiltinAttr 0x7a8e2a968 <<invalid sloc>> Inherited Implicit 1117
-| |-NoThrowAttr 0x7a8e2a990 <col:6> Inherited Implicit
-| `-FormatAttr 0x7a8e2a900 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 3 4
-|-FunctionDecl 0x7a8e2abc0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:440:6> col:6 implicit vfscanf 'int (FILE *restrict, const char *restrict, __builtin_va_list)' extern
-| |-ParmVarDecl 0x7a8e2acc0 <<invalid sloc>> <invalid sloc> 'FILE *restrict'
-| |-ParmVarDecl 0x7a8e2ad28 <<invalid sloc>> <invalid sloc> 'const char *restrict'
-| |-ParmVarDecl 0x7a8e2ad90 <<invalid sloc>> <invalid sloc> '__builtin_va_list':'char *'
-| |-BuiltinAttr 0x7a8e2ac68 <<invalid sloc>> Implicit 1366
-| `-FormatAttr 0x7a8e2ae10 <col:6> Implicit scanf 2 0
-|-FunctionDecl 0x7a8e2ae48 prev 0x7a8e2abc0 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:61> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:440:6 vfscanf 'int (FILE *restrict, const char *restrict, __builtin_va_list)'
-| |-ParmVarDecl 0x7a8e2a9d0 <col:14, col:32> col:32 __stream 'FILE *restrict'
-| |-ParmVarDecl 0x7a8e2aa50 <col:42, col:66> col:66 __format 'const char *restrict'
-| |-ParmVarDecl 0x7a8e2aac8 <col:76> col:83 'va_list':'char *'
-| |-BuiltinAttr 0x7a8e2af70 <<invalid sloc>> Inherited Implicit 1366
-| `-FormatAttr 0x7a8e2af08 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:17, col:59> scanf 2 0
-|-FunctionDecl 0x7a8e2b168 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:441:6> col:6 implicit vscanf 'int (const char *restrict, __builtin_va_list)' extern
-| |-ParmVarDecl 0x7a8e2b268 <<invalid sloc>> <invalid sloc> 'const char *restrict'
-| |-ParmVarDecl 0x7a8e2b2d0 <<invalid sloc>> <invalid sloc> '__builtin_va_list':'char *'
-| |-BuiltinAttr 0x7a8e2b210 <<invalid sloc>> Implicit 1376
-| `-FormatAttr 0x7a8e2b348 <col:6> Implicit scanf 1 0
-|-FunctionDecl 0x7a8e2b380 prev 0x7a8e2b168 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:61> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:441:6 vscanf 'int (const char *restrict, __builtin_va_list)'
-| |-ParmVarDecl 0x7a8e2b000 <col:13, col:37> col:37 __format 'const char *restrict'
-| |-ParmVarDecl 0x7a8e2b078 <col:47> col:54 'va_list':'char *'
-| |-BuiltinAttr 0x7a8e2b4a0 <<invalid sloc>> Inherited Implicit 1376
-| `-FormatAttr 0x7a8e2b438 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:17, col:59> scanf 1 0
-|-FunctionDecl 0x7a8e2b850 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:442:6> col:6 implicit vsnprintf 'int (char *restrict, unsigned long, const char *restrict, __builtin_va_list)' extern
-| |-ParmVarDecl 0x7a8e2b950 <<invalid sloc>> <invalid sloc> 'char *restrict'
-| |-ParmVarDecl 0x7a8e2b9b8 <<invalid sloc>> <invalid sloc> 'unsigned long'
-| |-ParmVarDecl 0x7a8e2ba20 <<invalid sloc>> <invalid sloc> 'const char *restrict'
-| |-ParmVarDecl 0x7a8e2ba88 <<invalid sloc>> <invalid sloc> '__builtin_va_list':'char *'
-| |-BuiltinAttr 0x7a8e2b8f8 <<invalid sloc>> Implicit 1389
-| |-FormatAttr 0x7a8e2bb10 <col:6> Implicit printf 3 0
-| `-NoThrowAttr 0x7a8e2bb48 <col:6> Implicit
-|-FunctionDecl 0x7a8e2bb70 prev 0x7a8e2b850 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:442:6 vsnprintf 'int (char *restrict, unsigned long, const char *restrict, __builtin_va_list)'
-| |-ParmVarDecl 0x7a8e2b4e0 <col:16, col:54> col:54 __str 'char *restrict'
-| |-ParmVarDecl 0x7a8e2b558 <col:61, col:68> col:68 __size 'size_t':'unsigned long'
-| |-ParmVarDecl 0x7a8e2b5d8 <col:76, col:100> col:100 __format 'const char *restrict'
-| |-ParmVarDecl 0x7a8e2b650 <col:110> col:117 'va_list':'char *'
-| |-BuiltinAttr 0x7a8e2bca0 <<invalid sloc>> Inherited Implicit 1389
-| |-NoThrowAttr 0x7a8e2bcc8 <col:6> Inherited Implicit
-| `-FormatAttr 0x7a8e2bc38 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 3 0
-|-FunctionDecl 0x7a8e2c000 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:443:6> col:6 implicit vsscanf 'int (const char *restrict, const char *restrict, __builtin_va_list)' extern
-| |-ParmVarDecl 0x7a8e2c100 <<invalid sloc>> <invalid sloc> 'const char *restrict'
-| |-ParmVarDecl 0x7a8e2c168 <<invalid sloc>> <invalid sloc> 'const char *restrict'
-| |-ParmVarDecl 0x7a8e2c1d0 <<invalid sloc>> <invalid sloc> '__builtin_va_list':'char *'
-| |-BuiltinAttr 0x7a8e2c0a8 <<invalid sloc>> Implicit 1374
-| `-FormatAttr 0x7a8e2c250 <col:6> Implicit scanf 2 0
-|-FunctionDecl 0x7a8e2c288 prev 0x7a8e2c000 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:61> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:443:6 vsscanf 'int (const char *restrict, const char *restrict, __builtin_va_list)'
-| |-ParmVarDecl 0x7a8e2bd08 <col:14, col:38> col:38 __str 'const char *restrict'
-| |-ParmVarDecl 0x7a8e2bd88 <col:45, col:69> col:69 __format 'const char *restrict'
-| |-ParmVarDecl 0x7a8e2be00 <col:79> col:86 'va_list':'char *'
-| |-BuiltinAttr 0x7a8e2c3b0 <<invalid sloc>> Inherited Implicit 1374
-| `-FormatAttr 0x7a8e2c348 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:17, col:59> scanf 2 0
-|-TypedefDecl 0x7a8e2c450 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ssize_t.h:31:1, col:33> col:33 referenced ssize_t '__darwin_ssize_t':'long'
-| `-ElaboratedType 0x7a8e2c410 '__darwin_ssize_t' sugar
-|   `-TypedefType 0x7a8e2c3e0 '__darwin_ssize_t' sugar
-|     |-Typedef 0x7a8dec6a0 '__darwin_ssize_t'
-|     `-BuiltinType 0x7a8c66130 'long'
-|-FunctionDecl 0x7a8e2c6e0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:457:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3490:126> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:457:5 dprintf 'int (int, const char *restrict, ...)'
-| |-ParmVarDecl 0x7a8e2c4c0 <col:13> col:16 'int'
-| |-ParmVarDecl 0x7a8e2c540 <col:18, col:29> col:41 'const char *restrict'
-| |-FormatAttr 0x7a8e2c798 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 2 3
-| `-AvailabilityAttr 0x7a8e2c800 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3490:89, col:124> macos 10.7 0 0 "" "" 0
-|-FunctionDecl 0x7a8e2cb48 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:458:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3490:126> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:458:5 vdprintf 'int (int, const char *restrict, va_list)'
-| |-ParmVarDecl 0x7a8e2c8a8 <col:14> col:17 'int'
-| |-ParmVarDecl 0x7a8e2c928 <col:19, col:30> col:42 'const char *restrict'
-| |-ParmVarDecl 0x7a8e2c9a0 <col:44> col:51 'va_list':'char *'
-| |-FormatAttr 0x7a8e2cc08 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 2 0
-| `-AvailabilityAttr 0x7a8e2cc70 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3490:89, col:124> macos 10.7 0 0 "" "" 0
-|-FunctionDecl 0x7a8e2d0e0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:459:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3490:126> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:459:9 getdelim 'ssize_t (char **restrict, size_t *restrict, int, FILE *restrict)'
-| |-ParmVarDecl 0x7a8e2cda8 <col:18, col:61> col:61 __linep 'char **restrict'
-| |-ParmVarDecl 0x7a8e2ce88 <col:70, col:90> col:90 __linecapp 'size_t *restrict'
-| |-ParmVarDecl 0x7a8e2cf08 <col:102, col:106> col:106 __delimiter 'int'
-| |-ParmVarDecl 0x7a8e2cf88 <col:119, col:137> col:137 __stream 'FILE *restrict'
-| `-AvailabilityAttr 0x7a8e2d1a8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3490:89, col:124> macos 10.7 0 0 "" "" 0
-|-FunctionDecl 0x7a8e2d4d0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:460:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3490:126> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:460:9 getline 'ssize_t (char **restrict, size_t *restrict, FILE *restrict)'
-| |-ParmVarDecl 0x7a8e2d280 <col:17, col:60> col:60 __linep 'char **restrict'
-| |-ParmVarDecl 0x7a8e2d300 <col:69, col:89> col:89 __linecapp 'size_t *restrict'
-| |-ParmVarDecl 0x7a8e2d380 <col:101, col:119> col:119 __stream 'FILE *restrict'
-| `-AvailabilityAttr 0x7a8e2d590 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3490:89, col:124> macos 10.7 0 0 "" "" 0
-|-FunctionDecl 0x7a8e2d8e8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:461:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:244:82> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:461:7 fmemopen 'FILE *(void *restrict, size_t, const char *restrict)'
-| |-ParmVarDecl 0x7a8e2d668 <col:16, col:34> col:34 __buf 'void *restrict'
-| |-ParmVarDecl 0x7a8e2d6e0 <col:60, col:67> col:67 __size 'size_t':'unsigned long'
-| |-ParmVarDecl 0x7a8e2d760 <col:75, col:99> col:99 __mode 'const char *restrict'
-| |-AvailabilityAttr 0x7a8e2d9a8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:244:39, col:80> macos 10.13 0 0 "" "" 0
-| |-AvailabilityAttr 0x7a8e2da68 <col:39, col:80> ios 11.0 0 0 "" "" 0
-| |-AvailabilityAttr 0x7a8e2daf8 <col:39, col:80> tvos 11.0 0 0 "" "" 0
-| `-AvailabilityAttr 0x7a8e2db88 <col:39, col:80> watchos 4.0 0 0 "" "" 0
-|-FunctionDecl 0x7a8e2de18 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:462:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:244:82> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:462:7 open_memstream 'FILE *(char **, size_t *)'
-| |-ParmVarDecl 0x7a8e2dc30 <col:22, col:51> col:51 __bufp 'char **'
-| |-ParmVarDecl 0x7a8e2dcb0 <col:59, col:67> col:67 __sizep 'size_t *'
-| |-AvailabilityAttr 0x7a8e2ded0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:244:39, col:80> macos 10.13 0 0 "" "" 0
-| |-AvailabilityAttr 0x7a8e2f000 <col:39, col:80> ios 11.0 0 0 "" "" 0
-| |-AvailabilityAttr 0x7a8e2f090 <col:39, col:80> tvos 11.0 0 0 "" "" 0
-| `-AvailabilityAttr 0x7a8e2f120 <col:39, col:80> watchos 4.0 0 0 "" "" 0
-|-VarDecl 0x7a8e2f1c8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:472:1, col:20> col:20 sys_nerr 'const int' extern
-|-VarDecl 0x7a8e2f2b8 <line:473:1, col:42> col:30 sys_errlist 'const char *const[]' extern
-|-FunctionDecl 0x7a8e2f540 <line:475:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:475:6 asprintf 'int (char **restrict, const char *restrict, ...)'
-| |-ParmVarDecl 0x7a8e2f338 <col:15, col:32> col:43 'char **restrict'
-| |-ParmVarDecl 0x7a8e2f3b8 <col:45, col:56> col:68 'const char *restrict'
-| `-FormatAttr 0x7a8e2f5f8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 2 3
-|-FunctionDecl 0x7a8e2f710 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:476:1, col:56> col:18 ctermid_r 'char *(char *)'
-| `-ParmVarDecl 0x7a8e2f678 <col:28, col:33> col:56 'char *'
-|-FunctionDecl 0x7a8e2f978 <line:477:1, col:55> col:27 fgetln 'char *(FILE *, size_t *)'
-| |-ParmVarDecl 0x7a8e2f7d8 <col:34, col:39> col:40 'FILE *'
-| `-ParmVarDecl 0x7a8e2f858 <col:42, col:50> col:50 __len 'size_t *'
-|-FunctionDecl 0x7a8e2fbc8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:119:25, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:478:81> col:15 fmtcheck 'const char *(const char *, const char *)'
-| |-ParmVarDecl 0x7a8e2fa48 <col:24, col:35> col:36 'const char *'
-| |-ParmVarDecl 0x7a8e2fac8 <col:38, col:49> col:50 'const char *'
-| `-FormatArgAttr 0x7a8e2fe08 <col:67, col:79> 2
-|-FunctionDecl 0x7a8e2ff10 <line:479:1, col:19> col:6 fpurge 'int (FILE *)'
-| `-ParmVarDecl 0x7a8e2fe78 <col:13, col:18> col:19 'FILE *'
-|-FunctionDecl 0x7a8e31240 <line:480:1, col:70> col:7 setbuffer 'void (FILE *, char *, int)'
-| |-ParmVarDecl 0x7a8e31000 <col:17, col:22> col:23 'FILE *'
-| |-ParmVarDecl 0x7a8e31080 <col:25, col:30> col:58 'char *'
-| `-ParmVarDecl 0x7a8e31100 <col:60, col:64> col:64 __size 'int'
-|-FunctionDecl 0x7a8e313b0 <line:481:1, col:23> col:6 setlinebuf 'int (FILE *)'
-| `-ParmVarDecl 0x7a8e31318 <col:17, col:22> col:23 'FILE *'
-|-FunctionDecl 0x7a8e31708 <line:482:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:482:6 vasprintf 'int (char **restrict, const char *restrict, va_list)'
-| |-ParmVarDecl 0x7a8e31478 <col:16, col:33> col:44 'char **restrict'
-| |-ParmVarDecl 0x7a8e314f8 <col:46, col:57> col:69 'const char *restrict'
-| |-ParmVarDecl 0x7a8e31570 <col:71> col:78 'va_list':'char *'
-| `-FormatAttr 0x7a8e317c8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 2 0
-|-FunctionDecl 0x7a8e32248 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:488:1, line:492:31> line:488:7 funopen 'FILE *(const void *, int (* _Nullable)(void *, char *, int), int (* _Nullable)(void *, const char *, int), fpos_t (* _Nullable)(void *, fpos_t, int), int (* _Nullable)(void *))'
-| |-ParmVarDecl 0x7a8e31848 <col:15, col:26> col:27 'const void *'
-| |-ParmVarDecl 0x7a8e31ab0 <line:489:6, col:13> col:22 'int (* _Nullable)(void *, char *, int)':'int (*)(void *, char *, int)'
-| |-ParmVarDecl 0x7a8e31d18 <line:490:6, col:13> col:22 'int (* _Nullable)(void *, const char *, int)':'int (*)(void *, const char *, int)'
-| |-ParmVarDecl 0x7a8e31f70 <line:491:6, col:16> col:25 'fpos_t (* _Nullable)(void *, fpos_t, int)':'fpos_t (*)(void *, fpos_t, int)'
-| `-ParmVarDecl 0x7a8e320d8 <line:492:6, col:13> col:22 'int (* _Nullable)(void *)':'int (*)(void *)'
-|-FunctionDecl 0x7a8e326a0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h:38:1, line:39:34> line:38:12 __snprintf_chk 'int (char *restrict, size_t, int, size_t, const char *restrict, ...)' extern
-| |-ParmVarDecl 0x7a8e32330 <col:28, col:33> col:67 'char *restrict'
-| |-ParmVarDecl 0x7a8e323a8 <col:69, col:76> col:76 __maxlen 'size_t':'unsigned long'
-| |-ParmVarDecl 0x7a8e32428 <col:86> col:89 'int'
-| |-ParmVarDecl 0x7a8e324a0 <col:91> col:97 'size_t':'unsigned long'
-| `-ParmVarDecl 0x7a8e32520 <line:39:6, col:17> col:29 'const char *restrict'
-|-FunctionDecl 0x7a8e32b78 <line:40:1, line:41:38> line:40:12 __vsnprintf_chk 'int (char *restrict, size_t, int, size_t, const char *restrict, va_list)' extern
-| |-ParmVarDecl 0x7a8e32788 <col:29, col:34> col:68 'char *restrict'
-| |-ParmVarDecl 0x7a8e32800 <col:70, col:77> col:77 __maxlen 'size_t':'unsigned long'
-| |-ParmVarDecl 0x7a8e32880 <col:87> col:90 'int'
-| |-ParmVarDecl 0x7a8e328f8 <col:92> col:98 'size_t':'unsigned long'
-| |-ParmVarDecl 0x7a8e32978 <line:41:6, col:17> col:29 'const char *restrict'
-| `-ParmVarDecl 0x7a8e329f0 <col:31> col:38 'va_list':'char *'
-|-FunctionDecl 0x7a8e32f50 <line:43:1, line:44:34> line:43:12 __sprintf_chk 'int (char *restrict, int, size_t, const char *restrict, ...)' extern
-| |-ParmVarDecl 0x7a8e32c68 <col:27, col:32> col:67 'char *restrict'
-| |-ParmVarDecl 0x7a8e32ce8 <col:69> col:72 'int'
-| |-ParmVarDecl 0x7a8e32d60 <col:74> col:80 'size_t':'unsigned long'
-| `-ParmVarDecl 0x7a8e32de0 <line:44:6, col:17> col:29 'const char *restrict'
-|-FunctionDecl 0x7a8e33398 <line:45:1, line:46:38> line:45:12 __vsprintf_chk 'int (char *restrict, int, size_t, const char *restrict, va_list)' extern
-| |-ParmVarDecl 0x7a8e33038 <col:28, col:33> col:68 'char *restrict'
-| |-ParmVarDecl 0x7a8e330b8 <col:70> col:73 'int'
-| |-ParmVarDecl 0x7a8e33130 <col:75> col:81 'size_t':'unsigned long'
-| |-ParmVarDecl 0x7a8e331b0 <line:46:6, col:17> col:29 'const char *restrict'
-| `-ParmVarDecl 0x7a8e33228 <col:31> col:38 'va_list':'char *'
-`-FunctionDecl 0x7a8e334c8 <test.c:3:1, line:6:1> line:3:5 main 'int ()'
-  `-CompoundStmt 0x7a8e33628 <col:12, line:6:1>
-    `-DeclStmt 0x7a8e33610 <line:4:5, line:5:5>
-      `-VarDecl 0x7a8e33588 <line:4:5, col:13> col:9 x 'int' cinit
-        `-IntegerLiteral 0x7a8e335f0 <col:13> 'int' 10
+TranslationUnitDecl 0x9bac6e008 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x9bad70000 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x9bac6e5d0 '__int128'
+|-TypedefDecl 0x9bad70070 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x9bac6e5f0 'unsigned __int128'
+|-TypedefDecl 0x9bad70380 <<invalid sloc>> <invalid sloc> implicit __NSConstantString 'struct __NSConstantString_tag'
+| `-RecordType 0x9bad70150 'struct __NSConstantString_tag'
+|   `-Record 0x9bad700c8 '__NSConstantString_tag'
+|-TypedefDecl 0x9bad703e8 <<invalid sloc>> <invalid sloc> implicit __SVInt8_t '__SVInt8_t'
+| `-BuiltinType 0x9bac6e7b0 '__SVInt8_t'
+|-TypedefDecl 0x9bad70450 <<invalid sloc>> <invalid sloc> implicit __SVInt16_t '__SVInt16_t'
+| `-BuiltinType 0x9bac6e7d0 '__SVInt16_t'
+|-TypedefDecl 0x9bad704b8 <<invalid sloc>> <invalid sloc> implicit __SVInt32_t '__SVInt32_t'
+| `-BuiltinType 0x9bac6e7f0 '__SVInt32_t'
+|-TypedefDecl 0x9bad70520 <<invalid sloc>> <invalid sloc> implicit __SVInt64_t '__SVInt64_t'
+| `-BuiltinType 0x9bac6e810 '__SVInt64_t'
+|-TypedefDecl 0x9bad70588 <<invalid sloc>> <invalid sloc> implicit __SVUint8_t '__SVUint8_t'
+| `-BuiltinType 0x9bac6e830 '__SVUint8_t'
+|-TypedefDecl 0x9bad705f0 <<invalid sloc>> <invalid sloc> implicit __SVUint16_t '__SVUint16_t'
+| `-BuiltinType 0x9bac6e850 '__SVUint16_t'
+|-TypedefDecl 0x9bad70658 <<invalid sloc>> <invalid sloc> implicit __SVUint32_t '__SVUint32_t'
+| `-BuiltinType 0x9bac6e870 '__SVUint32_t'
+|-TypedefDecl 0x9bad706c0 <<invalid sloc>> <invalid sloc> implicit __SVUint64_t '__SVUint64_t'
+| `-BuiltinType 0x9bac6e890 '__SVUint64_t'
+|-TypedefDecl 0x9bad70728 <<invalid sloc>> <invalid sloc> implicit __SVFloat16_t '__SVFloat16_t'
+| `-BuiltinType 0x9bac6e8b0 '__SVFloat16_t'
+|-TypedefDecl 0x9bad70790 <<invalid sloc>> <invalid sloc> implicit __SVFloat32_t '__SVFloat32_t'
+| `-BuiltinType 0x9bac6e8d0 '__SVFloat32_t'
+|-TypedefDecl 0x9bad707f8 <<invalid sloc>> <invalid sloc> implicit __SVFloat64_t '__SVFloat64_t'
+| `-BuiltinType 0x9bac6e8f0 '__SVFloat64_t'
+|-TypedefDecl 0x9bad70860 <<invalid sloc>> <invalid sloc> implicit __SVBfloat16_t '__SVBfloat16_t'
+| `-BuiltinType 0x9bac6e910 '__SVBfloat16_t'
+|-TypedefDecl 0x9bad708c8 <<invalid sloc>> <invalid sloc> implicit __clang_svint8x2_t '__clang_svint8x2_t'
+| `-BuiltinType 0x9bac6e930 '__clang_svint8x2_t'
+|-TypedefDecl 0x9bad70930 <<invalid sloc>> <invalid sloc> implicit __clang_svint16x2_t '__clang_svint16x2_t'
+| `-BuiltinType 0x9bac6e950 '__clang_svint16x2_t'
+|-TypedefDecl 0x9bad70998 <<invalid sloc>> <invalid sloc> implicit __clang_svint32x2_t '__clang_svint32x2_t'
+| `-BuiltinType 0x9bac6e970 '__clang_svint32x2_t'
+|-TypedefDecl 0x9bad70a00 <<invalid sloc>> <invalid sloc> implicit __clang_svint64x2_t '__clang_svint64x2_t'
+| `-BuiltinType 0x9bac6e990 '__clang_svint64x2_t'
+|-TypedefDecl 0x9bad70a68 <<invalid sloc>> <invalid sloc> implicit __clang_svuint8x2_t '__clang_svuint8x2_t'
+| `-BuiltinType 0x9bac6e9b0 '__clang_svuint8x2_t'
+|-TypedefDecl 0x9bad70ad0 <<invalid sloc>> <invalid sloc> implicit __clang_svuint16x2_t '__clang_svuint16x2_t'
+| `-BuiltinType 0x9bac6e9d0 '__clang_svuint16x2_t'
+|-TypedefDecl 0x9bad70b38 <<invalid sloc>> <invalid sloc> implicit __clang_svuint32x2_t '__clang_svuint32x2_t'
+| `-BuiltinType 0x9bac6e9f0 '__clang_svuint32x2_t'
+|-TypedefDecl 0x9bad70ba0 <<invalid sloc>> <invalid sloc> implicit __clang_svuint64x2_t '__clang_svuint64x2_t'
+| `-BuiltinType 0x9bac6ea10 '__clang_svuint64x2_t'
+|-TypedefDecl 0x9bad70c08 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat16x2_t '__clang_svfloat16x2_t'
+| `-BuiltinType 0x9bac6ea30 '__clang_svfloat16x2_t'
+|-TypedefDecl 0x9bad70c70 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat32x2_t '__clang_svfloat32x2_t'
+| `-BuiltinType 0x9bac6ea50 '__clang_svfloat32x2_t'
+|-TypedefDecl 0x9bad70cd8 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat64x2_t '__clang_svfloat64x2_t'
+| `-BuiltinType 0x9bac6ea70 '__clang_svfloat64x2_t'
+|-TypedefDecl 0x9bad70d40 <<invalid sloc>> <invalid sloc> implicit __clang_svbfloat16x2_t '__clang_svbfloat16x2_t'
+| `-BuiltinType 0x9bac6ea90 '__clang_svbfloat16x2_t'
+|-TypedefDecl 0x9bad70da8 <<invalid sloc>> <invalid sloc> implicit __clang_svint8x3_t '__clang_svint8x3_t'
+| `-BuiltinType 0x9bac6eab0 '__clang_svint8x3_t'
+|-TypedefDecl 0x9bad70e10 <<invalid sloc>> <invalid sloc> implicit __clang_svint16x3_t '__clang_svint16x3_t'
+| `-BuiltinType 0x9bac6ead0 '__clang_svint16x3_t'
+|-TypedefDecl 0x9bad70e78 <<invalid sloc>> <invalid sloc> implicit __clang_svint32x3_t '__clang_svint32x3_t'
+| `-BuiltinType 0x9bac6eaf0 '__clang_svint32x3_t'
+|-TypedefDecl 0x9bad70ee0 <<invalid sloc>> <invalid sloc> implicit __clang_svint64x3_t '__clang_svint64x3_t'
+| `-BuiltinType 0x9bac6eb10 '__clang_svint64x3_t'
+|-TypedefDecl 0x9bad70f48 <<invalid sloc>> <invalid sloc> implicit __clang_svuint8x3_t '__clang_svuint8x3_t'
+| `-BuiltinType 0x9bac6eb30 '__clang_svuint8x3_t'
+|-TypedefDecl 0x9bad71000 <<invalid sloc>> <invalid sloc> implicit __clang_svuint16x3_t '__clang_svuint16x3_t'
+| `-BuiltinType 0x9bac6eb50 '__clang_svuint16x3_t'
+|-TypedefDecl 0x9bad71068 <<invalid sloc>> <invalid sloc> implicit __clang_svuint32x3_t '__clang_svuint32x3_t'
+| `-BuiltinType 0x9bac6eb70 '__clang_svuint32x3_t'
+|-TypedefDecl 0x9bad710d0 <<invalid sloc>> <invalid sloc> implicit __clang_svuint64x3_t '__clang_svuint64x3_t'
+| `-BuiltinType 0x9bac6eb90 '__clang_svuint64x3_t'
+|-TypedefDecl 0x9bad71138 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat16x3_t '__clang_svfloat16x3_t'
+| `-BuiltinType 0x9bac6ebb0 '__clang_svfloat16x3_t'
+|-TypedefDecl 0x9bad711a0 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat32x3_t '__clang_svfloat32x3_t'
+| `-BuiltinType 0x9bac6ebd0 '__clang_svfloat32x3_t'
+|-TypedefDecl 0x9bad71208 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat64x3_t '__clang_svfloat64x3_t'
+| `-BuiltinType 0x9bac6ebf0 '__clang_svfloat64x3_t'
+|-TypedefDecl 0x9bad71270 <<invalid sloc>> <invalid sloc> implicit __clang_svbfloat16x3_t '__clang_svbfloat16x3_t'
+| `-BuiltinType 0x9bac6ec10 '__clang_svbfloat16x3_t'
+|-TypedefDecl 0x9bad712d8 <<invalid sloc>> <invalid sloc> implicit __clang_svint8x4_t '__clang_svint8x4_t'
+| `-BuiltinType 0x9bac6ec30 '__clang_svint8x4_t'
+|-TypedefDecl 0x9bad71340 <<invalid sloc>> <invalid sloc> implicit __clang_svint16x4_t '__clang_svint16x4_t'
+| `-BuiltinType 0x9bac6ec50 '__clang_svint16x4_t'
+|-TypedefDecl 0x9bad713a8 <<invalid sloc>> <invalid sloc> implicit __clang_svint32x4_t '__clang_svint32x4_t'
+| `-BuiltinType 0x9bac6ec70 '__clang_svint32x4_t'
+|-TypedefDecl 0x9bad71410 <<invalid sloc>> <invalid sloc> implicit __clang_svint64x4_t '__clang_svint64x4_t'
+| `-BuiltinType 0x9bac6ec90 '__clang_svint64x4_t'
+|-TypedefDecl 0x9bad71478 <<invalid sloc>> <invalid sloc> implicit __clang_svuint8x4_t '__clang_svuint8x4_t'
+| `-BuiltinType 0x9bac6ecb0 '__clang_svuint8x4_t'
+|-TypedefDecl 0x9bad714e0 <<invalid sloc>> <invalid sloc> implicit __clang_svuint16x4_t '__clang_svuint16x4_t'
+| `-BuiltinType 0x9bac6ecd0 '__clang_svuint16x4_t'
+|-TypedefDecl 0x9bad71548 <<invalid sloc>> <invalid sloc> implicit __clang_svuint32x4_t '__clang_svuint32x4_t'
+| `-BuiltinType 0x9bac6ecf0 '__clang_svuint32x4_t'
+|-TypedefDecl 0x9bad715b0 <<invalid sloc>> <invalid sloc> implicit __clang_svuint64x4_t '__clang_svuint64x4_t'
+| `-BuiltinType 0x9bac6ed10 '__clang_svuint64x4_t'
+|-TypedefDecl 0x9bad71618 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat16x4_t '__clang_svfloat16x4_t'
+| `-BuiltinType 0x9bac6ed30 '__clang_svfloat16x4_t'
+|-TypedefDecl 0x9bad71680 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat32x4_t '__clang_svfloat32x4_t'
+| `-BuiltinType 0x9bac6ed50 '__clang_svfloat32x4_t'
+|-TypedefDecl 0x9bad716e8 <<invalid sloc>> <invalid sloc> implicit __clang_svfloat64x4_t '__clang_svfloat64x4_t'
+| `-BuiltinType 0x9bac6ed70 '__clang_svfloat64x4_t'
+|-TypedefDecl 0x9bad71750 <<invalid sloc>> <invalid sloc> implicit __clang_svbfloat16x4_t '__clang_svbfloat16x4_t'
+| `-BuiltinType 0x9bac6ed90 '__clang_svbfloat16x4_t'
+|-TypedefDecl 0x9bad717b8 <<invalid sloc>> <invalid sloc> implicit __SVBool_t '__SVBool_t'
+| `-BuiltinType 0x9bac6edb0 '__SVBool_t'
+|-TypedefDecl 0x9bad71820 <<invalid sloc>> <invalid sloc> implicit __clang_svboolx2_t '__clang_svboolx2_t'
+| `-BuiltinType 0x9bac6edd0 '__clang_svboolx2_t'
+|-TypedefDecl 0x9bad71888 <<invalid sloc>> <invalid sloc> implicit __clang_svboolx4_t '__clang_svboolx4_t'
+| `-BuiltinType 0x9bac6edf0 '__clang_svboolx4_t'
+|-TypedefDecl 0x9bad718f0 <<invalid sloc>> <invalid sloc> implicit __SVCount_t '__SVCount_t'
+| `-BuiltinType 0x9bac6ee10 '__SVCount_t'
+|-TypedefDecl 0x9bac6ef08 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x9bac6eec0 'char *'
+|   `-BuiltinType 0x9bac6e0b0 'char'
+|-TypedefDecl 0x9bac6ef78 <<invalid sloc>> <invalid sloc> implicit referenced __builtin_va_list 'char *'
+| `-PointerType 0x9bac6eec0 'char *'
+|   `-BuiltinType 0x9bac6e0b0 'char'
+|-TypedefDecl 0x9bad71960 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_types.h:28:1, col:33> col:33 __int8_t 'signed char'
+| `-BuiltinType 0x9bac6e0d0 'signed char'
+|-TypedefDecl 0x9bad719d0 <line:32:1, col:33> col:33 __uint8_t 'unsigned char'
+| `-BuiltinType 0x9bac6e170 'unsigned char'
+|-TypedefDecl 0x9bad71a40 <line:33:1, col:33> col:33 __int16_t 'short'
+| `-BuiltinType 0x9bac6e0f0 'short'
+|-TypedefDecl 0x9bad71ab0 <line:34:1, col:33> col:33 referenced __uint16_t 'unsigned short'
+| `-BuiltinType 0x9bac6e190 'unsigned short'
+|-TypedefDecl 0x9bad71b20 <line:35:1, col:33> col:33 referenced __int32_t 'int'
+| `-BuiltinType 0x9bac6e110 'int'
+|-TypedefDecl 0x9bad71b90 <line:36:1, col:33> col:33 referenced __uint32_t 'unsigned int'
+| `-BuiltinType 0x9bac6e1b0 'unsigned int'
+|-TypedefDecl 0x9bad71c00 <line:37:1, col:33> col:33 referenced __int64_t 'long long'
+| `-BuiltinType 0x9bac6e150 'long long'
+|-TypedefDecl 0x9bad71c70 <line:38:1, col:33> col:33 referenced __uint64_t 'unsigned long long'
+| `-BuiltinType 0x9bac6e1f0 'unsigned long long'
+|-TypedefDecl 0x9bad71ce0 <line:40:1, col:33> col:33 referenced __darwin_intptr_t 'long'
+| `-BuiltinType 0x9bac6e130 'long'
+|-TypedefDecl 0x9bad71d50 <line:41:1, col:33> col:33 referenced __darwin_natural_t 'unsigned int'
+| `-BuiltinType 0x9bac6e1b0 'unsigned int'
+|-TypedefDecl 0x9bad71dc0 <line:61:1, col:33> col:33 __darwin_ct_rune_t 'int'
+| `-BuiltinType 0x9bac6e110 'int'
+|-RecordDecl 0x9bad71e18 <line:67:9, line:70:1> line:67:9 union definition
+| |-FieldDecl 0x9bad71f50 <line:68:2, col:32> col:18 __mbstate8 'char[128]'
+| `-FieldDecl 0x9bae6c000 <line:69:2, col:18> col:18 _mbstateL 'long long'
+|-TypedefDecl 0x9bae6c0a8 <line:67:1, line:70:3> col:3 referenced __mbstate_t 'union __mbstate_t':'__mbstate_t'
+| `-ElaboratedType 0x9bae6c050 'union __mbstate_t' sugar
+|   `-RecordType 0x9bad71ea0 '__mbstate_t'
+|     `-Record 0x9bad71e18 ''
+|-TypedefDecl 0x9bae6c190 <line:72:1, col:33> col:33 __darwin_mbstate_t '__mbstate_t'
+| `-ElaboratedType 0x9bae6c150 '__mbstate_t' sugar
+|   `-TypedefType 0x9bae6c120 '__mbstate_t' sugar
+|     |-Typedef 0x9bae6c0a8 '__mbstate_t'
+|     `-ElaboratedType 0x9bae6c050 'union __mbstate_t' sugar
+|       `-RecordType 0x9bad71ea0 '__mbstate_t'
+|         `-Record 0x9bad71e18 ''
+|-TypedefDecl 0x9bae6c200 <line:77:1, col:33> col:33 __darwin_ptrdiff_t 'long'
+| `-BuiltinType 0x9bac6e130 'long'
+|-TypedefDecl 0x9bae6c270 <line:87:1, col:33> col:33 referenced __darwin_size_t 'unsigned long'
+| `-BuiltinType 0x9bac6e1d0 'unsigned long'
+|-TypedefDecl 0x9bae6c340 <line:95:1, col:33> col:33 referenced __darwin_va_list '__builtin_va_list':'char *'
+| `-ElaboratedType 0x9bae6c300 '__builtin_va_list' sugar
+|   `-TypedefType 0x9bae6c2d0 '__builtin_va_list' sugar
+|     |-Typedef 0x9bac6ef78 '__builtin_va_list'
+|     `-PointerType 0x9bac6eec0 'char *'
+|       `-BuiltinType 0x9bac6e0b0 'char'
+|-TypedefDecl 0x9bae6c3b0 <line:103:1, col:33> col:33 referenced __darwin_wchar_t 'int'
+| `-BuiltinType 0x9bac6e110 'int'
+|-TypedefDecl 0x9bae6c480 <line:108:1, col:33> col:33 __darwin_rune_t '__darwin_wchar_t':'int'
+| `-ElaboratedType 0x9bae6c440 '__darwin_wchar_t' sugar
+|   `-TypedefType 0x9bae6c410 '__darwin_wchar_t' sugar
+|     |-Typedef 0x9bae6c3b0 '__darwin_wchar_t'
+|     `-BuiltinType 0x9bac6e110 'int'
+|-TypedefDecl 0x9bae6c4f0 <line:111:1, col:33> col:33 __darwin_wint_t 'int'
+| `-BuiltinType 0x9bac6e110 'int'
+|-TypedefDecl 0x9bae6c560 <line:116:1, col:33> col:33 __darwin_clock_t 'unsigned long'
+| `-BuiltinType 0x9bac6e1d0 'unsigned long'
+|-TypedefDecl 0x9bae6c630 <line:117:1, col:33> col:33 __darwin_socklen_t '__uint32_t':'unsigned int'
+| `-ElaboratedType 0x9bae6c5f0 '__uint32_t' sugar
+|   `-TypedefType 0x9bae6c5c0 '__uint32_t' sugar
+|     |-Typedef 0x9bad71b90 '__uint32_t'
+|     `-BuiltinType 0x9bac6e1b0 'unsigned int'
+|-TypedefDecl 0x9bae6c6a0 <line:118:1, col:33> col:33 referenced __darwin_ssize_t 'long'
+| `-BuiltinType 0x9bac6e130 'long'
+|-TypedefDecl 0x9bae6c710 <line:119:1, col:33> col:33 __darwin_time_t 'long'
+| `-BuiltinType 0x9bac6e130 'long'
+|-TypedefDecl 0x9bae6c7e0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h:67:1, col:25> col:25 __darwin_blkcnt_t '__int64_t':'long long'
+| `-ElaboratedType 0x9bae6c7a0 '__int64_t' sugar
+|   `-TypedefType 0x9bae6c770 '__int64_t' sugar
+|     |-Typedef 0x9bad71c00 '__int64_t'
+|     `-BuiltinType 0x9bac6e150 'long long'
+|-TypedefDecl 0x9bae6c8b0 <line:68:1, col:25> col:25 __darwin_blksize_t '__int32_t':'int'
+| `-ElaboratedType 0x9bae6c870 '__int32_t' sugar
+|   `-TypedefType 0x9bae6c840 '__int32_t' sugar
+|     |-Typedef 0x9bad71b20 '__int32_t'
+|     `-BuiltinType 0x9bac6e110 'int'
+|-TypedefDecl 0x9bae6c918 <line:69:1, col:25> col:25 __darwin_dev_t '__int32_t':'int'
+| `-ElaboratedType 0x9bae6c870 '__int32_t' sugar
+|   `-TypedefType 0x9bae6c840 '__int32_t' sugar
+|     |-Typedef 0x9bad71b20 '__int32_t'
+|     `-BuiltinType 0x9bac6e110 'int'
+|-TypedefDecl 0x9bae6c988 <line:70:1, col:25> col:25 __darwin_fsblkcnt_t 'unsigned int'
+| `-BuiltinType 0x9bac6e1b0 'unsigned int'
+|-TypedefDecl 0x9bae6c9f8 <line:71:1, col:25> col:25 __darwin_fsfilcnt_t 'unsigned int'
+| `-BuiltinType 0x9bac6e1b0 'unsigned int'
+|-TypedefDecl 0x9bae6ca60 <line:72:1, col:25> col:25 __darwin_gid_t '__uint32_t':'unsigned int'
+| `-ElaboratedType 0x9bae6c5f0 '__uint32_t' sugar
+|   `-TypedefType 0x9bae6c5c0 '__uint32_t' sugar
+|     |-Typedef 0x9bad71b90 '__uint32_t'
+|     `-BuiltinType 0x9bac6e1b0 'unsigned int'
+|-TypedefDecl 0x9bae6cac8 <line:73:1, col:25> col:25 __darwin_id_t '__uint32_t':'unsigned int'
+| `-ElaboratedType 0x9bae6c5f0 '__uint32_t' sugar
+|   `-TypedefType 0x9bae6c5c0 '__uint32_t' sugar
+|     |-Typedef 0x9bad71b90 '__uint32_t'
+|     `-BuiltinType 0x9bac6e1b0 'unsigned int'
+|-TypedefDecl 0x9bae6cb90 <line:74:1, col:25> col:25 referenced __darwin_ino64_t '__uint64_t':'unsigned long long'
+| `-ElaboratedType 0x9bae6cb50 '__uint64_t' sugar
+|   `-TypedefType 0x9bae6cb20 '__uint64_t' sugar
+|     |-Typedef 0x9bad71c70 '__uint64_t'
+|     `-BuiltinType 0x9bac6e1f0 'unsigned long long'
+|-TypedefDecl 0x9bae6cc60 <line:76:1, col:26> col:26 __darwin_ino_t '__darwin_ino64_t':'unsigned long long'
+| `-ElaboratedType 0x9bae6cc20 '__darwin_ino64_t' sugar
+|   `-TypedefType 0x9bae6cbf0 '__darwin_ino64_t' sugar
+|     |-Typedef 0x9bae6cb90 '__darwin_ino64_t'
+|     `-ElaboratedType 0x9bae6cb50 '__uint64_t' sugar
+|       `-TypedefType 0x9bae6cb20 '__uint64_t' sugar
+|         |-Typedef 0x9bad71c70 '__uint64_t'
+|         `-BuiltinType 0x9bac6e1f0 'unsigned long long'
+|-TypedefDecl 0x9bae6cd30 <line:80:1, col:28> col:28 referenced __darwin_mach_port_name_t '__darwin_natural_t':'unsigned int'
+| `-ElaboratedType 0x9bae6ccf0 '__darwin_natural_t' sugar
+|   `-TypedefType 0x9bae6ccc0 '__darwin_natural_t' sugar
+|     |-Typedef 0x9bad71d50 '__darwin_natural_t'
+|     `-BuiltinType 0x9bac6e1b0 'unsigned int'
+|-TypedefDecl 0x9bae6ce00 <line:81:1, col:35> col:35 __darwin_mach_port_t '__darwin_mach_port_name_t':'unsigned int'
+| `-ElaboratedType 0x9bae6cdc0 '__darwin_mach_port_name_t' sugar
+|   `-TypedefType 0x9bae6cd90 '__darwin_mach_port_name_t' sugar
+|     |-Typedef 0x9bae6cd30 '__darwin_mach_port_name_t'
+|     `-ElaboratedType 0x9bae6ccf0 '__darwin_natural_t' sugar
+|       `-TypedefType 0x9bae6ccc0 '__darwin_natural_t' sugar
+|         |-Typedef 0x9bad71d50 '__darwin_natural_t'
+|         `-BuiltinType 0x9bac6e1b0 'unsigned int'
+|-TypedefDecl 0x9bae6ced0 <line:82:1, col:25> col:25 __darwin_mode_t '__uint16_t':'unsigned short'
+| `-ElaboratedType 0x9bae6ce90 '__uint16_t' sugar
+|   `-TypedefType 0x9bae6ce60 '__uint16_t' sugar
+|     |-Typedef 0x9bad71ab0 '__uint16_t'
+|     `-BuiltinType 0x9bac6e190 'unsigned short'
+|-TypedefDecl 0x9bae6cf38 <line:83:1, col:25> col:25 referenced __darwin_off_t '__int64_t':'long long'
+| `-ElaboratedType 0x9bae6c7a0 '__int64_t' sugar
+|   `-TypedefType 0x9bae6c770 '__int64_t' sugar
+|     |-Typedef 0x9bad71c00 '__int64_t'
+|     `-BuiltinType 0x9bac6e150 'long long'
+|-TypedefDecl 0x9bae6cfa0 <line:84:1, col:25> col:25 __darwin_pid_t '__int32_t':'int'
+| `-ElaboratedType 0x9bae6c870 '__int32_t' sugar
+|   `-TypedefType 0x9bae6c840 '__int32_t' sugar
+|     |-Typedef 0x9bad71b20 '__int32_t'
+|     `-BuiltinType 0x9bac6e110 'int'
+|-TypedefDecl 0x9bae6d010 <line:85:1, col:25> col:25 __darwin_sigset_t '__uint32_t':'unsigned int'
+| `-ElaboratedType 0x9bae6c5f0 '__uint32_t' sugar
+|   `-TypedefType 0x9bae6c5c0 '__uint32_t' sugar
+|     |-Typedef 0x9bad71b90 '__uint32_t'
+|     `-BuiltinType 0x9bac6e1b0 'unsigned int'
+|-TypedefDecl 0x9bae6d078 <line:86:1, col:25> col:25 __darwin_suseconds_t '__int32_t':'int'
+| `-ElaboratedType 0x9bae6c870 '__int32_t' sugar
+|   `-TypedefType 0x9bae6c840 '__int32_t' sugar
+|     |-Typedef 0x9bad71b20 '__int32_t'
+|     `-BuiltinType 0x9bac6e110 'int'
+|-TypedefDecl 0x9bae6d0e0 <line:87:1, col:25> col:25 __darwin_uid_t '__uint32_t':'unsigned int'
+| `-ElaboratedType 0x9bae6c5f0 '__uint32_t' sugar
+|   `-TypedefType 0x9bae6c5c0 '__uint32_t' sugar
+|     |-Typedef 0x9bad71b90 '__uint32_t'
+|     `-BuiltinType 0x9bac6e1b0 'unsigned int'
+|-TypedefDecl 0x9bae6d148 <line:88:1, col:25> col:25 __darwin_useconds_t '__uint32_t':'unsigned int'
+| `-ElaboratedType 0x9bae6c5f0 '__uint32_t' sugar
+|   `-TypedefType 0x9bae6c5c0 '__uint32_t' sugar
+|     |-Typedef 0x9bad71b90 '__uint32_t'
+|     `-BuiltinType 0x9bac6e1b0 'unsigned int'
+|-TypedefDecl 0x9bae6d238 <line:89:1, col:43> col:25 __darwin_uuid_t 'unsigned char[16]'
+| `-ConstantArrayType 0x9bae6d1e0 'unsigned char[16]' 16 
+|   `-BuiltinType 0x9bac6e170 'unsigned char'
+|-TypedefDecl 0x9bae6d320 <line:90:1, col:42> col:17 __darwin_uuid_string_t 'char[37]'
+| `-ConstantArrayType 0x9bae6d2d0 'char[37]' 37 
+|   `-BuiltinType 0x9bac6e0b0 'char'
+|-RecordDecl 0x9bae6d378 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h:57:1, line:61:1> line:57:8 struct __darwin_pthread_handler_rec definition
+| |-FieldDecl 0x9bae6d5a8 <line:58:2, col:26> col:9 __routine 'void (*)(void *)'
+| |-FieldDecl 0x9bae6d610 <line:59:2, col:8> col:8 __arg 'void *'
+| `-FieldDecl 0x9bae6d718 <line:60:2, col:39> col:39 __next 'struct __darwin_pthread_handler_rec *'
+|-RecordDecl 0x9bae6d768 <line:63:1, line:66:1> line:63:8 struct _opaque_pthread_attr_t definition
+| |-FieldDecl 0x9bae6d828 <line:64:2, col:7> col:7 __sig 'long'
+| `-FieldDecl 0x9bae6d910 <line:65:2, col:37> col:7 __opaque 'char[56]'
+|-RecordDecl 0x9bae6d960 <line:68:1, line:71:1> line:68:8 struct _opaque_pthread_cond_t definition
+| |-FieldDecl 0x9bae6da18 <line:69:2, col:7> col:7 __sig 'long'
+| `-FieldDecl 0x9bae6db00 <line:70:2, col:37> col:7 __opaque 'char[40]'
+|-RecordDecl 0x9bae6db50 <line:73:1, line:76:1> line:73:8 struct _opaque_pthread_condattr_t definition
+| |-FieldDecl 0x9bae6dc08 <line:74:2, col:7> col:7 __sig 'long'
+| `-FieldDecl 0x9bae6dcf0 <line:75:2, col:41> col:7 __opaque 'char[8]'
+|-RecordDecl 0x9bae6dd40 <line:78:1, line:81:1> line:78:8 struct _opaque_pthread_mutex_t definition
+| |-FieldDecl 0x9bae6ddf8 <line:79:2, col:7> col:7 __sig 'long'
+| `-FieldDecl 0x9bae6dea8 <line:80:2, col:38> col:7 __opaque 'char[56]'
+|-RecordDecl 0x9bae6def8 <line:83:1, line:86:1> line:83:8 struct _opaque_pthread_mutexattr_t definition
+| |-FieldDecl 0x9bae6e000 <line:84:2, col:7> col:7 __sig 'long'
+| `-FieldDecl 0x9bae6e0b0 <line:85:2, col:42> col:7 __opaque 'char[8]'
+|-RecordDecl 0x9bae6e100 <line:88:1, line:91:1> line:88:8 struct _opaque_pthread_once_t definition
+| |-FieldDecl 0x9bae6e1b8 <line:89:2, col:7> col:7 __sig 'long'
+| `-FieldDecl 0x9bae6e268 <line:90:2, col:37> col:7 __opaque 'char[8]'
+|-RecordDecl 0x9bae6e2b8 <line:93:1, line:96:1> line:93:8 struct _opaque_pthread_rwlock_t definition
+| |-FieldDecl 0x9bae6e378 <line:94:2, col:7> col:7 __sig 'long'
+| `-FieldDecl 0x9bae6e460 <line:95:2, col:39> col:7 __opaque 'char[192]'
+|-RecordDecl 0x9bae6e4b0 <line:98:1, line:101:1> line:98:8 struct _opaque_pthread_rwlockattr_t definition
+| |-FieldDecl 0x9bae6e568 <line:99:2, col:7> col:7 __sig 'long'
+| `-FieldDecl 0x9bae6e650 <line:100:2, col:43> col:7 __opaque 'char[16]'
+|-RecordDecl 0x9bae6e6a0 <line:103:1, line:107:1> line:103:8 struct _opaque_pthread_t definition
+| |-FieldDecl 0x9bae6e758 <line:104:2, col:7> col:7 __sig 'long'
+| |-FieldDecl 0x9bae6e7d0 <line:105:2, col:40> col:40 __cleanup_stack 'struct __darwin_pthread_handler_rec *'
+| `-FieldDecl 0x9bae6e8b0 <line:106:2, col:32> col:7 __opaque 'char[8176]'
+|-TypedefDecl 0x9bae6e950 <line:109:1, col:39> col:39 __darwin_pthread_attr_t 'struct _opaque_pthread_attr_t'
+| `-ElaboratedType 0x9bae6e900 'struct _opaque_pthread_attr_t' sugar
+|   `-RecordType 0x9bae6d7f0 'struct _opaque_pthread_attr_t'
+|     `-Record 0x9bae6d768 '_opaque_pthread_attr_t'
+|-TypedefDecl 0x9bae6ea00 <line:110:1, col:39> col:39 __darwin_pthread_cond_t 'struct _opaque_pthread_cond_t'
+| `-ElaboratedType 0x9bae6e9b0 'struct _opaque_pthread_cond_t' sugar
+|   `-RecordType 0x9bae6d9e0 'struct _opaque_pthread_cond_t'
+|     `-Record 0x9bae6d960 '_opaque_pthread_cond_t'
+|-TypedefDecl 0x9bae6eab0 <line:111:1, col:43> col:43 __darwin_pthread_condattr_t 'struct _opaque_pthread_condattr_t'
+| `-ElaboratedType 0x9bae6ea60 'struct _opaque_pthread_condattr_t' sugar
+|   `-RecordType 0x9bae6dbd0 'struct _opaque_pthread_condattr_t'
+|     `-Record 0x9bae6db50 '_opaque_pthread_condattr_t'
+|-TypedefDecl 0x9bae6eb20 <line:112:1, col:23> col:23 __darwin_pthread_key_t 'unsigned long'
+| `-BuiltinType 0x9bac6e1d0 'unsigned long'
+|-TypedefDecl 0x9bae6ebd0 <line:113:1, col:40> col:40 __darwin_pthread_mutex_t 'struct _opaque_pthread_mutex_t'
+| `-ElaboratedType 0x9bae6eb80 'struct _opaque_pthread_mutex_t' sugar
+|   `-RecordType 0x9bae6ddc0 'struct _opaque_pthread_mutex_t'
+|     `-Record 0x9bae6dd40 '_opaque_pthread_mutex_t'
+|-TypedefDecl 0x9bae6ec80 <line:114:1, col:44> col:44 __darwin_pthread_mutexattr_t 'struct _opaque_pthread_mutexattr_t'
+| `-ElaboratedType 0x9bae6ec30 'struct _opaque_pthread_mutexattr_t' sugar
+|   `-RecordType 0x9bae6df80 'struct _opaque_pthread_mutexattr_t'
+|     `-Record 0x9bae6def8 '_opaque_pthread_mutexattr_t'
+|-TypedefDecl 0x9bae6ed30 <line:115:1, col:39> col:39 __darwin_pthread_once_t 'struct _opaque_pthread_once_t'
+| `-ElaboratedType 0x9bae6ece0 'struct _opaque_pthread_once_t' sugar
+|   `-RecordType 0x9bae6e180 'struct _opaque_pthread_once_t'
+|     `-Record 0x9bae6e100 '_opaque_pthread_once_t'
+|-TypedefDecl 0x9bae6ede0 <line:116:1, col:41> col:41 __darwin_pthread_rwlock_t 'struct _opaque_pthread_rwlock_t'
+| `-ElaboratedType 0x9bae6ed90 'struct _opaque_pthread_rwlock_t' sugar
+|   `-RecordType 0x9bae6e340 'struct _opaque_pthread_rwlock_t'
+|     `-Record 0x9bae6e2b8 '_opaque_pthread_rwlock_t'
+|-TypedefDecl 0x9bae6ee90 <line:117:1, col:45> col:45 __darwin_pthread_rwlockattr_t 'struct _opaque_pthread_rwlockattr_t'
+| `-ElaboratedType 0x9bae6ee40 'struct _opaque_pthread_rwlockattr_t' sugar
+|   `-RecordType 0x9bae6e530 'struct _opaque_pthread_rwlockattr_t'
+|     `-Record 0x9bae6e4b0 '_opaque_pthread_rwlockattr_t'
+|-TypedefDecl 0x9bae6efa8 <line:118:1, col:35> col:35 __darwin_pthread_t 'struct _opaque_pthread_t *'
+| `-PointerType 0x9bae6ef50 'struct _opaque_pthread_t *'
+|   `-ElaboratedType 0x9bae6eef0 'struct _opaque_pthread_t' sugar
+|     `-RecordType 0x9bae6e720 'struct _opaque_pthread_t'
+|       `-Record 0x9bae6e6a0 '_opaque_pthread_t'
+|-TypedefDecl 0x9bae6f018 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h:43:1, col:14> col:14 __darwin_nl_item 'int'
+| `-BuiltinType 0x9bac6e110 'int'
+|-TypedefDecl 0x9bae6f088 <line:44:1, col:14> col:14 __darwin_wctrans_t 'int'
+| `-BuiltinType 0x9bac6e110 'int'
+|-TypedefDecl 0x9bae6f0f0 <line:46:1, col:20> col:20 __darwin_wctype_t '__uint32_t':'unsigned int'
+| `-ElaboratedType 0x9bae6c5f0 '__uint32_t' sugar
+|   `-TypedefType 0x9bae6c5c0 '__uint32_t' sugar
+|     |-Typedef 0x9bad71b90 '__uint32_t'
+|     `-BuiltinType 0x9bac6e1b0 'unsigned int'
+|-TypedefDecl 0x9bae6f160 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int8_t.h:30:1, col:31> col:31 int8_t 'signed char'
+| `-BuiltinType 0x9bac6e0d0 'signed char'
+|-TypedefDecl 0x9bae6f1d0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h:30:1, col:33> col:33 int16_t 'short'
+| `-BuiltinType 0x9bac6e0f0 'short'
+|-TypedefDecl 0x9bae6f240 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int32_t.h:30:1, col:33> col:33 int32_t 'int'
+| `-BuiltinType 0x9bac6e110 'int'
+|-TypedefDecl 0x9bae6f2b0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int64_t.h:30:1, col:33> col:33 referenced int64_t 'long long'
+| `-BuiltinType 0x9bac6e150 'long long'
+|-TypedefDecl 0x9bae6f320 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int8_t.h:30:1, col:33> col:33 u_int8_t 'unsigned char'
+| `-BuiltinType 0x9bac6e170 'unsigned char'
+|-TypedefDecl 0x9bae6f390 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int16_t.h:30:1, col:41> col:41 u_int16_t 'unsigned short'
+| `-BuiltinType 0x9bac6e190 'unsigned short'
+|-TypedefDecl 0x9bae6f400 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int32_t.h:30:1, col:33> col:33 u_int32_t 'unsigned int'
+| `-BuiltinType 0x9bac6e1b0 'unsigned int'
+|-TypedefDecl 0x9bae6f470 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int64_t.h:30:1, col:33> col:33 referenced u_int64_t 'unsigned long long'
+| `-BuiltinType 0x9bac6e1f0 'unsigned long long'
+|-TypedefDecl 0x9bae6f540 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h:66:1, col:33> col:33 register_t 'int64_t':'long long'
+| `-ElaboratedType 0x9bae6f500 'int64_t' sugar
+|   `-TypedefType 0x9bae6f4d0 'int64_t' sugar
+|     |-Typedef 0x9bae6f2b0 'int64_t'
+|     `-BuiltinType 0x9bac6e150 'long long'
+|-TypedefDecl 0x9bae6f610 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_intptr_t.h:32:1, col:33> col:33 intptr_t '__darwin_intptr_t':'long'
+| `-ElaboratedType 0x9bae6f5d0 '__darwin_intptr_t' sugar
+|   `-TypedefType 0x9bae6f5a0 '__darwin_intptr_t' sugar
+|     |-Typedef 0x9bad71ce0 '__darwin_intptr_t'
+|     `-BuiltinType 0x9bac6e130 'long'
+|-TypedefDecl 0x9bae6f680 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h:34:1, col:33> col:33 uintptr_t 'unsigned long'
+| `-BuiltinType 0x9bac6e1d0 'unsigned long'
+|-TypedefDecl 0x9bae6f750 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/types.h:77:1, col:33> col:33 user_addr_t 'u_int64_t':'unsigned long long'
+| `-ElaboratedType 0x9bae6f710 'u_int64_t' sugar
+|   `-TypedefType 0x9bae6f6e0 'u_int64_t' sugar
+|     |-Typedef 0x9bae6f470 'u_int64_t'
+|     `-BuiltinType 0x9bac6e1f0 'unsigned long long'
+|-TypedefDecl 0x9bae6f7b8 <line:78:1, col:33> col:33 user_size_t 'u_int64_t':'unsigned long long'
+| `-ElaboratedType 0x9bae6f710 'u_int64_t' sugar
+|   `-TypedefType 0x9bae6f6e0 'u_int64_t' sugar
+|     |-Typedef 0x9bae6f470 'u_int64_t'
+|     `-BuiltinType 0x9bac6e1f0 'unsigned long long'
+|-TypedefDecl 0x9bae6f820 <line:79:1, col:33> col:33 user_ssize_t 'int64_t':'long long'
+| `-ElaboratedType 0x9bae6f500 'int64_t' sugar
+|   `-TypedefType 0x9bae6f4d0 'int64_t' sugar
+|     |-Typedef 0x9bae6f2b0 'int64_t'
+|     `-BuiltinType 0x9bac6e150 'long long'
+|-TypedefDecl 0x9bae6f888 <line:80:1, col:33> col:33 user_long_t 'int64_t':'long long'
+| `-ElaboratedType 0x9bae6f500 'int64_t' sugar
+|   `-TypedefType 0x9bae6f4d0 'int64_t' sugar
+|     |-Typedef 0x9bae6f2b0 'int64_t'
+|     `-BuiltinType 0x9bac6e150 'long long'
+|-TypedefDecl 0x9bae6f8f0 <line:81:1, col:33> col:33 user_ulong_t 'u_int64_t':'unsigned long long'
+| `-ElaboratedType 0x9bae6f710 'u_int64_t' sugar
+|   `-TypedefType 0x9bae6f6e0 'u_int64_t' sugar
+|     |-Typedef 0x9bae6f470 'u_int64_t'
+|     `-BuiltinType 0x9bac6e1f0 'unsigned long long'
+|-TypedefDecl 0x9bae6f958 <line:82:1, col:33> col:33 user_time_t 'int64_t':'long long'
+| `-ElaboratedType 0x9bae6f500 'int64_t' sugar
+|   `-TypedefType 0x9bae6f4d0 'int64_t' sugar
+|     |-Typedef 0x9bae6f2b0 'int64_t'
+|     `-BuiltinType 0x9bac6e150 'long long'
+|-TypedefDecl 0x9bae6f9c0 <line:83:1, col:33> col:33 user_off_t 'int64_t':'long long'
+| `-ElaboratedType 0x9bae6f500 'int64_t' sugar
+|   `-TypedefType 0x9bae6f4d0 'int64_t' sugar
+|     |-Typedef 0x9bae6f2b0 'int64_t'
+|     `-BuiltinType 0x9bac6e150 'long long'
+|-TypedefDecl 0x9bae6fa28 <line:105:1, col:33> col:33 syscall_arg_t 'u_int64_t':'unsigned long long'
+| `-ElaboratedType 0x9bae6f710 'u_int64_t' sugar
+|   `-TypedefType 0x9bae6f6e0 'u_int64_t' sugar
+|     |-Typedef 0x9bae6f470 'u_int64_t'
+|     `-BuiltinType 0x9bac6e1f0 'unsigned long long'
+|-TypedefDecl 0x9bae6faf0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_va_list.h:44:1, col:26> col:26 referenced va_list '__darwin_va_list':'char *'
+| `-ElaboratedType 0x9bae6fab0 '__darwin_va_list' sugar
+|   `-TypedefType 0x9bae6fa80 '__darwin_va_list' sugar
+|     |-Typedef 0x9bae6c340 '__darwin_va_list'
+|     `-ElaboratedType 0x9bae6c300 '__builtin_va_list' sugar
+|       `-TypedefType 0x9bae6c2d0 '__builtin_va_list' sugar
+|         |-Typedef 0x9bac6ef78 '__builtin_va_list'
+|         `-PointerType 0x9bac6eec0 'char *'
+|           `-BuiltinType 0x9bac6e0b0 'char'
+|-TypedefDecl 0x9bae6fbc0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h:50:1, col:32> col:32 referenced size_t '__darwin_size_t':'unsigned long'
+| `-ElaboratedType 0x9bae6fb80 '__darwin_size_t' sugar
+|   `-TypedefType 0x9bae6fb50 '__darwin_size_t' sugar
+|     |-Typedef 0x9bae6c270 '__darwin_size_t'
+|     `-BuiltinType 0x9bac6e1d0 'unsigned long'
+|-FunctionDecl 0x9bae6fec8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:48:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3876:128> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:48:9 renameat 'int (int, const char *, int, const char *)'
+| |-ParmVarDecl 0x9bae6fc30 <col:18> col:21 'int'
+| |-ParmVarDecl 0x9bae6fcb0 <col:23, col:34> col:35 'const char *'
+| |-ParmVarDecl 0x9bae6fd30 <col:37> col:40 'int'
+| |-ParmVarDecl 0x9bae6fdb0 <col:42, col:53> col:54 'const char *'
+| `-AvailabilityAttr 0x9bae73000 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3876:90, col:126> macos 10.10 0 0 "" "" 0
+|-FunctionDecl 0x9bae73358 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:52:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h:263:117> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:52:5 renamex_np 'int (const char *, const char *, unsigned int)'
+| |-ParmVarDecl 0x9bae73120 <col:16, col:27> col:28 'const char *'
+| |-ParmVarDecl 0x9bae731a0 <col:30, col:41> col:42 'const char *'
+| |-ParmVarDecl 0x9bae73220 <col:44, col:53> col:56 'unsigned int'
+| |-AvailabilityAttr 0x9bae73418 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h:263:81, col:115> macos 10.12 0 0 "" "" 0
+| |-AvailabilityAttr 0x9bae734d8 <col:81, col:115> ios 10.0 0 0 "" "" 0
+| |-AvailabilityAttr 0x9bae73568 <col:81, col:115> tvos 10.0 0 0 "" "" 0
+| `-AvailabilityAttr 0x9bae735f8 <col:81, col:115> watchos 3.0 0 0 "" "" 0
+|-FunctionDecl 0x9bae739f8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:53:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h:263:117> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stdio.h:53:5 renameatx_np 'int (int, const char *, int, const char *, unsigned int)'
+| |-ParmVarDecl 0x9bae736a0 <col:18> col:21 'int'
+| |-ParmVarDecl 0x9bae73720 <col:23, col:34> col:35 'const char *'
+| |-ParmVarDecl 0x9bae737a0 <col:37> col:40 'int'
+| |-ParmVarDecl 0x9bae73820 <col:42, col:53> col:54 'const char *'
+| |-ParmVarDecl 0x9bae738a0 <col:56, col:65> col:68 'unsigned int'
+| |-AvailabilityAttr 0x9bae73ac8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h:263:81, col:115> macos 10.12 0 0 "" "" 0
+| |-AvailabilityAttr 0x9bae73b88 <col:81, col:115> ios 10.0 0 0 "" "" 0
+| |-AvailabilityAttr 0x9bae73c18 <col:81, col:115> tvos 10.0 0 0 "" "" 0
+| `-AvailabilityAttr 0x9bae73ca8 <col:81, col:115> watchos 3.0 0 0 "" "" 0
+|-FunctionDecl 0x9bae73ec0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h:34:6> col:6 implicit printf 'int (const char *, ...)' extern
+| |-ParmVarDecl 0x9bae98000 <<invalid sloc>> <invalid sloc> 'const char *'
+| |-BuiltinAttr 0x9bae73f68 <<invalid sloc>> Implicit 979
+| `-FormatAttr 0x9bae98070 <col:6> Implicit printf 1 2
+|-FunctionDecl 0x9bae980a8 prev 0x9bae73ec0 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_printf.h:34:6 printf 'int (const char *, ...)'
+| |-ParmVarDecl 0x9bae73d50 <col:13, col:24> col:36 'const char *restrict'
+| |-BuiltinAttr 0x9bae981c0 <<invalid sloc>> Inherited Implicit 979
+| `-FormatAttr 0x9bae98158 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 1 2
+|-TypedefDecl 0x9bae98260 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:86:1, col:25> col:25 referenced fpos_t '__darwin_off_t':'long long'
+| `-ElaboratedType 0x9bae98220 '__darwin_off_t' sugar
+|   `-TypedefType 0x9bae981f0 '__darwin_off_t' sugar
+|     |-Typedef 0x9bae6cf38 '__darwin_off_t'
+|     `-ElaboratedType 0x9bae6c7a0 '__int64_t' sugar
+|       `-TypedefType 0x9bae6c770 '__int64_t' sugar
+|         |-Typedef 0x9bad71c00 '__int64_t'
+|         `-BuiltinType 0x9bac6e150 'long long'
+|-RecordDecl 0x9bae982b8 <line:97:1, line:100:1> line:97:8 struct __sbuf definition
+| |-FieldDecl 0x9bae983a8 <line:98:2, col:36> col:36 _base 'unsigned char *'
+| `-FieldDecl 0x9bae98410 <line:99:2, col:7> col:7 _size 'int'
+|-RecordDecl 0x9bae98460 <line:103:1, col:8> col:8 struct __sFILEX
+|-RecordDecl 0x9bae98500 <line:131:9, line:162:1> line:131:16 struct __sFILE definition
+| |-FieldDecl 0x9bae985b8 <line:132:2, col:40> col:40 referenced _p 'unsigned char *'
+| |-FieldDecl 0x9bae98620 <line:133:2, col:6> col:6 _r 'int'
+| |-FieldDecl 0x9bae98688 <line:134:2, col:6> col:6 referenced _w 'int'
+| |-FieldDecl 0x9bae986f0 <line:135:2, col:8> col:8 _flags 'short'
+| |-FieldDecl 0x9bae98758 <line:136:2, col:8> col:8 _file 'short'
+| |-FieldDecl 0x9bae98800 <line:137:2, col:16> col:16 _bf 'struct __sbuf'
+| |-FieldDecl 0x9bae98868 <line:138:2, col:6> col:6 referenced _lbfsize 'int'
+| |-FieldDecl 0x9bae988d0 <line:141:2, col:8> col:8 _cookie 'void *'
+| |-FieldDecl 0x9bae98b28 <line:142:2, col:19> col:19 _close 'int (* _Nullable)(void *)':'int (*)(void *)'
+| |-FieldDecl 0x9bae98ea8 <line:143:2, col:19> col:19 _read 'int (* _Nullable)(void *, char *, int)':'int (*)(void *, char *, int)'
+| |-FieldDecl 0x9bae992e0 <line:144:2, col:22> col:22 _seek 'fpos_t (* _Nullable)(void *, fpos_t, int)':'fpos_t (*)(void *, fpos_t, int)'
+| |-FieldDecl 0x9bae99658 <line:145:2, col:19> col:19 _write 'int (* _Nullable)(void *, const char *, int)':'int (*)(void *, const char *, int)'
+| |-FieldDecl 0x9bae996c8 <line:148:2, col:16> col:16 _ub 'struct __sbuf'
+| |-FieldDecl 0x9bae997d8 <line:149:2, col:19> col:19 _extra 'struct __sFILEX *'
+| |-FieldDecl 0x9bae99840 <line:150:2, col:6> col:6 _ur 'int'
+| |-FieldDecl 0x9bae99928 <line:153:2, col:23> col:16 _ubuf 'unsigned char[3]'
+| |-FieldDecl 0x9bae99a18 <line:154:2, col:23> col:16 _nbuf 'unsigned char[1]'
+| |-FieldDecl 0x9bae99a88 <line:157:2, col:16> col:16 _lb 'struct __sbuf'
+| |-FieldDecl 0x9bae99af0 <line:160:2, col:6> col:6 _blksize 'int'
+| `-FieldDecl 0x9bae99b50 <line:161:2, col:9> col:9 _offset 'fpos_t':'long long'
+|-TypedefDecl 0x9bae99bf8 <line:131:1, line:162:3> col:3 referenced FILE 'struct __sFILE'
+| `-ElaboratedType 0x9bae99ba0 'struct __sFILE' sugar
+|   `-RecordType 0x9bae98580 'struct __sFILE'
+|     `-Record 0x9bae98500 '__sFILE'
+|-VarDecl 0x9bae99d78 <line:167:1, col:14> col:14 __stdinp 'FILE *' extern
+| `-SwiftAttrAttr 0x9bae99de0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:343:64, col:100> "nonisolated(unsafe)"
+|-VarDecl 0x9bae99ea0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:168:1, col:14> col:14 __stdoutp 'FILE *' extern
+| `-SwiftAttrAttr 0x9bae99f08 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:343:64, col:100> "nonisolated(unsafe)"
+|-VarDecl 0x9bae9a000 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:169:1, col:14> col:14 __stderrp 'FILE *' extern
+| `-SwiftAttrAttr 0x9bae9a068 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:343:64, col:100> "nonisolated(unsafe)"
+|-FunctionDecl 0x9bae9a200 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:232:1, col:22> col:7 clearerr 'void (FILE *)'
+| `-ParmVarDecl 0x9bae9a0f8 <col:16, col:21> col:22 'FILE *'
+|-FunctionDecl 0x9bae9a3d8 <line:233:1, col:19> col:6 fclose 'int (FILE *)'
+| `-ParmVarDecl 0x9bae9a2c8 <col:13, col:18> col:19 'FILE *'
+|-FunctionDecl 0x9bae9a538 <line:234:1, col:17> col:6 feof 'int (FILE *)'
+| `-ParmVarDecl 0x9bae9a4a0 <col:11, col:16> col:17 'FILE *'
+|-FunctionDecl 0x9bae9a698 <line:235:1, col:19> col:6 ferror 'int (FILE *)'
+| `-ParmVarDecl 0x9bae9a600 <col:13, col:18> col:19 'FILE *'
+|-FunctionDecl 0x9bae9a7f8 <line:236:1, col:19> col:6 fflush 'int (FILE *)'
+| `-ParmVarDecl 0x9bae9a760 <col:13, col:18> col:19 'FILE *'
+|-FunctionDecl 0x9bae9a958 <line:237:1, col:18> col:6 fgetc 'int (FILE *)'
+| `-ParmVarDecl 0x9bae9a8c0 <col:12, col:17> col:18 'FILE *'
+|-FunctionDecl 0x9bae9ac28 <line:238:1, col:41> col:6 fgetpos 'int (FILE *restrict, fpos_t *)'
+| |-ParmVarDecl 0x9bae9aa20 <col:14, col:19> col:31 'FILE *restrict'
+| `-ParmVarDecl 0x9bae9ab08 <col:33, col:40> col:41 'fpos_t *'
+|-FunctionDecl 0x9bae9af38 <line:239:1, col:81> col:18 fgets 'char *(char *restrict, int, FILE *)'
+| |-ParmVarDecl 0x9bae9acf8 <col:24, col:29> col:61 'char *restrict'
+| |-ParmVarDecl 0x9bae9ad78 <col:63, col:67> col:67 __size 'int'
+| `-ParmVarDecl 0x9bae9adf8 <col:75, col:80> col:81 'FILE *'
+|-FunctionDecl 0x9bae9b290 <line:243:7> col:7 implicit fopen 'FILE *(const char *, const char *)' extern
+| |-ParmVarDecl 0x9bae9b390 <<invalid sloc>> <invalid sloc> 'const char *'
+| |-ParmVarDecl 0x9bae9b3f8 <<invalid sloc>> <invalid sloc> 'const char *'
+| `-BuiltinAttr 0x9bae9b338 <<invalid sloc>> Implicit 607
+|-FunctionDecl 0x9bae9b470 prev 0x9bae9b290 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:84> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:243:7 fopen 'FILE *(const char *, const char *)'
+| |-ParmVarDecl 0x9bae9b018 <col:13, col:37> col:37 __filename 'const char *restrict'
+| |-ParmVarDecl 0x9bae9b098 <col:49, col:73> col:73 __mode 'const char *restrict'
+| |-BuiltinAttr 0x9bae9b598 <<invalid sloc>> Inherited Implicit 607
+| `-AsmLabelAttr 0x9bae9b518 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:47> "_fopen" IsLiteralLabel
+|-FunctionDecl 0x9bae9b828 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:245:6> col:6 implicit fprintf 'int (FILE *restrict, const char *restrict, ...)' extern
+| |-ParmVarDecl 0x9bae9b928 <<invalid sloc>> <invalid sloc> 'FILE *restrict'
+| |-ParmVarDecl 0x9bae9b990 <<invalid sloc>> <invalid sloc> 'const char *restrict'
+| |-BuiltinAttr 0x9bae9b8d0 <<invalid sloc>> Implicit 544
+| |-FormatAttr 0x9bae9ba08 <col:6> Implicit printf 2 3
+| `-NoThrowAttr 0x9bae9ba40 <col:6> Implicit
+|-FunctionDecl 0x9bae9ba68 prev 0x9bae9b828 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:245:6 fprintf 'int (FILE *restrict, const char *restrict, ...)'
+| |-ParmVarDecl 0x9bae9b5d8 <col:14, col:19> col:31 'FILE *restrict'
+| |-ParmVarDecl 0x9bae9b658 <col:33, col:44> col:56 'const char *restrict'
+| |-BuiltinAttr 0x9bae9bb88 <<invalid sloc>> Inherited Implicit 544
+| |-NoThrowAttr 0x9bae9bbb0 <col:6> Inherited Implicit
+| `-FormatAttr 0x9bae9bb20 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 2 3
+|-FunctionDecl 0x9bae9bd98 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:246:1, col:23> col:6 fputc 'int (int, FILE *)'
+| |-ParmVarDecl 0x9bae9bbf0 <col:12> col:15 'int'
+| `-ParmVarDecl 0x9bae9bc70 <col:17, col:22> col:23 'FILE *'
+|-FunctionDecl 0x9bae9c038 <line:247:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:84> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:247:6 fputs 'int (const char *restrict, FILE *restrict)'
+| |-ParmVarDecl 0x9bae9be68 <col:12, col:23> col:35 'const char *restrict'
+| |-ParmVarDecl 0x9bae9bee8 <col:37, col:42> col:54 'FILE *restrict'
+| `-AsmLabelAttr 0x9bae9c0e0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:47> "_fputs" IsLiteralLabel
+|-FunctionDecl 0x9bae9c4e0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:248:9> col:9 implicit fread 'unsigned long (void *, unsigned long, unsigned long, FILE *)' extern
+| |-ParmVarDecl 0x9bae9c5e0 <<invalid sloc>> <invalid sloc> 'void *'
+| |-ParmVarDecl 0x9bae9c648 <<invalid sloc>> <invalid sloc> 'unsigned long'
+| |-ParmVarDecl 0x9bae9c6b0 <<invalid sloc>> <invalid sloc> 'unsigned long'
+| |-ParmVarDecl 0x9bae9c718 <<invalid sloc>> <invalid sloc> 'FILE *'
+| `-BuiltinAttr 0x9bae9c588 <<invalid sloc>> Implicit 611
+|-FunctionDecl 0x9bae9c7a0 prev 0x9bae9c4e0 <col:1, col:128> col:9 fread 'unsigned long (void *, unsigned long, unsigned long, FILE *)'
+| |-ParmVarDecl 0x9bae9c1d8 <col:15, col:63> col:63 __ptr 'void *restrict'
+| |-ParmVarDecl 0x9bae9c250 <col:70, col:77> col:77 __size 'size_t':'unsigned long'
+| |-ParmVarDecl 0x9bae9c2c8 <col:85, col:92> col:92 __nitems 'size_t':'unsigned long'
+| |-ParmVarDecl 0x9bae9c348 <col:102, col:120> col:120 __stream 'FILE *restrict'
+| `-BuiltinAttr 0x9bae9c898 <<invalid sloc>> Inherited Implicit 611
+|-FunctionDecl 0x9bae9cb78 <line:249:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:84> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:249:7 freopen 'FILE *(const char *restrict, const char *restrict, FILE *restrict)'
+| |-ParmVarDecl 0x9bae9c8d8 <col:15, col:26> col:38 'const char *restrict'
+| |-ParmVarDecl 0x9bae9c958 <col:40, col:51> col:63 'const char *restrict'
+| |-ParmVarDecl 0x9bae9c9d8 <line:250:6, col:11> col:23 'FILE *restrict'
+| `-AsmLabelAttr 0x9bae9cc20 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:47> "_freopen" IsLiteralLabel
+|-FunctionDecl 0x9bae9ce30 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:251:6> col:6 implicit fscanf 'int (FILE *restrict, const char *restrict, ...)' extern
+| |-ParmVarDecl 0x9bae9cf30 <<invalid sloc>> <invalid sloc> 'FILE *restrict'
+| |-ParmVarDecl 0x9bae9cf98 <<invalid sloc>> <invalid sloc> 'const char *restrict'
+| |-BuiltinAttr 0x9bae9ced8 <<invalid sloc>> Implicit 547
+| `-FormatAttr 0x9bae9d010 <col:6> Implicit scanf 2 3
+|-FunctionDecl 0x9bae9d048 prev 0x9bae9ce30 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:61> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:251:6 fscanf 'int (FILE *restrict, const char *restrict, ...)'
+| |-ParmVarDecl 0x9bae9ccc0 <col:13, col:18> col:30 'FILE *restrict'
+| |-ParmVarDecl 0x9bae9cd40 <col:32, col:43> col:55 'const char *restrict'
+| |-BuiltinAttr 0x9bae9d168 <<invalid sloc>> Inherited Implicit 547
+| `-FormatAttr 0x9bae9d100 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:17, col:59> scanf 2 3
+|-FunctionDecl 0x9bae9d3e8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:252:1, col:29> col:6 fseek 'int (FILE *, long, int)'
+| |-ParmVarDecl 0x9bae9d1a8 <col:12, col:17> col:18 'FILE *'
+| |-ParmVarDecl 0x9bae9d228 <col:20> col:24 'long'
+| `-ParmVarDecl 0x9bae9d2a8 <col:26> col:29 'int'
+|-FunctionDecl 0x9bae9d6c8 <line:253:1, col:36> col:6 fsetpos 'int (FILE *, const fpos_t *)'
+| |-ParmVarDecl 0x9bae9d4c0 <col:14, col:19> col:20 'FILE *'
+| `-ParmVarDecl 0x9bae9d5a8 <col:22, col:35> col:36 'const fpos_t *'
+|-FunctionDecl 0x9bae9d8a8 <line:254:1, col:19> col:7 ftell 'long (FILE *)'
+| `-ParmVarDecl 0x9bae9d798 <col:13, col:18> col:19 'FILE *'
+|-FunctionDecl 0x9bae9dce0 <line:255:9> col:9 implicit fwrite 'unsigned long (const void *, unsigned long, unsigned long, FILE *)' extern
+| |-ParmVarDecl 0x9bae9dde0 <<invalid sloc>> <invalid sloc> 'const void *'
+| |-ParmVarDecl 0x9bae9de48 <<invalid sloc>> <invalid sloc> 'unsigned long'
+| |-ParmVarDecl 0x9bae9deb0 <<invalid sloc>> <invalid sloc> 'unsigned long'
+| |-ParmVarDecl 0x9bae9df18 <<invalid sloc>> <invalid sloc> 'FILE *'
+| `-BuiltinAttr 0x9bae9dd88 <<invalid sloc>> Implicit 622
+|-FunctionDecl 0x9bae9e000 prev 0x9bae9dce0 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:84> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:255:9 fwrite 'unsigned long (const void *, unsigned long, unsigned long, FILE *)'
+| |-ParmVarDecl 0x9bae9d9a8 <col:16, col:70> col:70 __ptr 'const void *restrict'
+| |-ParmVarDecl 0x9bae9da20 <col:77, col:84> col:84 __size 'size_t':'unsigned long'
+| |-ParmVarDecl 0x9bae9da98 <col:92, col:99> col:99 __nitems 'size_t':'unsigned long'
+| |-ParmVarDecl 0x9bae9db18 <col:109, col:127> col:127 __stream 'FILE *restrict'
+| |-BuiltinAttr 0x9bae9e138 <<invalid sloc>> Inherited Implicit 622
+| `-AsmLabelAttr 0x9bae9e0a8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:47> "_fwrite" IsLiteralLabel
+|-FunctionDecl 0x9bae9e210 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:256:1, col:17> col:6 getc 'int (FILE *)'
+| `-ParmVarDecl 0x9bae9e178 <col:11, col:16> col:17 'FILE *'
+|-FunctionDecl 0x9bae9e398 <line:257:1, col:18> col:6 getchar 'int (void)'
+|-FunctionDecl 0x9bae9e5f8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:33, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:262:51> col:18 gets 'char *(char *)'
+| |-ParmVarDecl 0x9bae9e520 <col:23, col:28> col:51 'char *'
+| `-DeprecatedAttr 0x9bae9e6a8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48, col:67> "This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of gets(3), it is highly recommended that you use fgets(3) instead." ""
+|-FunctionDecl 0x9bae9e8b0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:264:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:183:49> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:264:7 perror 'void (const char *)'
+| |-ParmVarDecl 0x9bae9e7e0 <col:14, col:25> col:26 'const char *'
+| `-ColdAttr 0x9bae9e960 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:183:40>
+|-FunctionDecl 0x9bae9eaf0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:265:1, col:22> col:6 putc 'int (int, FILE *)'
+| |-ParmVarDecl 0x9bae9e9d0 <col:11> col:14 'int'
+| `-ParmVarDecl 0x9bae9ea50 <col:16, col:21> col:22 'FILE *'
+|-FunctionDecl 0x9bae9ec98 <line:266:1, col:17> col:6 putchar 'int (int)'
+| `-ParmVarDecl 0x9bae9ebc0 <col:14> col:17 'int'
+|-FunctionDecl 0x9bae9ee38 <line:267:1, col:23> col:6 puts 'int (const char *)'
+| `-ParmVarDecl 0x9bae9ed60 <col:11, col:22> col:23 'const char *'
+|-FunctionDecl 0x9bae9f000 <line:268:1, col:25> col:6 remove 'int (const char *)'
+| `-ParmVarDecl 0x9bae9ef00 <col:13, col:24> col:25 'const char *'
+|-FunctionDecl 0x9bae9f228 <line:269:1, col:50> col:6 rename 'int (const char *, const char *)'
+| |-ParmVarDecl 0x9bae9f0c8 <col:14, col:26> col:26 __old 'const char *'
+| `-ParmVarDecl 0x9bae9f148 <col:33, col:45> col:45 __new 'const char *'
+|-FunctionDecl 0x9bae9f388 <line:270:1, col:20> col:7 rewind 'void (FILE *)'
+| `-ParmVarDecl 0x9bae9f2f8 <col:14, col:19> col:20 'FILE *'
+|-FunctionDecl 0x9bae9f538 <line:271:6> col:6 implicit scanf 'int (const char *restrict, ...)' extern
+| |-ParmVarDecl 0x9bae9f638 <<invalid sloc>> <invalid sloc> 'const char *restrict'
+| |-BuiltinAttr 0x9bae9f5e0 <<invalid sloc>> Implicit 1082
+| `-FormatAttr 0x9bae9f6a8 <col:6> Implicit scanf 1 2
+|-FunctionDecl 0x9bae9f6e0 prev 0x9bae9f538 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:61> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:271:6 scanf 'int (const char *restrict, ...)'
+| |-ParmVarDecl 0x9bae9f450 <col:12, col:23> col:35 'const char *restrict'
+| |-BuiltinAttr 0x9bae9f7f8 <<invalid sloc>> Inherited Implicit 1082
+| `-FormatAttr 0x9bae9f790 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:17, col:59> scanf 1 2
+|-FunctionDecl 0x9bae9f9d0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:272:1, col:78> col:7 setbuf 'void (FILE *restrict, char *restrict)'
+| |-ParmVarDecl 0x9bae9f838 <col:14, col:19> col:31 'FILE *restrict'
+| `-ParmVarDecl 0x9bae9f8b8 <col:33, col:38> col:78 'char *restrict'
+|-FunctionDecl 0x9bae9fd68 <line:273:1, col:98> col:6 setvbuf 'int (FILE *restrict, char *restrict, int, size_t)'
+| |-ParmVarDecl 0x9bae9faa0 <col:14, col:19> col:31 'FILE *restrict'
+| |-ParmVarDecl 0x9bae9fb20 <col:33, col:38> col:78 'char *restrict'
+| |-ParmVarDecl 0x9bae9fba0 <col:80> col:83 'int'
+| `-ParmVarDecl 0x9bae9fc18 <col:85, col:92> col:92 __size 'size_t':'unsigned long'
+|-FunctionDecl 0x9baea4190 <line:280:6> col:6 implicit sprintf 'int (char *restrict, const char *restrict, ...)' extern
+| |-ParmVarDecl 0x9baea4290 <<invalid sloc>> <invalid sloc> 'char *restrict'
+| |-ParmVarDecl 0x9baea42f8 <<invalid sloc>> <invalid sloc> 'const char *restrict'
+| |-BuiltinAttr 0x9baea4238 <<invalid sloc>> Implicit 1061
+| |-FormatAttr 0x9baea4370 <col:6> Implicit printf 2 3
+| `-NoThrowAttr 0x9baea43a8 <col:6> Implicit
+|-FunctionDecl 0x9baea43d0 prev 0x9baea4190 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:41, line:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:280:6 sprintf 'int (char *restrict, const char *restrict, ...)'
+| |-ParmVarDecl 0x9bae9ff58 <col:14, col:19> col:54 'char *restrict'
+| |-ParmVarDecl 0x9baea4000 <col:56, col:67> col:79 'const char *restrict'
+| |-BuiltinAttr 0x9baea4690 <<invalid sloc>> Inherited Implicit 1061
+| |-NoThrowAttr 0x9baea46b8 <col:6> Inherited Implicit
+| |-AvailabilityAttr 0x9baea4488 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:56, col:105> swift 0 0 0 Unavailable "Use snprintf instead." "" 0
+| |-DeprecatedAttr 0x9baea4560 <line:227:48, col:67> "This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead." ""
+| `-FormatAttr 0x9baea4658 <line:430:17, col:60> printf 2 3
+|-FunctionDecl 0x9baea4900 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:282:6> col:6 implicit sscanf 'int (const char *restrict, const char *restrict, ...)' extern
+| |-ParmVarDecl 0x9baea4a00 <<invalid sloc>> <invalid sloc> 'const char *restrict'
+| |-ParmVarDecl 0x9baea4a68 <<invalid sloc>> <invalid sloc> 'const char *restrict'
+| |-BuiltinAttr 0x9baea49a8 <<invalid sloc>> Implicit 1064
+| `-FormatAttr 0x9baea4ae0 <col:6> Implicit scanf 2 3
+|-FunctionDecl 0x9baea4b18 prev 0x9baea4900 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:61> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:282:6 sscanf 'int (const char *restrict, const char *restrict, ...)'
+| |-ParmVarDecl 0x9baea46f8 <col:13, col:24> col:36 'const char *restrict'
+| |-ParmVarDecl 0x9baea4778 <col:38, col:49> col:61 'const char *restrict'
+| |-BuiltinAttr 0x9baea4c38 <<invalid sloc>> Inherited Implicit 1064
+| `-FormatAttr 0x9baea4bd0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:17, col:59> scanf 2 3
+|-FunctionDecl 0x9baea4d68 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:283:1, col:19> col:7 tmpfile 'FILE *(void)'
+|-FunctionDecl 0x9baea5000 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:41, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:289:52> col:18 tmpnam 'char *(char *)'
+| |-ParmVarDecl 0x9baea4f38 <col:25, col:30> col:52 'char *'
+| |-AvailabilityAttr 0x9baea50b0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:56, col:105> swift 0 0 0 Unavailable "Use mkstemp(3) instead." "" 0
+| `-DeprecatedAttr 0x9baea5188 <line:227:48, col:67> "This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of tmpnam(3), it is highly recommended that you use mkstemp(3) instead." ""
+|-FunctionDecl 0x9baea53b8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:291:1, col:24> col:6 ungetc 'int (int, FILE *)'
+| |-ParmVarDecl 0x9baea5298 <col:13> col:16 'int'
+| `-ParmVarDecl 0x9baea5318 <col:18, col:23> col:24 'FILE *'
+|-FunctionDecl 0x9baea57c8 <line:292:6> col:6 implicit vfprintf 'int (FILE *restrict, const char *restrict, __builtin_va_list)' extern
+| |-ParmVarDecl 0x9baea58c8 <<invalid sloc>> <invalid sloc> 'FILE *restrict'
+| |-ParmVarDecl 0x9baea5930 <<invalid sloc>> <invalid sloc> 'const char *restrict'
+| |-ParmVarDecl 0x9baea5998 <<invalid sloc>> <invalid sloc> '__builtin_va_list':'char *'
+| |-BuiltinAttr 0x9baea5870 <<invalid sloc>> Implicit 1384
+| |-FormatAttr 0x9baea5a18 <col:6> Implicit printf 2 0
+| `-NoThrowAttr 0x9baea5a50 <col:6> Implicit
+|-FunctionDecl 0x9baea5a78 prev 0x9baea57c8 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:292:6 vfprintf 'int (FILE *restrict, const char *restrict, __builtin_va_list)'
+| |-ParmVarDecl 0x9baea5488 <col:15, col:20> col:32 'FILE *restrict'
+| |-ParmVarDecl 0x9baea5508 <col:34, col:45> col:57 'const char *restrict'
+| |-ParmVarDecl 0x9baea55e0 <col:59> col:66 'va_list':'char *'
+| |-BuiltinAttr 0x9baea5ba0 <<invalid sloc>> Inherited Implicit 1384
+| |-NoThrowAttr 0x9baea5bc8 <col:6> Inherited Implicit
+| `-FormatAttr 0x9baea5b38 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 2 0
+|-FunctionDecl 0x9baea5e40 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:293:6> col:6 implicit vprintf 'int (const char *restrict, __builtin_va_list)' extern
+| |-ParmVarDecl 0x9baea5f40 <<invalid sloc>> <invalid sloc> 'const char *restrict'
+| |-ParmVarDecl 0x9baea6000 <<invalid sloc>> <invalid sloc> '__builtin_va_list':'char *'
+| |-BuiltinAttr 0x9baea5ee8 <<invalid sloc>> Implicit 1369
+| |-FormatAttr 0x9baea6078 <col:6> Implicit printf 1 0
+| `-NoThrowAttr 0x9baea60b0 <col:6> Implicit
+|-FunctionDecl 0x9baea60d8 prev 0x9baea5e40 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:293:6 vprintf 'int (const char *restrict, __builtin_va_list)'
+| |-ParmVarDecl 0x9baea5c08 <col:14, col:25> col:37 'const char *restrict'
+| |-ParmVarDecl 0x9baea5c80 <col:39> col:46 'va_list':'char *'
+| |-BuiltinAttr 0x9baea61f8 <<invalid sloc>> Inherited Implicit 1369
+| |-NoThrowAttr 0x9baea6220 <col:6> Inherited Implicit
+| `-FormatAttr 0x9baea6190 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 1 0
+|-FunctionDecl 0x9baea6648 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:300:6> col:6 implicit vsprintf 'int (char *restrict, const char *restrict, __builtin_va_list)' extern
+| |-ParmVarDecl 0x9baea6748 <<invalid sloc>> <invalid sloc> 'char *restrict'
+| |-ParmVarDecl 0x9baea67b0 <<invalid sloc>> <invalid sloc> 'const char *restrict'
+| |-ParmVarDecl 0x9baea6818 <<invalid sloc>> <invalid sloc> '__builtin_va_list':'char *'
+| |-BuiltinAttr 0x9baea66f0 <<invalid sloc>> Implicit 1387
+| |-FormatAttr 0x9baea6898 <col:6> Implicit printf 2 0
+| `-NoThrowAttr 0x9baea68d0 <col:6> Implicit
+|-FunctionDecl 0x9baea68f8 prev 0x9baea6648 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:41, line:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:300:6 vsprintf 'int (char *restrict, const char *restrict, __builtin_va_list)'
+| |-ParmVarDecl 0x9baea6370 <col:15, col:20> col:55 'char *restrict'
+| |-ParmVarDecl 0x9baea63f0 <col:57, col:68> col:80 'const char *restrict'
+| |-ParmVarDecl 0x9baea6468 <col:82> col:89 'va_list':'char *'
+| |-BuiltinAttr 0x9baea6bc0 <<invalid sloc>> Inherited Implicit 1387
+| |-NoThrowAttr 0x9baea6be8 <col:6> Inherited Implicit
+| |-AvailabilityAttr 0x9baea69b8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:56, col:105> swift 0 0 0 Unavailable "Use vsnprintf instead." "" 0
+| |-DeprecatedAttr 0x9baea6a90 <line:227:48, col:67> "This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use vsnprintf(3) instead." ""
+| `-FormatAttr 0x9baea6b88 <line:430:17, col:60> printf 2 0
+|-FunctionDecl 0x9baea6cc0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctermid.h:38:1, col:54> col:18 ctermid 'char *(char *)'
+| `-ParmVarDecl 0x9baea6c28 <col:26, col:31> col:54 'char *'
+|-FunctionDecl 0x9baea6f58 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:322:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:84> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:322:7 fdopen 'FILE *(int, const char *)'
+| |-ParmVarDecl 0x9baea6d88 <col:14> col:17 'int'
+| |-ParmVarDecl 0x9baea6e08 <col:19, col:30> col:31 'const char *'
+| `-AsmLabelAttr 0x9baea8000 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:47> "_fdopen" IsLiteralLabel
+|-FunctionDecl 0x9baea8130 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:324:1, col:19> col:6 fileno 'int (FILE *)'
+| `-ParmVarDecl 0x9baea8098 <col:13, col:18> col:19 'FILE *'
+|-FunctionDecl 0x9baea8310 <line:335:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:107> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:335:6 pclose 'int (FILE *)'
+| |-ParmVarDecl 0x9baea81f8 <col:13, col:18> col:19 'FILE *'
+| `-AvailabilityAttr 0x9baea83c0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:56, col:105> swift 0 0 0 Unavailable "Use posix_spawn APIs or NSTask instead. (On iOS, process spawning is unavailable.)" "" 0
+|-FunctionDecl 0x9baea86f8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:339:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:107> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:339:7 popen 'FILE *(const char *, const char *)'
+| |-ParmVarDecl 0x9baea84f0 <col:13, col:24> col:25 'const char *'
+| |-ParmVarDecl 0x9baea8570 <col:27, col:38> col:39 'const char *'
+| |-AsmLabelAttr 0x9baea87a0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:47> "_popen" IsLiteralLabel
+| `-AvailabilityAttr 0x9baea8820 <line:332:56, col:105> swift 0 0 0 Unavailable "Use posix_spawn APIs or NSTask instead. (On iOS, process spawning is unavailable.)" "" 0
+|-FunctionDecl 0x9baea89b8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:354:1, col:19> col:5 __srget 'int (FILE *)'
+| `-ParmVarDecl 0x9baea8920 <col:13, col:18> col:19 'FILE *'
+|-FunctionDecl 0x9baea8cb8 <line:355:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:61> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:355:5 __svfscanf 'int (FILE *, const char *, va_list)'
+| |-ParmVarDecl 0x9baea8a80 <col:16, col:21> col:22 'FILE *'
+| |-ParmVarDecl 0x9baea8b00 <col:24, col:35> col:36 'const char *'
+| |-ParmVarDecl 0x9baea8b78 <col:38> col:45 'va_list':'char *'
+| `-FormatAttr 0x9baea8d78 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:17, col:59> scanf 2 0
+|-FunctionDecl 0x9baea8f18 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:356:1, col:24> col:5 used __swbuf 'int (int, FILE *)'
+| |-ParmVarDecl 0x9baea8df8 <col:13> col:16 'int'
+| `-ParmVarDecl 0x9baea8e78 <col:18, col:23> col:24 'FILE *'
+|-FunctionDecl 0x9baea9120 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:379:36, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:370:1> line:365:28 __sputc 'int (int, FILE *)' inline
+| |-ParmVarDecl 0x9baea9000 <col:36, col:40> col:40 used _c 'int'
+| |-ParmVarDecl 0x9baea9080 <col:44, col:50> col:50 used _p 'FILE *'
+| |-CompoundStmt 0x9baea9968 <col:54, line:370:1>
+| | `-IfStmt 0x9baea9938 <line:366:2, line:369:26> has_else
+| |   |-BinaryOperator 0x9baea9510 <line:366:6, col:66> 'int' '||'
+| |   | |-BinaryOperator 0x9baea92d0 <col:6, col:18> 'int' '>='
+| |   | | |-UnaryOperator 0x9baea9298 <col:6, col:12> 'int' prefix '--'
+| |   | | | `-MemberExpr 0x9baea9268 <col:8, col:12> 'int' lvalue ->_w 0x9bae98688
+| |   | | |   `-ImplicitCastExpr 0x9baea9250 <col:8> 'FILE *' <LValueToRValue>
+| |   | | |     `-DeclRefExpr 0x9baea9230 <col:8> 'FILE *' lvalue ParmVar 0x9baea9080 '_p' 'FILE *'
+| |   | | `-IntegerLiteral 0x9baea92b0 <col:18> 'int' 0
+| |   | `-ParenExpr 0x9baea94f0 <col:23, col:66> 'int'
+| |   |   `-BinaryOperator 0x9baea94d0 <col:24, col:62> 'int' '&&'
+| |   |     |-BinaryOperator 0x9baea93f0 <col:24, col:38> 'int' '>='
+| |   |     | |-ImplicitCastExpr 0x9baea93c0 <col:24, col:28> 'int' <LValueToRValue>
+| |   |     | | `-MemberExpr 0x9baea9328 <col:24, col:28> 'int' lvalue ->_w 0x9bae98688
+| |   |     | |   `-ImplicitCastExpr 0x9baea9310 <col:24> 'FILE *' <LValueToRValue>
+| |   |     | |     `-DeclRefExpr 0x9baea92f0 <col:24> 'FILE *' lvalue ParmVar 0x9baea9080 '_p' 'FILE *'
+| |   |     | `-ImplicitCastExpr 0x9baea93d8 <col:34, col:38> 'int' <LValueToRValue>
+| |   |     |   `-MemberExpr 0x9baea9390 <col:34, col:38> 'int' lvalue ->_lbfsize 0x9bae98868
+| |   |     |     `-ImplicitCastExpr 0x9baea9378 <col:34> 'FILE *' <LValueToRValue>
+| |   |     |       `-DeclRefExpr 0x9baea9358 <col:34> 'FILE *' lvalue ParmVar 0x9baea9080 '_p' 'FILE *'
+| |   |     `-BinaryOperator 0x9baea94b0 <col:50, col:62> 'int' '!='
+| |   |       |-ImplicitCastExpr 0x9baea9498 <col:50, col:56> 'int' <IntegralCast>
+| |   |       | `-CStyleCastExpr 0x9baea9458 <col:50, col:56> 'char' <IntegralCast>
+| |   |       |   `-ImplicitCastExpr 0x9baea9440 <col:56> 'int' <LValueToRValue> part_of_explicit_cast
+| |   |       |     `-DeclRefExpr 0x9baea9410 <col:56> 'int' lvalue ParmVar 0x9baea9000 '_c' 'int'
+| |   |       `-CharacterLiteral 0x9baea9480 <col:62> 'int' 10
+| |   |-ReturnStmt 0x9baea9670 <line:367:3, col:25>
+| |   | `-ImplicitCastExpr 0x9baea9658 <col:10, col:25> 'int' <IntegralCast>
+| |   |   `-ParenExpr 0x9baea9638 <col:10, col:25> 'unsigned char'
+| |   |     `-BinaryOperator 0x9baea9618 <col:11, col:23> 'unsigned char' '='
+| |   |       |-UnaryOperator 0x9baea95b0 <col:11, col:18> 'unsigned char' lvalue prefix '*' cannot overflow
+| |   |       | `-UnaryOperator 0x9baea9598 <col:12, col:18> 'unsigned char *' postfix '++'
+| |   |       |   `-MemberExpr 0x9baea9568 <col:12, col:16> 'unsigned char *' lvalue ->_p 0x9bae985b8
+| |   |       |     `-ImplicitCastExpr 0x9baea9550 <col:12> 'FILE *' <LValueToRValue>
+| |   |       |       `-DeclRefExpr 0x9baea9530 <col:12> 'FILE *' lvalue ParmVar 0x9baea9080 '_p' 'FILE *'
+| |   |       `-ImplicitCastExpr 0x9baea9600 <col:23> 'unsigned char' <IntegralCast>
+| |   |         `-ImplicitCastExpr 0x9baea95e8 <col:23> 'int' <LValueToRValue>
+| |   |           `-DeclRefExpr 0x9baea95c8 <col:23> 'int' lvalue ParmVar 0x9baea9000 '_c' 'int'
+| |   `-ReturnStmt 0x9baea9928 <line:369:3, col:26>
+| |     `-ParenExpr 0x9baea9908 <col:10, col:26> 'int'
+| |       `-CallExpr 0x9baea9758 <col:11, col:25> 'int'
+| |         |-ImplicitCastExpr 0x9baea9740 <col:11> 'int (*)(int, FILE *)' <FunctionToPointerDecay>
+| |         | `-DeclRefExpr 0x9baea9680 <col:11> 'int (int, FILE *)' Function 0x9baea8f18 '__swbuf' 'int (int, FILE *)'
+| |         |-ImplicitCastExpr 0x9baea9788 <col:19> 'int' <LValueToRValue>
+| |         | `-DeclRefExpr 0x9baea96a0 <col:19> 'int' lvalue ParmVar 0x9baea9000 '_c' 'int'
+| |         `-ImplicitCastExpr 0x9baea97a0 <col:23> 'FILE *' <LValueToRValue>
+| |           `-DeclRefExpr 0x9baea96c0 <col:23> 'FILE *' lvalue ParmVar 0x9baea9080 '_p' 'FILE *'
+| `-AlwaysInlineAttr 0x9baea91d8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:392:68> always_inline
+|-FunctionDecl 0x9baea9a28 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:391:1, col:23> col:7 flockfile 'void (FILE *)'
+| `-ParmVarDecl 0x9baea9998 <col:17, col:22> col:23 'FILE *'
+|-FunctionDecl 0x9baea9b88 <line:392:1, col:25> col:6 ftrylockfile 'int (FILE *)'
+| `-ParmVarDecl 0x9baea9af0 <col:19, col:24> col:25 'FILE *'
+|-FunctionDecl 0x9baea9ce0 <line:393:1, col:25> col:7 funlockfile 'void (FILE *)'
+| `-ParmVarDecl 0x9baea9c50 <col:19, col:24> col:25 'FILE *'
+|-FunctionDecl 0x9baea9e40 <line:394:1, col:26> col:6 getc_unlocked 'int (FILE *)'
+| `-ParmVarDecl 0x9baea9da8 <col:20, col:25> col:26 'FILE *'
+|-FunctionDecl 0x9baeab000 <line:395:1, col:27> col:6 getchar_unlocked 'int (void)'
+|-FunctionDecl 0x9baeab1e0 <line:396:1, col:31> col:6 putc_unlocked 'int (int, FILE *)'
+| |-ParmVarDecl 0x9baeab0c0 <col:20> col:23 'int'
+| `-ParmVarDecl 0x9baeab140 <col:25, col:30> col:31 'FILE *'
+|-FunctionDecl 0x9baeab348 <line:397:1, col:26> col:6 putchar_unlocked 'int (int)'
+| `-ParmVarDecl 0x9baeab2b0 <col:23> col:26 'int'
+|-FunctionDecl 0x9baeab4a8 <line:401:1, col:17> col:6 getw 'int (FILE *)'
+| `-ParmVarDecl 0x9baeab410 <col:11, col:16> col:17 'FILE *'
+|-FunctionDecl 0x9baeab690 <line:402:1, col:22> col:6 putw 'int (int, FILE *)'
+| |-ParmVarDecl 0x9baeab570 <col:11> col:14 'int'
+| `-ParmVarDecl 0x9baeab5f0 <col:16, col:21> col:22 'FILE *'
+|-FunctionDecl 0x9baeab9f8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:332:41, line:790:84> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:409:18 tempnam 'char *(const char *, const char *)'
+| |-ParmVarDecl 0x9baeab870 <col:26, col:38> col:38 __dir 'const char *'
+| |-ParmVarDecl 0x9baeab8f0 <col:45, col:57> col:57 __prefix 'const char *'
+| |-AsmLabelAttr 0x9baeabaa0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:790:47> "_tempnam" IsLiteralLabel
+| |-AvailabilityAttr 0x9baeabb20 <line:332:56, col:105> swift 0 0 0 Unavailable "Use mkstemp(3) instead." "" 0
+| `-DeprecatedAttr 0x9baeabbc8 <line:227:48, col:67> "This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of tempnam(3), it is highly recommended that you use mkstemp(3) instead." ""
+|-TypedefDecl 0x9baeabcd0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_off_t.h:31:1, col:33> col:33 referenced off_t '__darwin_off_t':'long long'
+| `-ElaboratedType 0x9bae98220 '__darwin_off_t' sugar
+|   `-TypedefType 0x9bae981f0 '__darwin_off_t' sugar
+|     |-Typedef 0x9bae6cf38 '__darwin_off_t'
+|     `-ElaboratedType 0x9bae6c7a0 '__int64_t' sugar
+|       `-TypedefType 0x9bae6c770 '__int64_t' sugar
+|         |-Typedef 0x9bad71c00 '__int64_t'
+|         `-BuiltinType 0x9bac6e150 'long long'
+|-FunctionDecl 0x9baead000 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:432:1, col:58> col:6 fseeko 'int (FILE *, off_t, int)'
+| |-ParmVarDecl 0x9baeabd40 <col:13, col:20> col:20 __stream 'FILE *'
+| |-ParmVarDecl 0x9baeabe20 <col:30, col:36> col:36 __offset 'off_t':'long long'
+| `-ParmVarDecl 0x9baeabea0 <col:46, col:50> col:50 __whence 'int'
+|-FunctionDecl 0x9baead1e0 <line:433:1, col:30> col:8 ftello 'off_t (FILE *)'
+| `-ParmVarDecl 0x9baead0d8 <col:15, col:22> col:22 __stream 'FILE *'
+|-FunctionDecl 0x9baead590 <line:439:6> col:6 implicit snprintf 'int (char *restrict, unsigned long, const char *restrict, ...)' extern
+| |-ParmVarDecl 0x9baead690 <<invalid sloc>> <invalid sloc> 'char *restrict'
+| |-ParmVarDecl 0x9baead6f8 <<invalid sloc>> <invalid sloc> 'unsigned long'
+| |-ParmVarDecl 0x9baead760 <<invalid sloc>> <invalid sloc> 'const char *restrict'
+| |-BuiltinAttr 0x9baead638 <<invalid sloc>> Implicit 1117
+| |-FormatAttr 0x9baead7e0 <col:6> Implicit printf 3 4
+| `-NoThrowAttr 0x9baead818 <col:6> Implicit
+|-FunctionDecl 0x9baead840 prev 0x9baead590 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:439:6 snprintf 'int (char *restrict, unsigned long, const char *restrict, ...)'
+| |-ParmVarDecl 0x9baead2a8 <col:15, col:53> col:53 __str 'char *restrict'
+| |-ParmVarDecl 0x9baead320 <col:60, col:67> col:67 __size 'size_t':'unsigned long'
+| |-ParmVarDecl 0x9baead3a0 <col:75, col:99> col:99 __format 'const char *restrict'
+| |-BuiltinAttr 0x9baead968 <<invalid sloc>> Inherited Implicit 1117
+| |-NoThrowAttr 0x9baead990 <col:6> Inherited Implicit
+| `-FormatAttr 0x9baead900 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 3 4
+|-FunctionDecl 0x9baeadbc0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:440:6> col:6 implicit vfscanf 'int (FILE *restrict, const char *restrict, __builtin_va_list)' extern
+| |-ParmVarDecl 0x9baeadcc0 <<invalid sloc>> <invalid sloc> 'FILE *restrict'
+| |-ParmVarDecl 0x9baeadd28 <<invalid sloc>> <invalid sloc> 'const char *restrict'
+| |-ParmVarDecl 0x9baeadd90 <<invalid sloc>> <invalid sloc> '__builtin_va_list':'char *'
+| |-BuiltinAttr 0x9baeadc68 <<invalid sloc>> Implicit 1366
+| `-FormatAttr 0x9baeade10 <col:6> Implicit scanf 2 0
+|-FunctionDecl 0x9baeade48 prev 0x9baeadbc0 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:61> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:440:6 vfscanf 'int (FILE *restrict, const char *restrict, __builtin_va_list)'
+| |-ParmVarDecl 0x9baead9d0 <col:14, col:32> col:32 __stream 'FILE *restrict'
+| |-ParmVarDecl 0x9baeada50 <col:42, col:66> col:66 __format 'const char *restrict'
+| |-ParmVarDecl 0x9baeadac8 <col:76> col:83 'va_list':'char *'
+| |-BuiltinAttr 0x9baeadf70 <<invalid sloc>> Inherited Implicit 1366
+| `-FormatAttr 0x9baeadf08 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:17, col:59> scanf 2 0
+|-FunctionDecl 0x9baeae168 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:441:6> col:6 implicit vscanf 'int (const char *restrict, __builtin_va_list)' extern
+| |-ParmVarDecl 0x9baeae268 <<invalid sloc>> <invalid sloc> 'const char *restrict'
+| |-ParmVarDecl 0x9baeae2d0 <<invalid sloc>> <invalid sloc> '__builtin_va_list':'char *'
+| |-BuiltinAttr 0x9baeae210 <<invalid sloc>> Implicit 1376
+| `-FormatAttr 0x9baeae348 <col:6> Implicit scanf 1 0
+|-FunctionDecl 0x9baeae380 prev 0x9baeae168 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:61> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:441:6 vscanf 'int (const char *restrict, __builtin_va_list)'
+| |-ParmVarDecl 0x9baeae000 <col:13, col:37> col:37 __format 'const char *restrict'
+| |-ParmVarDecl 0x9baeae078 <col:47> col:54 'va_list':'char *'
+| |-BuiltinAttr 0x9baeae4a0 <<invalid sloc>> Inherited Implicit 1376
+| `-FormatAttr 0x9baeae438 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:17, col:59> scanf 1 0
+|-FunctionDecl 0x9baeae850 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:442:6> col:6 implicit vsnprintf 'int (char *restrict, unsigned long, const char *restrict, __builtin_va_list)' extern
+| |-ParmVarDecl 0x9baeae950 <<invalid sloc>> <invalid sloc> 'char *restrict'
+| |-ParmVarDecl 0x9baeae9b8 <<invalid sloc>> <invalid sloc> 'unsigned long'
+| |-ParmVarDecl 0x9baeaea20 <<invalid sloc>> <invalid sloc> 'const char *restrict'
+| |-ParmVarDecl 0x9baeaea88 <<invalid sloc>> <invalid sloc> '__builtin_va_list':'char *'
+| |-BuiltinAttr 0x9baeae8f8 <<invalid sloc>> Implicit 1389
+| |-FormatAttr 0x9baeaeb10 <col:6> Implicit printf 3 0
+| `-NoThrowAttr 0x9baeaeb48 <col:6> Implicit
+|-FunctionDecl 0x9baeaeb70 prev 0x9baeae850 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:442:6 vsnprintf 'int (char *restrict, unsigned long, const char *restrict, __builtin_va_list)'
+| |-ParmVarDecl 0x9baeae4e0 <col:16, col:54> col:54 __str 'char *restrict'
+| |-ParmVarDecl 0x9baeae558 <col:61, col:68> col:68 __size 'size_t':'unsigned long'
+| |-ParmVarDecl 0x9baeae5d8 <col:76, col:100> col:100 __format 'const char *restrict'
+| |-ParmVarDecl 0x9baeae650 <col:110> col:117 'va_list':'char *'
+| |-BuiltinAttr 0x9baeaeca0 <<invalid sloc>> Inherited Implicit 1389
+| |-NoThrowAttr 0x9baeaecc8 <col:6> Inherited Implicit
+| `-FormatAttr 0x9baeaec38 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 3 0
+|-FunctionDecl 0x9baeaf000 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:443:6> col:6 implicit vsscanf 'int (const char *restrict, const char *restrict, __builtin_va_list)' extern
+| |-ParmVarDecl 0x9baeaf100 <<invalid sloc>> <invalid sloc> 'const char *restrict'
+| |-ParmVarDecl 0x9baeaf168 <<invalid sloc>> <invalid sloc> 'const char *restrict'
+| |-ParmVarDecl 0x9baeaf1d0 <<invalid sloc>> <invalid sloc> '__builtin_va_list':'char *'
+| |-BuiltinAttr 0x9baeaf0a8 <<invalid sloc>> Implicit 1374
+| `-FormatAttr 0x9baeaf250 <col:6> Implicit scanf 2 0
+|-FunctionDecl 0x9baeaf288 prev 0x9baeaf000 <col:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:61> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:443:6 vsscanf 'int (const char *restrict, const char *restrict, __builtin_va_list)'
+| |-ParmVarDecl 0x9baeaed08 <col:14, col:38> col:38 __str 'const char *restrict'
+| |-ParmVarDecl 0x9baeaed88 <col:45, col:69> col:69 __format 'const char *restrict'
+| |-ParmVarDecl 0x9baeaee00 <col:79> col:86 'va_list':'char *'
+| |-BuiltinAttr 0x9baeaf3b0 <<invalid sloc>> Inherited Implicit 1374
+| `-FormatAttr 0x9baeaf348 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:434:17, col:59> scanf 2 0
+|-TypedefDecl 0x9baeaf450 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ssize_t.h:31:1, col:33> col:33 referenced ssize_t '__darwin_ssize_t':'long'
+| `-ElaboratedType 0x9baeaf410 '__darwin_ssize_t' sugar
+|   `-TypedefType 0x9baeaf3e0 '__darwin_ssize_t' sugar
+|     |-Typedef 0x9bae6c6a0 '__darwin_ssize_t'
+|     `-BuiltinType 0x9bac6e130 'long'
+|-FunctionDecl 0x9baeaf6e0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:457:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3490:126> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:457:5 dprintf 'int (int, const char *restrict, ...)'
+| |-ParmVarDecl 0x9baeaf4c0 <col:13> col:16 'int'
+| |-ParmVarDecl 0x9baeaf540 <col:18, col:29> col:41 'const char *restrict'
+| |-FormatAttr 0x9baeaf798 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 2 3
+| `-AvailabilityAttr 0x9baeaf800 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3490:89, col:124> macos 10.7 0 0 "" "" 0
+|-FunctionDecl 0x9baeafb48 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:458:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3490:126> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:458:5 vdprintf 'int (int, const char *restrict, va_list)'
+| |-ParmVarDecl 0x9baeaf8a8 <col:14> col:17 'int'
+| |-ParmVarDecl 0x9baeaf928 <col:19, col:30> col:42 'const char *restrict'
+| |-ParmVarDecl 0x9baeaf9a0 <col:44> col:51 'va_list':'char *'
+| |-FormatAttr 0x9baeafc08 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 2 0
+| `-AvailabilityAttr 0x9baeafc70 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3490:89, col:124> macos 10.7 0 0 "" "" 0
+|-FunctionDecl 0x9baeb00e0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:459:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3490:126> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:459:9 getdelim 'ssize_t (char **restrict, size_t *restrict, int, FILE *restrict)'
+| |-ParmVarDecl 0x9baeafda8 <col:18, col:61> col:61 __linep 'char **restrict'
+| |-ParmVarDecl 0x9baeafe88 <col:70, col:90> col:90 __linecapp 'size_t *restrict'
+| |-ParmVarDecl 0x9baeaff08 <col:102, col:106> col:106 __delimiter 'int'
+| |-ParmVarDecl 0x9baeaff88 <col:119, col:137> col:137 __stream 'FILE *restrict'
+| `-AvailabilityAttr 0x9baeb01a8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3490:89, col:124> macos 10.7 0 0 "" "" 0
+|-FunctionDecl 0x9baeb04d0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:460:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3490:126> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:460:9 getline 'ssize_t (char **restrict, size_t *restrict, FILE *restrict)'
+| |-ParmVarDecl 0x9baeb0280 <col:17, col:60> col:60 __linep 'char **restrict'
+| |-ParmVarDecl 0x9baeb0300 <col:69, col:89> col:89 __linecapp 'size_t *restrict'
+| |-ParmVarDecl 0x9baeb0380 <col:101, col:119> col:119 __stream 'FILE *restrict'
+| `-AvailabilityAttr 0x9baeb0590 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h:3490:89, col:124> macos 10.7 0 0 "" "" 0
+|-FunctionDecl 0x9baeb08e8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:461:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:244:82> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:461:7 fmemopen 'FILE *(void *restrict, size_t, const char *restrict)'
+| |-ParmVarDecl 0x9baeb0668 <col:16, col:34> col:34 __buf 'void *restrict'
+| |-ParmVarDecl 0x9baeb06e0 <col:60, col:67> col:67 __size 'size_t':'unsigned long'
+| |-ParmVarDecl 0x9baeb0760 <col:75, col:99> col:99 __mode 'const char *restrict'
+| |-AvailabilityAttr 0x9baeb09a8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:244:39, col:80> macos 10.13 0 0 "" "" 0
+| |-AvailabilityAttr 0x9baeb0a68 <col:39, col:80> ios 11.0 0 0 "" "" 0
+| |-AvailabilityAttr 0x9baeb0af8 <col:39, col:80> tvos 11.0 0 0 "" "" 0
+| `-AvailabilityAttr 0x9baeb0b88 <col:39, col:80> watchos 4.0 0 0 "" "" 0
+|-FunctionDecl 0x9baeb0e18 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:462:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:244:82> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:462:7 open_memstream 'FILE *(char **, size_t *)'
+| |-ParmVarDecl 0x9baeb0c30 <col:22, col:51> col:51 __bufp 'char **'
+| |-ParmVarDecl 0x9baeb0cb0 <col:59, col:67> col:67 __sizep 'size_t *'
+| |-AvailabilityAttr 0x9baeb0ed0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h:244:39, col:80> macos 10.13 0 0 "" "" 0
+| |-AvailabilityAttr 0x9baeb1000 <col:39, col:80> ios 11.0 0 0 "" "" 0
+| |-AvailabilityAttr 0x9baeb1090 <col:39, col:80> tvos 11.0 0 0 "" "" 0
+| `-AvailabilityAttr 0x9baeb1120 <col:39, col:80> watchos 4.0 0 0 "" "" 0
+|-VarDecl 0x9baeb11c8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:472:1, col:20> col:20 sys_nerr 'const int' extern
+|-VarDecl 0x9baeb12b8 <line:473:1, col:42> col:30 sys_errlist 'const char *const[]' extern
+|-FunctionDecl 0x9baeb1540 <line:475:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:475:6 asprintf 'int (char **restrict, const char *restrict, ...)'
+| |-ParmVarDecl 0x9baeb1338 <col:15, col:32> col:43 'char **restrict'
+| |-ParmVarDecl 0x9baeb13b8 <col:45, col:56> col:68 'const char *restrict'
+| `-FormatAttr 0x9baeb15f8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 2 3
+|-FunctionDecl 0x9baeb1710 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:476:1, col:56> col:18 ctermid_r 'char *(char *)'
+| `-ParmVarDecl 0x9baeb1678 <col:28, col:33> col:56 'char *'
+|-FunctionDecl 0x9baeb1978 <line:477:1, col:55> col:27 fgetln 'char *(FILE *, size_t *)'
+| |-ParmVarDecl 0x9baeb17d8 <col:34, col:39> col:40 'FILE *'
+| `-ParmVarDecl 0x9baeb1858 <col:42, col:50> col:50 __len 'size_t *'
+|-FunctionDecl 0x9baeb1bc8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:119:25, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:478:81> col:15 fmtcheck 'const char *(const char *, const char *)'
+| |-ParmVarDecl 0x9baeb1a48 <col:24, col:35> col:36 'const char *'
+| |-ParmVarDecl 0x9baeb1ac8 <col:38, col:49> col:50 'const char *'
+| `-FormatArgAttr 0x9baeb1e08 <col:67, col:79> 2
+|-FunctionDecl 0x9baeb1f10 <line:479:1, col:19> col:6 fpurge 'int (FILE *)'
+| `-ParmVarDecl 0x9baeb1e78 <col:13, col:18> col:19 'FILE *'
+|-FunctionDecl 0x9baeb3240 <line:480:1, col:70> col:7 setbuffer 'void (FILE *, char *, int)'
+| |-ParmVarDecl 0x9baeb3000 <col:17, col:22> col:23 'FILE *'
+| |-ParmVarDecl 0x9baeb3080 <col:25, col:30> col:58 'char *'
+| `-ParmVarDecl 0x9baeb3100 <col:60, col:64> col:64 __size 'int'
+|-FunctionDecl 0x9baeb33b0 <line:481:1, col:23> col:6 setlinebuf 'int (FILE *)'
+| `-ParmVarDecl 0x9baeb3318 <col:17, col:22> col:23 'FILE *'
+|-FunctionDecl 0x9baeb3708 <line:482:1, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:62> /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:482:6 vasprintf 'int (char **restrict, const char *restrict, va_list)'
+| |-ParmVarDecl 0x9baeb3478 <col:16, col:33> col:44 'char **restrict'
+| |-ParmVarDecl 0x9baeb34f8 <col:46, col:57> col:69 'const char *restrict'
+| |-ParmVarDecl 0x9baeb3570 <col:71> col:78 'va_list':'char *'
+| `-FormatAttr 0x9baeb37c8 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:430:17, col:60> printf 2 0
+|-FunctionDecl 0x9baeb8248 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:488:1, line:492:31> line:488:7 funopen 'FILE *(const void *, int (* _Nullable)(void *, char *, int), int (* _Nullable)(void *, const char *, int), fpos_t (* _Nullable)(void *, fpos_t, int), int (* _Nullable)(void *))'
+| |-ParmVarDecl 0x9baeb3848 <col:15, col:26> col:27 'const void *'
+| |-ParmVarDecl 0x9baeb3ab0 <line:489:6, col:13> col:22 'int (* _Nullable)(void *, char *, int)':'int (*)(void *, char *, int)'
+| |-ParmVarDecl 0x9baeb3d18 <line:490:6, col:13> col:22 'int (* _Nullable)(void *, const char *, int)':'int (*)(void *, const char *, int)'
+| |-ParmVarDecl 0x9baeb3f70 <line:491:6, col:16> col:25 'fpos_t (* _Nullable)(void *, fpos_t, int)':'fpos_t (*)(void *, fpos_t, int)'
+| `-ParmVarDecl 0x9baeb80d8 <line:492:6, col:13> col:22 'int (* _Nullable)(void *)':'int (*)(void *)'
+|-FunctionDecl 0x9baeb86a0 </Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h:38:1, line:39:34> line:38:12 __snprintf_chk 'int (char *restrict, size_t, int, size_t, const char *restrict, ...)' extern
+| |-ParmVarDecl 0x9baeb8330 <col:28, col:33> col:67 'char *restrict'
+| |-ParmVarDecl 0x9baeb83a8 <col:69, col:76> col:76 __maxlen 'size_t':'unsigned long'
+| |-ParmVarDecl 0x9baeb8428 <col:86> col:89 'int'
+| |-ParmVarDecl 0x9baeb84a0 <col:91> col:97 'size_t':'unsigned long'
+| `-ParmVarDecl 0x9baeb8520 <line:39:6, col:17> col:29 'const char *restrict'
+|-FunctionDecl 0x9baeb8b78 <line:40:1, line:41:38> line:40:12 __vsnprintf_chk 'int (char *restrict, size_t, int, size_t, const char *restrict, va_list)' extern
+| |-ParmVarDecl 0x9baeb8788 <col:29, col:34> col:68 'char *restrict'
+| |-ParmVarDecl 0x9baeb8800 <col:70, col:77> col:77 __maxlen 'size_t':'unsigned long'
+| |-ParmVarDecl 0x9baeb8880 <col:87> col:90 'int'
+| |-ParmVarDecl 0x9baeb88f8 <col:92> col:98 'size_t':'unsigned long'
+| |-ParmVarDecl 0x9baeb8978 <line:41:6, col:17> col:29 'const char *restrict'
+| `-ParmVarDecl 0x9baeb89f0 <col:31> col:38 'va_list':'char *'
+|-FunctionDecl 0x9baeb8f50 <line:43:1, line:44:34> line:43:12 __sprintf_chk 'int (char *restrict, int, size_t, const char *restrict, ...)' extern
+| |-ParmVarDecl 0x9baeb8c68 <col:27, col:32> col:67 'char *restrict'
+| |-ParmVarDecl 0x9baeb8ce8 <col:69> col:72 'int'
+| |-ParmVarDecl 0x9baeb8d60 <col:74> col:80 'size_t':'unsigned long'
+| `-ParmVarDecl 0x9baeb8de0 <line:44:6, col:17> col:29 'const char *restrict'
+|-FunctionDecl 0x9baeb9398 <line:45:1, line:46:38> line:45:12 __vsprintf_chk 'int (char *restrict, int, size_t, const char *restrict, va_list)' extern
+| |-ParmVarDecl 0x9baeb9038 <col:28, col:33> col:68 'char *restrict'
+| |-ParmVarDecl 0x9baeb90b8 <col:70> col:73 'int'
+| |-ParmVarDecl 0x9baeb9130 <col:75> col:81 'size_t':'unsigned long'
+| |-ParmVarDecl 0x9baeb91b0 <line:46:6, col:17> col:29 'const char *restrict'
+| `-ParmVarDecl 0x9baeb9228 <col:31> col:38 'va_list':'char *'
+`-FunctionDecl 0x9baeb94c8 <test_suite/beginner_programs/test1_missing_semicolon.c:7:1, line:11:1> line:7:5 main 'int ()'
+  `-CompoundStmt 0x9baeb9658 <col:12, line:11:1>
+    |-DeclStmt 0x9baeb9610 <line:8:5, line:9:5>
+    | `-VarDecl 0x9baeb9588 <line:8:5, col:13> col:9 x 'int' cinit
+    |   `-IntegerLiteral 0x9baeb95f0 <col:13> 'int' 10
+    `-ReturnStmt 0x9baeb9648 <line:10:5, col:12>
+      `-IntegerLiteral 0x9baeb9628 <col:12> 'int' 0

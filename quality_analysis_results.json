@@ -1,0 +1,270 @@
+{
+  "summary": {
+    "total_analyzed": 5,
+    "average_scores": {
+      "readability": 69.188,
+      "correctness": 36.0,
+      "security": 0.0,
+      "completeness": 50.0,
+      "overall": 232.448
+    }
+  },
+  "results": [
+    {
+      "error_message": "warning: implicit conversion from 'int' to 'char'",
+      "error_type": "implicit_conversion",
+      "explanation": "The compiler detected a syntax or semantic error: warning: implicit conversion from 'int' to 'char'. This violates C language rules and must be fixed for successful compilation.",
+      "code_context": "char c = value;",
+      "readability": {
+        "word_count": 27,
+        "sentence_count": 2,
+        "avg_words_per_sentence": 13.5,
+        "complexity_ratio": 0.11,
+        "readability_score": 68.64,
+        "rating": "good"
+      },
+      "correctness": {
+        "expected_concepts": [
+          "implicit",
+          "conversion",
+          "cast",
+          "type",
+          "precision"
+        ],
+        "matched_concepts": [
+          "implicit",
+          "conversion"
+        ],
+        "missing_concepts": [
+          "cast",
+          "type",
+          "precision"
+        ],
+        "coverage": 40.0,
+        "correctness_rating": "acceptable"
+      },
+      "security_awareness": {
+        "security_mentions": [],
+        "security_mention_count": 0,
+        "has_formal_security_analysis": true,
+        "security_rating": "low"
+      },
+      "completeness": {
+        "components": {
+          "problem_description": true,
+          "solution_guidance": true,
+          "example_provided": false,
+          "cause_explanation": false
+        },
+        "completeness_score": 50.0,
+        "completeness_rating": "good"
+      },
+      "overall_score": 257.41,
+      "overall_rating": "excellent"
+    },
+    {
+      "error_message": "warning: unused return value of 'read' function",
+      "error_type": "unused_result",
+      "explanation": "The compiler detected a syntax or semantic error: warning: unused return value of 'read' function. This violates C language rules and must be fixed for successful compilation.",
+      "code_context": "read(fd, buffer, size);",
+      "readability": {
+        "word_count": 27,
+        "sentence_count": 2,
+        "avg_words_per_sentence": 13.5,
+        "complexity_ratio": 0.11,
+        "readability_score": 68.64,
+        "rating": "good"
+      },
+      "correctness": {
+        "expected_concepts": [
+          "return value",
+          "unused",
+          "check",
+          "error handling"
+        ],
+        "matched_concepts": [
+          "return value",
+          "unused"
+        ],
+        "missing_concepts": [
+          "check",
+          "error handling"
+        ],
+        "coverage": 50.0,
+        "correctness_rating": "acceptable"
+      },
+      "security_awareness": {
+        "security_mentions": [],
+        "security_mention_count": 0,
+        "has_formal_security_analysis": false,
+        "security_rating": "low"
+      },
+      "completeness": {
+        "components": {
+          "problem_description": true,
+          "solution_guidance": true,
+          "example_provided": false,
+          "cause_explanation": false
+        },
+        "completeness_score": 50.0,
+        "completeness_rating": "good"
+      },
+      "overall_score": 319.91,
+      "overall_rating": "excellent"
+    },
+    {
+      "error_message": "warning: format string is not a string literal",
+      "error_type": "format_string",
+      "explanation": "The compiler detected a syntax or semantic error: warning: format string is not a string literal. This violates C language rules and must be fixed for successful compilation.",
+      "code_context": "printf(user_input);",
+      "readability": {
+        "word_count": 28,
+        "sentence_count": 2,
+        "avg_words_per_sentence": 14.0,
+        "complexity_ratio": 0.07,
+        "readability_score": 71.86,
+        "rating": "excellent"
+      },
+      "correctness": {
+        "expected_concepts": [
+          "format",
+          "specifier",
+          "type",
+          "argument",
+          "printf"
+        ],
+        "matched_concepts": [
+          "format"
+        ],
+        "missing_concepts": [
+          "specifier",
+          "type",
+          "argument",
+          "printf"
+        ],
+        "coverage": 20.0,
+        "correctness_rating": "poor"
+      },
+      "security_awareness": {
+        "security_mentions": [],
+        "security_mention_count": 0,
+        "has_formal_security_analysis": false,
+        "security_rating": "low"
+      },
+      "completeness": {
+        "components": {
+          "problem_description": true,
+          "solution_guidance": true,
+          "example_provided": false,
+          "cause_explanation": false
+        },
+        "completeness_score": 50.0,
+        "completeness_rating": "good"
+      },
+      "overall_score": 132.62,
+      "overall_rating": "excellent"
+    },
+    {
+      "error_message": "error: use of undeclared identifier 'x'",
+      "error_type": "undeclared",
+      "explanation": "This error means a variable is being used before it has been declared. In C, variables must be declared with a data type before they can be used.",
+      "code_context": "x = 5;",
+      "readability": {
+        "word_count": 28,
+        "sentence_count": 2,
+        "avg_words_per_sentence": 14.0,
+        "complexity_ratio": 0.07,
+        "readability_score": 71.86,
+        "rating": "excellent"
+      },
+      "correctness": {
+        "expected_concepts": [
+          "declare",
+          "undefined",
+          "not declared",
+          "scope",
+          "identifier"
+        ],
+        "matched_concepts": [
+          "declare"
+        ],
+        "missing_concepts": [
+          "undefined",
+          "not declared",
+          "scope",
+          "identifier"
+        ],
+        "coverage": 20.0,
+        "correctness_rating": "poor"
+      },
+      "security_awareness": {
+        "security_mentions": [],
+        "security_mention_count": 0,
+        "has_formal_security_analysis": false,
+        "security_rating": "low"
+      },
+      "completeness": {
+        "components": {
+          "problem_description": true,
+          "solution_guidance": true,
+          "example_provided": false,
+          "cause_explanation": false
+        },
+        "completeness_score": 50.0,
+        "completeness_rating": "good"
+      },
+      "overall_score": 132.62,
+      "overall_rating": "excellent"
+    },
+    {
+      "error_message": "warning: comparison of integers of different signs",
+      "error_type": "sign_compare",
+      "explanation": "The compiler detected a syntax or semantic error: warning: comparison of integers of different signs. This violates C language rules and must be fixed for successful compilation.",
+      "code_context": "if (i < len)",
+      "readability": {
+        "word_count": 27,
+        "sentence_count": 2,
+        "avg_words_per_sentence": 13.5,
+        "complexity_ratio": 0.15,
+        "readability_score": 64.94,
+        "rating": "good"
+      },
+      "correctness": {
+        "expected_concepts": [
+          "signed",
+          "unsigned",
+          "comparison",
+          "different signs"
+        ],
+        "matched_concepts": [
+          "comparison",
+          "different signs"
+        ],
+        "missing_concepts": [
+          "signed",
+          "unsigned"
+        ],
+        "coverage": 50.0,
+        "correctness_rating": "acceptable"
+      },
+      "security_awareness": {
+        "security_mentions": [],
+        "security_mention_count": 0,
+        "has_formal_security_analysis": false,
+        "security_rating": "low"
+      },
+      "completeness": {
+        "components": {
+          "problem_description": true,
+          "solution_guidance": true,
+          "example_provided": false,
+          "cause_explanation": false
+        },
+        "completeness_score": 50.0,
+        "completeness_rating": "good"
+      },
+      "overall_score": 319.68,
+      "overall_rating": "excellent"
+    }
+  ]
+}
