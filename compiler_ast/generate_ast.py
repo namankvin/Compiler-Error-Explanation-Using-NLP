@@ -4,13 +4,16 @@ import os
 AST_DIR = "compiler_ast"
 AST_FILE = os.path.join(AST_DIR, "ast_output.txt")
 
-def generate_ast(source_file):
+def generate_ast(source_file, compiler="clang"):
     print("Generating AST...")
 
     os.makedirs(AST_DIR, exist_ok=True)
 
+    # AST dump flags are clang-specific.
+    ast_compiler = compiler if compiler == "clang" else "clang"
+
     command = [
-        "clang",
+        ast_compiler,
         "-fno-color-diagnostics",
         "-Xclang",
         "-ast-dump",
