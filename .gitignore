@@ -1,0 +1,29 @@
+.DS_Store
+
+# Python bytecode/cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Local virtual environment
+.venv/
+
+# Local build artifact
+a.out
+
+# Generated evaluation artifacts
+evaluation_metrics.json
+human_validation_sample.csv
+
+# Generated reports/logs (legacy root locations)
+benchmark_summary.json
+simulated_feedback.json
+quality_analysis_results.json
+model_outputs.csv
+eval_output.txt
+test_results.json
+unified_logs.txt
+compiler_ast/ast_output.txt
+
+# Dedicated generated outputs folder
+artifacts/

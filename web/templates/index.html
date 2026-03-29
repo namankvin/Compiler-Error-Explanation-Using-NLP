@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compiler NLP Explainer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,600;10..48,800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="page-glow"></div>
+  <main class="app-shell">
+    <section class="hero">
+      <p class="eyebrow">Compiler Error Explanation Using NLP</p>
+      <h1>Paste C Code, Compile, and Understand the Error</h1>
+      <p class="subtitle">This interface compiles your code, extracts diagnostics, and explains each issue with your trained NLP stack.</p>
+      <div class="hero-meta">
+        <span class="chip">Model: {% if model_available %}Loaded{% else %}Fallback Rules{% endif %}</span>
+        <span class="chip">Live Compiler + Security Layer</span>
+      </div>
+    </section>
+
+    <section class="workspace">
+      <div class="panel input-panel">
+        <div class="panel-head">
+          <h2>Input</h2>
+          <button id="load-example" class="ghost-btn" type="button">Load Example</button>
+        </div>
+
+        <div class="controls">
+          <label>
+            Compiler
+            <select id="compiler">
+              <option value="clang" selected>clang</option>
+              <option value="gcc">gcc</option>
+            </select>
+          </label>
+
+          <label class="toggle">
+            <input id="warnings" type="checkbox" checked>
+            Enable warnings
+          </label>
+
+          <label class="toggle">
+            <input id="security" type="checkbox" checked>
+            Security analysis
+          </label>
+
+          <label class="toggle">
+            <input id="prefer-model" type="checkbox" checked>
+            Prefer NLP model
+          </label>
+        </div>
+
+        <textarea id="code-input" spellcheck="false" aria-label="C source code input"></textarea>
+
+        <div class="actions">
+          <button id="analyze-btn" class="primary-btn" type="button">Run Analysis</button>
+        </div>
+      </div>
+
+      <div class="panel output-panel">
+        <div class="panel-head">
+          <h2>Output</h2>
+          <span id="runtime" class="runtime"></span>
+        </div>
+        <div id="status" class="status">Ready.</div>
+        <div id="results" class="results"></div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    window.DEFAULT_CODE = {{ default_code|tojson }};
+  </script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

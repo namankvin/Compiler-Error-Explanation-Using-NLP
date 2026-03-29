@@ -1,15 +1,20 @@
+import argparse
+import os
 import subprocess
+import tempfile
+
 import torch
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-from context_extractor import extract_context
+
+from compiler_ast.ast_utils import parse_diagnostics
+from context_extractor import extract_context, extract_expected_actual
+from error_classifier import classify_error
 from security_explainer import (
     analyze_security_implications,
+    compare_explanations,
     get_security_recommendation,
-    generate_security_report,
-    compare_explanations
 )
 
-# Load trained model
 device = "mps" if torch.backends.mps.is_available() else "cpu"
 
 try:
@@ -50,81 +55,76 @@ ERROR_EXPLANATIONS = {
 
 
 def get_explanation_for_error(error_text):
-    """Get explanation based on error type using pattern matching"""
+    """Get explanation based on error type using pattern matching."""
     error_lower = error_text.lower()
-    
+
     for pattern, explanation in ERROR_EXPLANATIONS.items():
         if pattern.lower() in error_lower:
             return explanation
-    
+
     return f"The compiler detected a syntax or semantic error: {error_text}. This violates C language rules and must be fixed for successful compilation."
 
 
-def compile_code(file, flags=None):
-    """Compile C code and capture compiler errors"""
-    
-    cmd = ["clang"]
+def compile_code(file_path, compiler="clang", flags=None, syntax_only=True):
+    """Compile C code and capture compiler diagnostics."""
+    cmd = [compiler]
+    if syntax_only:
+        cmd.append("-fsyntax-only")
     if flags:
         cmd.extend(flags)
-    cmd.append(file)
+    cmd.append(file_path)
 
-    result = subprocess.run(
-        cmd,
-        capture_output=True,
-        text=True
-    )
+    try:
+        result = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+        )
+    except FileNotFoundError as exc:
+        raise RuntimeError(f"Compiler '{compiler}' not found on this system.") from exc
 
     return result.stderr
 
 
-def extract_error_and_code(error_message, file):
-    """Extract error message and code context"""
+def extract_diagnostics_with_context(error_message, file_path):
+    """Parse all diagnostics and enrich with code context/classification."""
+    diagnostics = parse_diagnostics(error_message)
+    if not diagnostics:
+        return []
 
-    error_text = None
-    line_number = None
+    enriched = []
+    for diagnostic in diagnostics:
+        line_number = diagnostic["line"]
+        context_lines = extract_context(file_path, line_number)
+        code_context = "\n".join(context_lines)
 
-    lines = error_message.split("\n")
+        classification = classify_error(diagnostic["raw"])
+        expected_actual = extract_expected_actual(diagnostic["message"])
 
-    for line in lines:
-        # Look for both errors and warnings
-        if "error:" in line or "warning:" in line:
+        enriched.append(
+            {
+                **diagnostic,
+                "code_context": code_context,
+                "code_context_lines": context_lines,
+                "classification": classification,
+                "expected_actual": expected_actual,
+            }
+        )
 
-            # Example line:
-            # test.c:4:15: error: expected ';' at end of declaration
-            # test.c:9:27: warning: format specifies type 'int'
-
-            parts = line.split("error:") if "error:" in line else line.split("warning:")
-            if len(parts) > 1:
-                error_text = parts[1].strip()
-
-                try:
-                    location = line.split(":")
-                    line_number = int(location[1])
-                except:
-                    line_number = None
-
-                break
-
-    code_context = "<unknown>"
-
-    if line_number:
-        try:
-            code_context = "\n".join(extract_context(file, line_number))
-        except:
-            pass
-
-    return error_text, code_context
+    return enriched
 
 
-def format_error(error_message, file):
-    """Convert compiler error to model input"""
+def extract_error_and_code(error_message, file_path):
+    """Backward-compatible helper that returns first diagnostic and context."""
+    diagnostics = extract_diagnostics_with_context(error_message, file_path)
+    if not diagnostics:
+        return None, "<unknown>"
 
-    error_text, code_context = extract_error_and_code(error_message, file)
+    return diagnostics[0]["message"], diagnostics[0]["code_context"]
 
-    if not error_text:
-        return None
 
-    input_text = f"""Explain the following compiler error:
+def format_diagnostic_input(error_text, code_context):
+    return f"""Explain the following compiler error:
 
 Error:
 {error_text}
@@ -133,118 +133,285 @@ Code:
 {code_context}
 """
 
-    return input_text
+
+def format_error(error_message, file_path):
+    """Convert first compiler diagnostic to model input (legacy behavior)."""
+    error_text, code_context = extract_error_and_code(error_message, file_path)
+
+    if not error_text:
+        return None
+
+    return format_diagnostic_input(error_text, code_context)
 
 
-def generate_explanation(input_text, error_text):
-    """Generate explanation using trained NLP model or fallback to rule-based"""
-    
-    # First try rule-based explanation
+def _generate_model_explanation(input_text):
+    if not MODEL_AVAILABLE:
+        return None
+
+    inputs = tokenizer(
+        input_text,
+        return_tensors="pt",
+        truncation=True,
+        max_length=512,
+    ).to(device)
+
+    with torch.no_grad():
+        outputs = model.generate(
+            **inputs,
+            max_new_tokens=150,
+            num_beams=5,
+            repetition_penalty=1.2,
+            no_repeat_ngram_size=3,
+            early_stopping=True,
+            do_sample=False,
+        )
+
+    return tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
+
+
+def _is_low_quality_explanation(explanation, input_text):
+    if not explanation:
+        return True
+
+    normalized = " ".join(explanation.split())
+    if len(normalized) < 35:
+        return True
+
+    # Model copied prompt.
+    if input_text.strip()[:50] in normalized:
+        return True
+
+    # Obvious repetitive degeneration.
+    words = normalized.lower().split()
+    if len(words) > 20:
+        unique_ratio = len(set(words)) / len(words)
+        if unique_ratio < 0.35:
+            return True
+
+    return False
+
+
+def generate_explanation(input_text, error_text, prefer_model=True):
+    """Generate explanation using model-first strategy with robust fallback."""
+    generic_fallback = (
+        f"The compiler detected a syntax or semantic error: {error_text}. "
+        "This violates C language rules and must be fixed for successful compilation."
+    )
     rule_explanation = get_explanation_for_error(error_text)
-    
-    # If we have a rule-based match, use it
-    if rule_explanation != f'The compiler detected a syntax or semantic error: {error_text}. This violates C language rules and must be fixed for successful compilation.':
-        return rule_explanation
-    
-    # Fallback to model if available
-    if MODEL_AVAILABLE:
-        inputs = tokenizer(
-            input_text,
-            return_tensors="pt",
-            truncation=True,
-            max_length=512
-        ).to(device)
+    has_specific_rule = rule_explanation != generic_fallback
 
-        with torch.no_grad():
-            outputs = model.generate(
-                **inputs,
-                max_new_tokens=150,
-                num_beams=5,
-                repetition_penalty=1.5,
-                no_repeat_ngram_size=2,
-                early_stopping=True,
-                do_sample=False
+    if prefer_model and MODEL_AVAILABLE:
+        model_explanation = _generate_model_explanation(input_text)
+        if model_explanation and not _is_low_quality_explanation(model_explanation, input_text):
+            return model_explanation
+
+    if has_specific_rule:
+        return rule_explanation
+
+    if not prefer_model and MODEL_AVAILABLE:
+        model_explanation = _generate_model_explanation(input_text)
+        if model_explanation and not _is_low_quality_explanation(model_explanation, input_text):
+            return model_explanation
+
+    return generic_fallback
+
+
+def explain_compiler_output(
+    error_message,
+    file_path,
+    show_security=False,
+    show_comparison=False,
+    prefer_model=True,
+):
+    diagnostics = extract_diagnostics_with_context(error_message, file_path)
+    if not diagnostics:
+        return []
+
+    explained = []
+    for diagnostic in diagnostics:
+        error_text = diagnostic["message"]
+        code_context = diagnostic["code_context"]
+        input_text = format_diagnostic_input(error_text, code_context)
+
+        explanation = generate_explanation(input_text, error_text, prefer_model=prefer_model)
+        security_analysis = analyze_security_implications(error_text, code_context)
+
+        payload = {
+            "diagnostic": diagnostic,
+            "input_text": input_text,
+            "explanation": explanation,
+            "security_analysis": security_analysis,
+            "security_recommendations": [],
+            "comparison": None,
+        }
+
+        if security_analysis:
+            payload["security_recommendations"] = get_security_recommendation(
+                security_analysis.get("category", "")
             )
 
-        explanation = tokenizer.decode(outputs[0], skip_special_tokens=True)
-        
-        # If model just copies input, use generic fallback
-        if input_text.strip()[:50] in explanation or len(explanation) < 20:
-            return f"The compiler detected a syntax or semantic error: {error_text}. This violates C language rules and must be fixed for successful compilation."
-        
-        return explanation.strip()
-    
-    return f"The compiler detected a syntax or semantic error: {error_text}. This violates C language rules and must be fixed for successful compilation."
+        if show_comparison:
+            payload["comparison"] = compare_explanations(explanation, security_analysis)
+
+        explained.append(payload)
+
+    return explained
 
 
-def explain_file(file, show_security=False, show_comparison=False, compiler_flags=None):
+def explain_source_code(
+    source_code,
+    compiler="clang",
+    compiler_flags=None,
+    show_security=True,
+    prefer_model=True,
+):
+    """Compile source text and return structured diagnostics + explanations."""
+    temp_path = None
+    try:
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".c", delete=False) as temp_file:
+            temp_file.write(source_code)
+            temp_path = temp_file.name
 
-    print(f"\nCompiling {file}...\n")
+        stderr_output = compile_code(temp_path, compiler=compiler, flags=compiler_flags)
+        diagnostics = parse_diagnostics(stderr_output)
 
-    error_message = compile_code(file, compiler_flags)
+        if not diagnostics:
+            return {
+                "success": True,
+                "compiler_output": stderr_output,
+                "diagnostics": [],
+            }
 
-    if not error_message:
+        explained = explain_compiler_output(
+            stderr_output,
+            temp_path,
+            show_security=show_security,
+            show_comparison=False,
+            prefer_model=prefer_model,
+        )
+
+        return {
+            "success": False,
+            "compiler_output": stderr_output,
+            "diagnostics": explained,
+        }
+    finally:
+        if temp_path and os.path.exists(temp_path):
+            os.remove(temp_path)
+
+def explain_file(
+    file_path,
+    show_security=False,
+    show_comparison=False,
+    compiler_flags=None,
+    compiler="clang",
+    prefer_model=True,
+):
+    print(f"\nCompiling {file_path} using {compiler}...\n")
+
+    error_message = compile_code(file_path, compiler=compiler, flags=compiler_flags)
+    diagnostics = parse_diagnostics(error_message)
+
+    if not diagnostics:
         print("No compiler errors detected.")
         return
 
     print("Compiler Output:\n")
     print(error_message)
 
-    input_text = format_error(error_message, file)
+    explained = explain_compiler_output(
+        error_message,
+        file_path,
+        show_security=show_security,
+        show_comparison=show_comparison,
+        prefer_model=prefer_model,
+    )
 
-    if not input_text:
-        print("Could not parse compiler error.")
-        return
+    for index, item in enumerate(explained, start=1):
+        diagnostic = item["diagnostic"]
+        classification = diagnostic["classification"]
+        expected_actual = diagnostic["expected_actual"]
 
-    # Extract error text for rule-based matching
-    error_text, code_context = extract_error_and_code(error_message, file)
-    
-    explanation = generate_explanation(input_text, error_text)
+        print("\n" + "=" * 60)
+        print(f"Diagnostic #{index}: {diagnostic['level'].upper()}")
+        print(f"Location: line {diagnostic['line']}, column {diagnostic['column']}")
+        print(f"Message: {diagnostic['message']}")
+        print(
+            f"Category: {classification['category']} | Phase: {classification['phase']}"
+        )
+        print(
+            f"Expected: {expected_actual['expected']} | Actual: {expected_actual['actual']}"
+        )
 
-    print("\nGenerated Explanation:\n")
-    print("--------------------------------------------------")
-    print(explanation)
-    print("--------------------------------------------------")
+        print("\nGenerated Explanation:")
+        print("-" * 60)
+        print(item["explanation"])
+        print("-" * 60)
 
-    # Security-aware analysis
-    if show_security or show_comparison:
-        security_analysis = analyze_security_implications(error_text, code_context)
-        
-        if show_comparison and security_analysis:
-            print(compare_explanations(explanation, security_analysis))
+        if show_comparison and item["comparison"]:
+            print(item["comparison"])
         elif show_security:
+            security_analysis = item["security_analysis"]
             if security_analysis:
-                print("\n🔒 SECURITY ANALYSIS:\n")
+                print("\nSecurity Analysis:")
                 print(f"Severity: {security_analysis.get('severity', 'Unknown')}")
                 print(f"Category: {security_analysis.get('category', 'Unknown')}")
                 print(f"CWE Reference: {security_analysis.get('cwe', 'N/A')}")
-                print(f"\nSecurity Risk:\n  {security_analysis.get('risk', 'N/A')}")
-                print(f"\nSecure Fix:\n  {security_analysis.get('explanation', 'N/A')}")
-                print(f"\n⚠️  Warning:\n  {security_analysis.get('insecure_fix_warning', 'N/A')}")
-                
-                print("\nRecommendations:")
-                for rec in get_security_recommendation(security_analysis.get('category', '')):
-                    print(f"  • {rec}")
+                print(f"Risk: {security_analysis.get('risk', 'N/A')}")
+                print(f"Secure Fix: {security_analysis.get('explanation', 'N/A')}")
+                print(
+                    f"Warning Against Insecure Fixes: "
+                    f"{security_analysis.get('insecure_fix_warning', 'N/A')}"
+                )
+                if item["security_recommendations"]:
+                    print("Recommendations:")
+                    for recommendation in item["security_recommendations"]:
+                        print(f"  - {recommendation}")
             else:
-                print("\nℹ️  No specific security concerns identified for this error.")
+                print("\nNo specific security concerns identified for this diagnostic.")
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Explain compiler diagnostics using NLP.")
+    parser.add_argument("file", help="Path to C source file")
+    parser.add_argument(
+        "--security",
+        "-s",
+        action="store_true",
+        help="Show security analysis for diagnostics",
+    )
+    parser.add_argument(
+        "--compare",
+        "-c",
+        action="store_true",
+        help="Show comparison between standard and security-aware explanations",
+    )
+    parser.add_argument(
+        "--warnings",
+        "-w",
+        action="store_true",
+        help="Enable common warning flags",
+    )
+    parser.add_argument(
+        "--compiler",
+        choices=["clang", "gcc"],
+        default="clang",
+        help="Compiler to use for diagnostics",
+    )
+    parser.add_argument(
+        "--rule-first",
+        action="store_true",
+        help="Use rule explanations first, then model fallback",
+    )
+    args = parser.parse_args()
 
-    import sys
+    warning_flags = ["-Wall", "-Wextra", "-Wpedantic"] if args.warnings else None
 
-    if len(sys.argv) < 2:
-        print("Usage: python explain_error.py <file.c> [--security] [--compare] [--warnings]")
-        print("  --security  Show security analysis for the error")
-        print("  --compare   Show comparison between standard and security-aware explanations")
-        print("  --warnings  Enable -Wall -Wextra compiler warnings")
-        exit()
-
-    file = sys.argv[1]
-    show_security = "--security" in sys.argv or "-s" in sys.argv
-    show_comparison = "--compare" in sys.argv or "-c" in sys.argv
-    use_warnings = "--warnings" in sys.argv or "-w" in sys.argv
-    
-    compiler_flags = ["-Wall", "-Wextra"] if use_warnings else None
-    
-    explain_file(file, show_security=show_security, show_comparison=show_comparison, compiler_flags=compiler_flags)
+    explain_file(
+        args.file,
+        show_security=args.security,
+        show_comparison=args.compare,
+        compiler_flags=warning_flags,
+        compiler=args.compiler,
+        prefer_model=not args.rule_first,
+    )

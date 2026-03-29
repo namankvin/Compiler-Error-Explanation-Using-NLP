@@ -6,19 +6,36 @@ Runs all test cases and collects compiler diagnostics for validation.
 """
 
 import subprocess
-import os
 import json
 from pathlib import Path
 from datetime import datetime
+
+from analyze_explanation_quality import ExplanationQualityAnalyzer
+from compiler_ast.ast_utils import parse_diagnostics
+from explain_error import explain_compiler_output
 
 
 class TestRunner:
     """Runs test cases and collects compiler output."""
     
-    def __init__(self, test_dir="test_suite"):
+    def __init__(self, test_dir="test_suite", include_explanations=True):
         self.test_dir = Path(test_dir)
         self.results = []
         self.compiler_flags = ["-Wall", "-Wextra", "-Wpedantic", "-Werror=format-security"]
+        self.include_explanations = include_explanations
+        self.quality_analyzer = ExplanationQualityAnalyzer()
+
+    def _categorize_error(self, raw_error: str) -> str:
+        raw_error = raw_error.lower()
+        if "incompatible" in raw_error or "conversion" in raw_error:
+            return "type_mismatch"
+        if "undeclared" in raw_error:
+            return "undeclared"
+        if "format" in raw_error:
+            return "format_string"
+        if "expected ';'" in raw_error:
+            return "syntax_error"
+        return "general"
         
     def run_test(self, filepath: Path) -> dict:
         """Run a single test file and collect results."""
@@ -32,6 +49,8 @@ class TestRunner:
             "return_code": None,
             "warnings": [],
             "errors": [],
+            "diagnostics": [],
+            "explanation_analyses": [],
             "timestamp": datetime.now().isoformat()
         }
         
@@ -54,6 +73,41 @@ class TestRunner:
                     result["warnings"].append(line.strip())
                 elif 'error:' in line:
                     result["errors"].append(line.strip())
+
+            diagnostics = parse_diagnostics(proc.stderr)
+            result["diagnostics"] = diagnostics
+
+            if self.include_explanations and diagnostics:
+                explained = explain_compiler_output(
+                    proc.stderr,
+                    str(filepath),
+                    show_security=True,
+                    show_comparison=False,
+                    prefer_model=True,
+                )
+
+                analyses = []
+                for item in explained:
+                    diagnostic = item["diagnostic"]
+                    error_text = diagnostic["message"]
+                    error_type = self._categorize_error(error_text)
+
+                    quality = self.quality_analyzer.analyze_explanation(
+                        error_text,
+                        item["explanation"],
+                        diagnostic.get("code_context", ""),
+                        error_type,
+                    )
+                    analyses.append(
+                        {
+                            "diagnostic": diagnostic,
+                            "explanation": item["explanation"],
+                            "security_analysis": item["security_analysis"],
+                            "quality": quality,
+                        }
+                    )
+
+                result["explanation_analyses"] = analyses
                     
         except subprocess.TimeoutExpired:
             result["error"] = "Compilation timeout"
@@ -98,11 +152,20 @@ class TestRunner:
     def save_results(self, output_file="test_results.json"):
         """Save test results to JSON file."""
         with open(output_file, 'w') as f:
+            quality_scores = []
+            for item in self.results:
+                for analysis in item.get("explanation_analyses", []):
+                    quality_scores.append(analysis["quality"]["overall_score"])
+
             json.dump({
                 "test_run": {
                     "timestamp": datetime.now().isoformat(),
                     "total_tests": len(self.results),
-                    "categories": list(set(r["category"] for r in self.results))
+                    "categories": list(set(r["category"] for r in self.results)),
+                    "explanations_evaluated": len(quality_scores),
+                    "average_explanation_quality": round(
+                        sum(quality_scores) / max(len(quality_scores), 1), 2
+                    ),
                 },
                 "results": self.results
             }, f, indent=2)
@@ -120,12 +183,20 @@ class TestRunner:
         
         total_warnings = sum(len(r["warnings"]) for r in self.results)
         total_errors = sum(len(r["errors"]) for r in self.results)
+        quality_scores = [
+            analysis["quality"]["overall_score"]
+            for result in self.results
+            for analysis in result.get("explanation_analyses", [])
+        ]
         
         print(f"\nTotal Tests: {total}")
         print(f"Passed (no errors): {passed}")
         print(f"Failed (with errors): {failed}")
         print(f"Total Warnings: {total_warnings}")
         print(f"Total Errors: {total_errors}")
+        if quality_scores:
+            avg_quality = sum(quality_scores) / len(quality_scores)
+            print(f"Average Explanation Quality: {avg_quality:.2f}/5")
         
         print("\nResults by Category:")
         categories = {}

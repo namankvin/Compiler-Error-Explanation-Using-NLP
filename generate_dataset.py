@@ -2,6 +2,7 @@ import os
 import random
 import csv
 import re
+import argparse
 
 from error_classifier import classify_error
 from context_extractor import extract_context
@@ -18,35 +19,6 @@ VALID_TYPES = ["int", "float", "double", "char"]
 # Use fixed variable names per generator to avoid cross-contamination
 VAR_NAMES = ["x", "count", "value", "num", "temp", "total", "score"]
 INT_VALUES = [str(random.randint(1, 100)) for _ in range(200)]
-
-# Fixed variable assignments for each error type to ensure consistency
-ERROR_VAR_MAP = {
-    0: ("a", "int"),       # missing semicolon
-    1: ("y", "int"),       # undefined variable
-    2: ("z", "int"),       # type mismatch
-    3: ("w", "int"),       # scope error
-    4: ("i", "int"),       # empty loop
-    5: ("flag", "int"),    # assignment in if
-    6: ("s1", "char*"),    # string compare
-    7: ("arr", "int"),     # sizeof array
-    8: ("input", "int"),   # scanf missing &
-    9: ("result", "int"),  # missing return
-    10: ("fval", "float"), # float modulo
-    11: ("uninit", "int"), # uninitialized use
-    12: ("myarr", "int"),  # array bounds
-    13: ("msg", "char*"),  # printf format
-    14: ("fnum", "float"), # scanf format
-    15: ("ptr", "int"),    # implicit declaration
-    16: ("p", "int"),      # pointer-int mismatch
-    17: ("val", "int"),    # dereference non-pointer
-    18: ("obj", "int"),    # member access non-struct
-    19: ("arg", "int"),    # function argument mismatch
-    20: ("ret", "int"),    # void return value
-    21: ("divisor", "int"),# division by zero
-    22: ("var", "int"),    # multiple definition
-    23: ("cond", "int"),   # bitwise-logical mixup
-    24: ("switchvar", "int") # duplicate case
-}
 
 
 # TEMPLATE GENERATORS
@@ -380,7 +352,7 @@ Code:
 
 def extract_variable_from_context(context):
     for line in context:
-        match = re.search(r"\b(int|float|double|char)\s+(\w+)\s*=", line)
+        match = re.search(r"\b(?:const\s+)?(?:unsigned\s+)?(int|float|double|char)\s*\*?\s*(\w+)(?:\s*\[\s*\d*\s*\])?\s*[,=;]", line)
         if match:
             return match.group(2)
     return None
@@ -504,11 +476,21 @@ def generate_dynamic_explanation(category, cleaned_message, context):
 
 # DATASET CREATION
 
-def generate_dataset():
+def generate_dataset(compiler="clang"):
 
     with open(OUTPUT_DATASET, "w", newline="") as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(["input_text", "target_text"])
+        writer.writerow(
+            [
+                "input_text",
+                "target_text",
+                "category",
+                "phase",
+                "violated_rule",
+                "compiler",
+                "error_line",
+            ]
+        )
 
         for generator in ERROR_GENERATORS:
 
@@ -522,7 +504,7 @@ def generate_dataset():
                 with open(TEMP_FILE, "w") as f:
                     f.write(code)
 
-                error_line, error_column, error_output = get_error_line(TEMP_FILE)
+                error_line, _, error_output = get_error_line(TEMP_FILE, compiler=compiler)
 
                 if not error_line:
                     continue
@@ -531,7 +513,6 @@ def generate_dataset():
                 category = classification["category"]
 
                 if category == "Unknown":
-                    # Debug print to see what's being missed
                     print(f"Unknown category for: {error_output}")
                     continue
 
@@ -544,7 +525,17 @@ def generate_dataset():
                 prompt = build_prompt(cleaned, context)
                 explanation = generate_dynamic_explanation(category, cleaned, context)
 
-                writer.writerow([prompt, explanation])
+                writer.writerow(
+                    [
+                        prompt,
+                        explanation,
+                        category,
+                        phase,
+                        violated_rule,
+                        compiler,
+                        error_line,
+                    ]
+                )
 
                 generated += 1
 
@@ -554,4 +545,12 @@ def generate_dataset():
 
 
 if __name__ == "__main__":
-    generate_dataset()
+    parser = argparse.ArgumentParser(description="Generate labeled compiler diagnostic dataset.")
+    parser.add_argument(
+        "--compiler",
+        choices=["clang", "gcc"],
+        default="clang",
+        help="Compiler used to collect diagnostics",
+    )
+    args = parser.parse_args()
+    generate_dataset(compiler=args.compiler)
