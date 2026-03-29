@@ -1,0 +1,11 @@
+flask
+transformers
+torch
+datasets
+evaluate
+sacrebleu
+absl-py
+rouge-score
+pandas
+numpy
+tqdm
