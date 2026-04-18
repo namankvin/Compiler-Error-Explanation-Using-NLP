@@ -1,5 +1,6 @@
 import argparse
 import os
+import re
 import subprocess
 import tempfile
 
@@ -51,6 +52,21 @@ ERROR_EXPLANATIONS = {
     "invalid operands to binary": "This error indicates that the operands used with a binary operator are not compatible with that operator.",
     "too few arguments to function call": "This error means a function call is missing required arguments.",
     "too many arguments to function call": "This error means a function call has more arguments than the function expects.",
+}
+
+
+CATEGORY_FIX_STEPS = {
+    "Missing token": "Insert the missing token at the reported location and recompile to reveal any follow-up errors.",
+    "Undefined symbol": "Declare the variable before first use and ensure the name matches exactly in all references.",
+    "Scope error": "Move the declaration to a broader scope or pass the value as a function argument.",
+    "Type mismatch": "Align both operand types using the correct variable type or an explicit safe conversion.",
+    "Implicit declaration": "Include the required header and verify the function signature before calling it.",
+    "Pointer-int mismatch": "Use a pointer variable for addresses and integer variables for numeric values; avoid unsafe casts.",
+    "Array bounds": "Ensure index checks use valid limits and never access beyond array length.",
+    "Printf format mismatch": "Match each format specifier with the exact argument type (for example %d for int, %s for char*).",
+    "Scanf format mismatch": "Match the scanf format with the destination type and pass addresses where required.",
+    "Function argument mismatch": "Update the call site to pass the exact number and type of parameters required by the function.",
+    "Unknown": "Start by fixing the first reported diagnostic, then recompile and continue iteratively.",
 }
 
 
@@ -188,11 +204,28 @@ def _is_low_quality_explanation(explanation, input_text):
         if unique_ratio < 0.35:
             return True
 
+    # Repeated sentence degeneration.
+    sentences = [
+        sentence.strip().lower()
+        for sentence in re.split(r"[.!?]+", normalized)
+        if sentence.strip()
+    ]
+    if len(sentences) >= 3 and len(set(sentences)) <= max(1, len(sentences) // 2):
+        return True
+
+    # Strongly generic explanations are less useful in competitive settings.
+    generic_phrases = [
+        "compiler detected a syntax or semantic error",
+        "must be fixed for successful compilation",
+    ]
+    if sum(1 for phrase in generic_phrases if phrase in normalized.lower()) >= 2:
+        return True
+
     return False
 
 
-def generate_explanation(input_text, error_text, prefer_model=True):
-    """Generate explanation using model-first strategy with robust fallback."""
+def _generate_explanation_with_source(input_text, error_text, prefer_model=True):
+    """Return explanation text and source type for downstream quality fusion."""
     generic_fallback = (
         f"The compiler detected a syntax or semantic error: {error_text}. "
         "This violates C language rules and must be fixed for successful compilation."
@@ -203,17 +236,73 @@ def generate_explanation(input_text, error_text, prefer_model=True):
     if prefer_model and MODEL_AVAILABLE:
         model_explanation = _generate_model_explanation(input_text)
         if model_explanation and not _is_low_quality_explanation(model_explanation, input_text):
-            return model_explanation
+            return model_explanation, "model"
 
     if has_specific_rule:
-        return rule_explanation
+        return rule_explanation, "rule"
 
     if not prefer_model and MODEL_AVAILABLE:
         model_explanation = _generate_model_explanation(input_text)
         if model_explanation and not _is_low_quality_explanation(model_explanation, input_text):
-            return model_explanation
+            return model_explanation, "model"
 
-    return generic_fallback
+    return generic_fallback, "fallback"
+
+
+def _get_focus_line(diagnostic):
+    line_number = diagnostic.get("line", 0)
+    target_prefix = f"{line_number}:"
+    for line in diagnostic.get("code_context_lines", []):
+        if line.startswith(target_prefix):
+            return line.split(":", 1)[1].strip()
+    return ""
+
+
+def _build_hybrid_explanation(diagnostic, base_explanation, security_analysis=None):
+    """Fuse base explanation with actionable, category-aware guidance."""
+    classification = diagnostic.get("classification", {})
+    category = classification.get("category", "Unknown")
+    phase = classification.get("phase", "Unknown")
+
+    fix_step = CATEGORY_FIX_STEPS.get(category, CATEGORY_FIX_STEPS["Unknown"])
+
+    sections = [
+        base_explanation.strip(),
+        f"Likely cause: {category} ({phase}).",
+    ]
+
+    sections.append(f"Suggested fix: {fix_step}")
+
+    return "\n".join(sections)
+
+
+def _estimate_confidence(diagnostic, explanation_source):
+    score = 0.5
+    classification = diagnostic.get("classification", {})
+
+    if classification.get("category", "Unknown") != "Unknown":
+        score += 0.15
+
+    expected_actual = diagnostic.get("expected_actual", {})
+    if expected_actual.get("expected") != "Unknown" or expected_actual.get("actual") != "Unknown":
+        score += 0.1
+
+    if explanation_source == "model":
+        score += 0.1
+    elif explanation_source == "rule":
+        score += 0.2
+
+    return round(min(score, 0.95), 2)
+
+
+def generate_explanation(input_text, error_text, prefer_model=True):
+    """Generate explanation using model-first strategy with robust fallback."""
+    explanation, _ = _generate_explanation_with_source(
+        input_text,
+        error_text,
+        prefer_model=prefer_model,
+    )
+    return explanation
 
 
 def explain_compiler_output(
@@ -233,13 +322,27 @@ def explain_compiler_output(
         code_context = diagnostic["code_context"]
         input_text = format_diagnostic_input(error_text, code_context)
 
-        explanation = generate_explanation(input_text, error_text, prefer_model=prefer_model)
-        security_analysis = analyze_security_implications(error_text, code_context)
+        base_explanation, explanation_source = _generate_explanation_with_source(
+            input_text,
+            error_text,
+            prefer_model=prefer_model,
+        )
+        security_analysis = None
+        if show_security:
+            security_analysis = analyze_security_implications(error_text, code_context)
+
+        explanation = _build_hybrid_explanation(
+            diagnostic,
+            base_explanation,
+            security_analysis=security_analysis,
+        )
 
         payload = {
             "diagnostic": diagnostic,
             "input_text": input_text,
             "explanation": explanation,
+            "strategy": f"hybrid:{explanation_source}",
+            "confidence": _estimate_confidence(diagnostic, explanation_source),
             "security_analysis": security_analysis,
             "security_recommendations": [],
             "comparison": None,
@@ -275,11 +378,81 @@ def explain_source_code(
         stderr_output = compile_code(temp_path, compiler=compiler, flags=compiler_flags)
         diagnostics = parse_diagnostics(stderr_output)
 
-        if not diagnostics:
+        # Guard against false success when compiler returns non-parseable fatal messages.
+        has_error_text = bool(re.search(r"\b(fatal\s+error|error):", stderr_output, re.IGNORECASE))
+
+        if not diagnostics and not has_error_text:
             return {
                 "success": True,
                 "compiler_output": stderr_output,
                 "diagnostics": [],
+            }
+
+        if not diagnostics and has_error_text:
+            fallback_message = "Compilation failed with an unparsed compiler diagnostic."
+            for line in (stderr_output or "").splitlines():
+                stripped = line.strip()
+                if stripped:
+                    fallback_message = stripped
+                    break
+
+            fallback_diagnostic = {
+                "file": temp_path,
+                "line": 0,
+                "column": 0,
+                "level": "error",
+                "message": fallback_message,
+                "raw": fallback_message,
+                "code_context": "<context unavailable>",
+                "code_context_lines": [],
+                "classification": classify_error(fallback_message),
+                "expected_actual": extract_expected_actual(fallback_message),
+            }
+
+            input_text = format_diagnostic_input(
+                fallback_diagnostic["message"], fallback_diagnostic["code_context"]
+            )
+            base_explanation, explanation_source = _generate_explanation_with_source(
+                input_text,
+                fallback_diagnostic["message"],
+                prefer_model=prefer_model,
+            )
+
+            security_analysis = None
+            recommendations = []
+            if show_security:
+                security_analysis = analyze_security_implications(
+                    fallback_diagnostic["message"], fallback_diagnostic["code_context"]
+                )
+                if security_analysis:
+                    recommendations = get_security_recommendation(
+                        security_analysis.get("category", "")
+                    )
+
+            explanation = _build_hybrid_explanation(
+                fallback_diagnostic,
+                base_explanation,
+                security_analysis=security_analysis,
+            )
+
+            return {
+                "success": False,
+                "compiler_output": stderr_output,
+                "diagnostics": [
+                    {
+                        "diagnostic": fallback_diagnostic,
+                        "input_text": input_text,
+                        "explanation": explanation,
+                        "strategy": f"hybrid:{explanation_source}",
+                        "confidence": _estimate_confidence(
+                            fallback_diagnostic,
+                            explanation_source,
+                        ),
+                        "security_analysis": security_analysis,
+                        "security_recommendations": recommendations,
+                        "comparison": None,
+                    }
+                ],
             }
 
         explained = explain_compiler_output(
