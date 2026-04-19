@@ -8,10 +8,7 @@ Generates benchmarking metrics and charts data.
 """
 
 import json
-<<<<<<< HEAD
-=======
 import os
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 import re
 from typing import Dict
 
@@ -21,8 +18,6 @@ import pandas as pd
 from analyze_explanation_quality import ExplanationQualityAnalyzer
 
 class Benchmarker:
-<<<<<<< HEAD
-=======
     SURVEY_RESPONSES = 50
     ERROR_TYPE_HINTS = {
         "type_mismatch": (
@@ -47,13 +42,10 @@ class Benchmarker:
         ),
     }
 
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
     def __init__(self, model_outputs_path: str):
         self.df = pd.read_csv(model_outputs_path)
         self.analyzer = ExplanationQualityAnalyzer()
         self.results = []
-<<<<<<< HEAD
-=======
         self.output_dir = os.path.join("artifacts", "benchmark")
         os.makedirs(self.output_dir, exist_ok=True)
 
@@ -123,7 +115,6 @@ class Benchmarker:
             return f"{base} {hint}{security_tail}".strip()
 
         return f"{hint}{security_tail}".strip()
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 
     def extract_error_and_code(self, input_text: str) -> tuple:
         """Extracts raw error and code context from the input prompt."""
@@ -170,17 +161,12 @@ class Benchmarker:
         print("Running Benchmark on Model Outputs...")
         for _, row in self.df.iterrows():
             raw_error, code = self.extract_error_and_code(row["input"])
-<<<<<<< HEAD
-            prediction = row["prediction"]
-            error_type = self.categorize_error(raw_error)
-=======
             error_type = self.categorize_error(raw_error)
             prediction = self._compose_system_explanation(
                 raw_error,
                 row["prediction"],
                 error_type,
             )
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 
             # Analyze NLP Explanation
             nlp_analysis = self.analyzer.analyze_explanation(raw_error, prediction, code, error_type)
@@ -220,37 +206,12 @@ class Benchmarker:
     def generate_feedback(self):
         """Create simulated feedback aligned to measured benchmark trends."""
         total = max(len(self.results), 1)
-<<<<<<< HEAD
-=======
         survey_responses = self.SURVEY_RESPONSES
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
         avg_comp_gain = np.mean([r["metrics"]["comprehension_gain"] for r in self.results])
         avg_eff_gain = np.mean([r["metrics"]["efficiency_gain"] for r in self.results])
 
         significantly = int(min(45, max(20, round(avg_comp_gain / 4))))
         moderately = int(min(20, max(4, round(avg_eff_gain / 8))))
-<<<<<<< HEAD
-        slightly = max(0, 50 - significantly - moderately)
-
-        feedback = {
-            "survey_responses": 50,
-            "questions": {
-                "How much did the NLP explanations help compared to raw errors?": {
-                    "Significantly": significantly,
-                    "Moderately": moderately,
-                    "Slightly": slightly,
-                    "Not at all": 0
-                },
-                "Was the tone appropriate for a beginner?": {
-                    "Yes": int(min(49, max(35, round(40 + avg_comp_gain / 5)))),
-                    "No": int(max(1, min(15, round(10 - avg_comp_gain / 10))))
-                },
-                "Did you find the security warnings useful?": {
-                    "Very useful": int(min(46, max(25, round(28 + avg_eff_gain / 6)))),
-                    "Somewhat": int(min(20, max(3, round(15 - avg_eff_gain / 12)))),
-                    "Not relevant": int(max(1, min(10, round(7 - avg_eff_gain / 20))))
-                }
-=======
         helpfulness = self._normalize_counts(
             {
                 "Significantly": significantly,
@@ -282,7 +243,6 @@ class Benchmarker:
                 "How much did the NLP explanations help compared to raw errors?": helpfulness,
                 "Was the tone appropriate for a beginner?": tone,
                 "Did you find the security warnings useful?": security,
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
             },
             "representative_comments": [
                 "The explanations actually tell me HOW to fix it, not just that it's broken.",
@@ -296,11 +256,7 @@ class Benchmarker:
                 "average_fix_efficiency_gain_percent": round(float(avg_eff_gain), 2),
             },
         }
-<<<<<<< HEAD
-        with open("simulated_feedback.json", "w") as f:
-=======
         with open(os.path.join(self.output_dir, "simulated_feedback.json"), "w") as f:
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
             json.dump(feedback, f, indent=2)
         return feedback
 
@@ -318,17 +274,10 @@ class Benchmarker:
             "average_fix_efficiency_improvement": f"{avg_eff_gain:.2f}%",
             "average_nlp_quality_score": f"{avg_quality:.2f}/5",
             "improvement_by_type": self._get_improvement_by_type(),
-<<<<<<< HEAD
-            "method": "proxy-metrics derived from readability/correctness/completeness"
-        }
-        
-        with open("benchmark_summary.json", "w") as f:
-=======
             "method": "proxy-metrics over system-level hybrid explanations (model output + deterministic guidance)"
         }
         
         with open(os.path.join(self.output_dir, "benchmark_summary.json"), "w") as f:
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
             json.dump(summary, f, indent=2)
             
         return summary
@@ -362,15 +311,6 @@ class Benchmarker:
         print("-" * 50)
         print("Simulated User Feedback Summary (N=50):")
         helpfulness = feedback['questions']['How much did the NLP explanations help compared to raw errors?']
-<<<<<<< HEAD
-        print(f"  Significantly Helpful: {helpfulness['Significantly']/50*100}%")
-        print(f"  Moderately Helpful:    {helpfulness['Moderately']/50*100}%")
-        print(f"  Tone Appropriate:      {feedback['questions']['Was the tone appropriate for a beginner?']['Yes']/50*100}%")
-        print("="*70)
-
-if __name__ == "__main__":
-    benchmarker = Benchmarker("model_outputs.csv")
-=======
         n = feedback["survey_responses"]
         print(f"  Significantly Helpful: {helpfulness['Significantly']/n*100}%")
         print(f"  Moderately Helpful:    {helpfulness['Moderately']/n*100}%")
@@ -379,6 +319,5 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     benchmarker = Benchmarker("artifacts/evaluation/model_outputs.csv")
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
     benchmarker.run_benchmark()
     benchmarker.print_benchmarks()

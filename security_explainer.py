@@ -5,11 +5,8 @@ This module identifies compiler errors that are commonly linked to insecure fixe
 and provides security-aware explanations that warn against unsafe quick fixes.
 """
 
-<<<<<<< HEAD
-=======
 import re
 
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 # Security-linked error patterns and their secure explanations
 SECURITY_ERROR_PATTERNS = {
     # Type Casting Issues
@@ -60,11 +57,7 @@ SECURITY_ERROR_PATTERNS = {
         "severity": "HIGH", 
         "insecure_fix": "Calling functions without proper declarations can cause incorrect calling conventions.",
         "secure_explanation": "Always include proper headers for functions. Implicit declarations assume int return type which is wrong for pointers. This can cause crashes or security issues on 64-bit systems.",
-<<<<<<< HEAD
-        "cwe": "CWE-434: Unrestricted Upload of File with Dangerous Type",
-=======
         "cwe": "CWE-628: Function Call with Incorrectly Specified Arguments",
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
         "risk": "May cause stack corruption, incorrect parameter passing, or return value truncation."
     },
     "format specifies type": {
@@ -75,8 +68,6 @@ SECURITY_ERROR_PATTERNS = {
         "cwe": "CWE-134: Use of Externally-Controlled Format String",
         "risk": "Format string vulnerabilities can lead to information disclosure or arbitrary code execution."
     },
-<<<<<<< HEAD
-=======
     "format string is not a string literal": {
         "category": "Ignored Warnings",
         "severity": "CRITICAL",
@@ -85,7 +76,6 @@ SECURITY_ERROR_PATTERNS = {
         "cwe": "CWE-134: Use of Externally-Controlled Format String",
         "risk": "Attackers may read memory or write memory via format tokens such as %x and %n."
     },
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
     
     # Disabling Checks
     "sign-compare": {
@@ -96,8 +86,6 @@ SECURITY_ERROR_PATTERNS = {
         "cwe": "CWE-190: Integer Overflow or Wraparound",
         "risk": "Sign mismatches can cause infinite loops or bypass security bounds checks."
     },
-<<<<<<< HEAD
-=======
     "comparison of integers of different signs": {
         "category": "Disabled Checks",
         "severity": "MEDIUM",
@@ -106,7 +94,6 @@ SECURITY_ERROR_PATTERNS = {
         "cwe": "CWE-190: Integer Overflow or Wraparound",
         "risk": "Signed negatives may become large unsigned values, bypassing index and size checks."
     },
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
     "tautological comparison": {
         "category": "Disabled Checks",
         "severity": "MEDIUM",
@@ -167,8 +154,6 @@ SECURITY_ERROR_PATTERNS = {
         "cwe": "CWE-570: Expression Always False",
         "risk": "Indicates potential logic errors in input validation."
     },
-<<<<<<< HEAD
-=======
     "call to undeclared library function": {
         "category": "Ignored Warnings",
         "severity": "HIGH",
@@ -209,7 +194,6 @@ CODE_SECURITY_PATTERNS = {
         "cwe": "CWE-134: Use of Externally-Controlled Format String",
         "risk": "User-controlled format strings can leak or overwrite memory.",
     },
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 }
 
 # Insecure quick fixes to warn against
@@ -253,8 +237,6 @@ def analyze_security_implications(error_message, code_context):
                 "risk": security_info["risk"]
             }
     
-<<<<<<< HEAD
-=======
     # Check for dangerous code patterns first.
     for pattern, security_info in CODE_SECURITY_PATTERNS.items():
         if re.search(pattern, code_lower):
@@ -268,7 +250,6 @@ def analyze_security_implications(error_message, code_context):
                 "risk": security_info["risk"],
             }
 
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
     # Check for insecure patterns in code
     for insecure_pattern, warning in INSECURE_FIXES.items():
         if insecure_pattern.lower() in code_lower:

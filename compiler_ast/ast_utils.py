@@ -2,12 +2,6 @@ import subprocess
 import re
 
 DIAGNOSTIC_PATTERN = re.compile(
-<<<<<<< HEAD
-    r"^(?P<file>.*?):(?P<line>\d+):(?P<column>\d+):\s+(?P<level>error|warning):\s+(?P<message>.*)$"
-)
-
-
-=======
     r"^(?P<file>.*?):(?P<line>\d+)(?::(?P<column>\d+))?:\s+"
     r"(?P<level>fatal error|error|warning|note|remark):\s+(?P<message>.*)$",
     re.IGNORECASE,
@@ -17,7 +11,6 @@ DIAGNOSTIC_PATTERN = re.compile(
 PRIMARY_LEVELS = {"fatal error", "error", "warning"}
 
 
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 def parse_diagnostics(error_output):
     diagnostics = []
     for line in (error_output or "").splitlines():
@@ -29,13 +22,8 @@ def parse_diagnostics(error_output):
             {
                 "file": match.group("file"),
                 "line": int(match.group("line")),
-<<<<<<< HEAD
-                "column": int(match.group("column")),
-                "level": match.group("level"),
-=======
                 "column": int(match.group("column") or 1),
                 "level": match.group("level").lower(),
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
                 "message": match.group("message"),
                 "raw": line.strip(),
             }
@@ -55,13 +43,6 @@ def get_error_line(source_file, compiler="clang", extra_flags=None):
 
     diagnostics = parse_diagnostics(error_output)
 
-<<<<<<< HEAD
-    if diagnostics:
-        error_line = diagnostics[0]["line"]
-        error_column = diagnostics[0]["column"]
-        return error_line, error_column, error_output
-
-=======
     primary = [d for d in diagnostics if d["level"] in PRIMARY_LEVELS]
 
     if primary:
@@ -74,5 +55,4 @@ def get_error_line(source_file, compiler="clang", extra_flags=None):
         error_column = diagnostics[0]["column"]
         return error_line, error_column, error_output
 
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
     return None, None, error_output

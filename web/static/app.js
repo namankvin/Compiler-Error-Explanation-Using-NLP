@@ -1,20 +1,11 @@
 const codeInput = document.getElementById("code-input");
 const analyzeButton = document.getElementById("analyze-btn");
 const loadExampleButton = document.getElementById("load-example");
-<<<<<<< HEAD
-=======
 const loadExample2Button = document.getElementById("load-example-2");
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 const resultsContainer = document.getElementById("results");
 const statusElement = document.getElementById("status");
 const runtimeElement = document.getElementById("runtime");
 
-<<<<<<< HEAD
-const compilerSelect = document.getElementById("compiler");
-const warningsToggle = document.getElementById("warnings");
-const securityToggle = document.getElementById("security");
-const preferModelToggle = document.getElementById("prefer-model");
-=======
 const carbonSummaryElement = document.getElementById("carbon-summary");
 
 const EXAMPLE_2_CODE = `#include <stdio.h>
@@ -31,16 +22,11 @@ int main() {
   undeclared_api(buf);                    // ERROR 3: undeclared function call
   return missing_value                    // ERROR 4: undeclared identifier + missing semicolon
 }`;
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 
 codeInput.value = window.DEFAULT_CODE || "";
 
 function escapeHtml(value) {
-<<<<<<< HEAD
-  return value
-=======
   return String(value ?? "")
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
@@ -52,13 +38,6 @@ function setStatus(text) {
   statusElement.textContent = text;
 }
 
-<<<<<<< HEAD
-function renderCleanState(meta) {
-  resultsContainer.innerHTML = `
-    <div class="clean-state">
-      No diagnostics reported. Compilation succeeded.
-      <div style="margin-top:0.4rem; color:#2a5a50;">Compiler: ${escapeHtml(meta.compiler)} | Time: ${meta.elapsed_ms} ms</div>
-=======
 function toFiniteNumber(value, fallback = 0) {
   const n = Number(value);
   return Number.isFinite(n) ? n : fallback;
@@ -161,7 +140,6 @@ function renderCleanState(meta) {
     <div class="clean-state">
       ${details}
       <div class="clean-meta">Compiler: ${escapeHtml(meta.compiler)} | Time: ${escapeHtml(meta.elapsed_ms)} ms</div>
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
     </div>
   `;
 }
@@ -172,53 +150,6 @@ function renderDiagnostics(items) {
     return;
   }
 
-<<<<<<< HEAD
-  const cards = items.map((item, index) => {
-    const diagnostic = item.diagnostic;
-    const classification = diagnostic.classification || {};
-    const expectedActual = diagnostic.expected_actual || {};
-    const security = item.security_analysis;
-
-    let securityBlock = "";
-    if (security) {
-      securityBlock = `
-        <div class="result-block">
-          <h4>Security</h4>
-          <p>
-Severity: ${escapeHtml(security.severity || "Unknown")}
-Category: ${escapeHtml(security.category || "Unknown")}
-CWE: ${escapeHtml(security.cwe || "N/A")}
-Risk: ${escapeHtml(security.risk || "N/A")}
-Secure Fix: ${escapeHtml(security.explanation || "N/A")}
-          </p>
-        </div>
-      `;
-    }
-
-    return `
-      <article class="result-card ${escapeHtml(diagnostic.level || "warning")}">
-        <h3 class="result-title">#${index + 1} ${escapeHtml((diagnostic.level || "warning").toUpperCase())}: ${escapeHtml(diagnostic.message || "")}</h3>
-        <div class="result-meta">
-          Line ${diagnostic.line}, Col ${diagnostic.column} | Category: ${escapeHtml(classification.category || "Unknown")} | Phase: ${escapeHtml(classification.phase || "Unknown")}
-        </div>
-
-        <div class="result-block">
-          <h4>Expected vs Actual</h4>
-          <p>Expected: ${escapeHtml(expectedActual.expected || "Unknown")}\nActual: ${escapeHtml(expectedActual.actual || "Unknown")}</p>
-        </div>
-
-        <div class="result-block">
-          <h4>Context</h4>
-          <pre>${escapeHtml(diagnostic.code_context || "")}</pre>
-        </div>
-
-        <div class="result-block">
-          <h4>NLP Explanation</h4>
-          <p>${escapeHtml(item.explanation || "")}</p>
-        </div>
-
-        ${securityBlock}
-=======
   const orderedItems = [...items].sort((a, b) => {
     const lineA = Number(a?.diagnostic?.line || 0);
     const lineB = Number(b?.diagnostic?.line || 0);
@@ -268,7 +199,6 @@ Secure Fix: ${escapeHtml(security.explanation || "N/A")}
           <h4>Compiler Output</h4>
           <pre>${escapeHtml(compilerOutput)}</pre>
         </div>
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
       </article>
     `;
   });
@@ -276,8 +206,6 @@ Secure Fix: ${escapeHtml(security.explanation || "N/A")}
   resultsContainer.innerHTML = cards.join("\n");
 }
 
-<<<<<<< HEAD
-=======
 function renderExplanationHtml(explanation) {
   const lines = String(explanation || "")
     .split("\n")
@@ -348,7 +276,6 @@ function renderCodeContext(codeContext, errorLine) {
   return `<div class="code-context-pre">${rendered}</div>`;
 }
 
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 async function runAnalysis() {
   const code = codeInput.value;
   if (!code.trim()) {
@@ -359,10 +286,7 @@ async function runAnalysis() {
   analyzeButton.disabled = true;
   setStatus("Compiling and generating NLP explanations...");
   runtimeElement.textContent = "";
-<<<<<<< HEAD
-=======
   carbonSummaryElement.innerHTML = "";
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
   resultsContainer.innerHTML = "";
 
   try {
@@ -371,13 +295,6 @@ async function runAnalysis() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         code,
-<<<<<<< HEAD
-        compiler: compilerSelect.value,
-        warnings: warningsToggle.checked,
-        security: securityToggle.checked,
-        prefer_model: preferModelToggle.checked,
-=======
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
       }),
     });
 
@@ -389,11 +306,6 @@ async function runAnalysis() {
 
     const meta = payload.meta || {};
     runtimeElement.textContent = `Runtime: ${meta.elapsed_ms || "-"} ms`;
-<<<<<<< HEAD
-
-    if (payload.success) {
-      setStatus("Compilation successful.");
-=======
     renderCodeCarbonSummary(meta);
 
     if (payload.success) {
@@ -403,16 +315,11 @@ async function runAnalysis() {
       } else {
         setStatus("Compilation successful.");
       }
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
       renderCleanState(meta);
       return;
     }
 
-<<<<<<< HEAD
-    setStatus(`Found ${payload.diagnostics.length} diagnostic(s).`);
-=======
     setStatus("");
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
     renderDiagnostics(payload.diagnostics);
   } catch (error) {
     setStatus(`Error: ${error.message}`);
@@ -425,14 +332,10 @@ async function runAnalysis() {
 analyzeButton.addEventListener("click", runAnalysis);
 loadExampleButton.addEventListener("click", () => {
   codeInput.value = window.DEFAULT_CODE || codeInput.value;
-<<<<<<< HEAD
-  setStatus("Loaded sample code.");
-=======
   setStatus("Loaded sample code 1.");
 });
 
 loadExample2Button.addEventListener("click", () => {
   codeInput.value = EXAMPLE_2_CODE;
   setStatus("Loaded sample code 2.");
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 });

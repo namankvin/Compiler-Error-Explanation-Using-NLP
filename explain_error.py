@@ -1,9 +1,6 @@
 import argparse
 import os
-<<<<<<< HEAD
-=======
 import re
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 import subprocess
 import tempfile
 
@@ -58,8 +55,6 @@ ERROR_EXPLANATIONS = {
 }
 
 
-<<<<<<< HEAD
-=======
 CATEGORY_FIX_STEPS = {
     "Missing token": "Insert the missing token at the reported location and recompile to reveal any follow-up errors.",
     "Undefined symbol": "Declare the variable before first use and ensure the name matches exactly in all references.",
@@ -75,7 +70,6 @@ CATEGORY_FIX_STEPS = {
 }
 
 
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 def get_explanation_for_error(error_text):
     """Get explanation based on error type using pattern matching."""
     error_lower = error_text.lower()
@@ -210,13 +204,6 @@ def _is_low_quality_explanation(explanation, input_text):
         if unique_ratio < 0.35:
             return True
 
-<<<<<<< HEAD
-    return False
-
-
-def generate_explanation(input_text, error_text, prefer_model=True):
-    """Generate explanation using model-first strategy with robust fallback."""
-=======
     # Repeated sentence degeneration.
     sentences = [
         sentence.strip().lower()
@@ -239,7 +226,6 @@ def generate_explanation(input_text, error_text, prefer_model=True):
 
 def _generate_explanation_with_source(input_text, error_text, prefer_model=True):
     """Return explanation text and source type for downstream quality fusion."""
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
     generic_fallback = (
         f"The compiler detected a syntax or semantic error: {error_text}. "
         "This violates C language rules and must be fixed for successful compilation."
@@ -250,26 +236,14 @@ def _generate_explanation_with_source(input_text, error_text, prefer_model=True)
     if prefer_model and MODEL_AVAILABLE:
         model_explanation = _generate_model_explanation(input_text)
         if model_explanation and not _is_low_quality_explanation(model_explanation, input_text):
-<<<<<<< HEAD
-            return model_explanation
-
-    if has_specific_rule:
-        return rule_explanation
-=======
             return model_explanation, "model"
 
     if has_specific_rule:
         return rule_explanation, "rule"
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 
     if not prefer_model and MODEL_AVAILABLE:
         model_explanation = _generate_model_explanation(input_text)
         if model_explanation and not _is_low_quality_explanation(model_explanation, input_text):
-<<<<<<< HEAD
-            return model_explanation
-
-    return generic_fallback
-=======
             return model_explanation, "model"
 
     return generic_fallback, "fallback"
@@ -329,7 +303,6 @@ def generate_explanation(input_text, error_text, prefer_model=True):
         prefer_model=prefer_model,
     )
     return explanation
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 
 
 def explain_compiler_output(
@@ -349,10 +322,6 @@ def explain_compiler_output(
         code_context = diagnostic["code_context"]
         input_text = format_diagnostic_input(error_text, code_context)
 
-<<<<<<< HEAD
-        explanation = generate_explanation(input_text, error_text, prefer_model=prefer_model)
-        security_analysis = analyze_security_implications(error_text, code_context)
-=======
         base_explanation, explanation_source = _generate_explanation_with_source(
             input_text,
             error_text,
@@ -367,17 +336,13 @@ def explain_compiler_output(
             base_explanation,
             security_analysis=security_analysis,
         )
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 
         payload = {
             "diagnostic": diagnostic,
             "input_text": input_text,
             "explanation": explanation,
-<<<<<<< HEAD
-=======
             "strategy": f"hybrid:{explanation_source}",
             "confidence": _estimate_confidence(diagnostic, explanation_source),
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
             "security_analysis": security_analysis,
             "security_recommendations": [],
             "comparison": None,
@@ -413,22 +378,16 @@ def explain_source_code(
         stderr_output = compile_code(temp_path, compiler=compiler, flags=compiler_flags)
         diagnostics = parse_diagnostics(stderr_output)
 
-<<<<<<< HEAD
-        if not diagnostics:
-=======
         # Guard against false success when compiler returns non-parseable fatal messages.
         has_error_text = bool(re.search(r"\b(fatal\s+error|error):", stderr_output, re.IGNORECASE))
 
         if not diagnostics and not has_error_text:
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
             return {
                 "success": True,
                 "compiler_output": stderr_output,
                 "diagnostics": [],
             }
 
-<<<<<<< HEAD
-=======
         if not diagnostics and has_error_text:
             fallback_message = "Compilation failed with an unparsed compiler diagnostic."
             for line in (stderr_output or "").splitlines():
@@ -496,7 +455,6 @@ def explain_source_code(
                 ],
             }
 
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
         explained = explain_compiler_output(
             stderr_output,
             temp_path,

@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 """Web frontend for compiler diagnostics and NLP explanations."""
 
-<<<<<<< HEAD
-=======
 import copy
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 import os
 import time
 
@@ -12,10 +9,6 @@ from flask import Flask, jsonify, render_template, request
 
 from explain_error import MODEL_AVAILABLE, explain_source_code
 
-<<<<<<< HEAD
-app = Flask(__name__, template_folder="web/templates", static_folder="web/static")
-
-=======
 try:
     from codecarbon import EmissionsTracker
     from codecarbon.core import powermetrics as codecarbon_powermetrics
@@ -37,7 +30,6 @@ CODECARBON_DISABLE_SUDO_METRICS = (
 
 os.makedirs(CODECARBON_OUTPUT_DIR, exist_ok=True)
 
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 DEFAULT_CODE = """#include <stdio.h>
 
 int main() {
@@ -48,8 +40,6 @@ int main() {
 """
 
 
-<<<<<<< HEAD
-=======
 def _run_core_analysis(source_code, compiler, flags, security_enabled, prefer_model):
     started = time.perf_counter()
     result = explain_source_code(
@@ -213,7 +203,6 @@ def _compare_outputs(without_tracking, with_tracking):
     }
 
 
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 @app.get("/")
 def index():
     return render_template(
@@ -229,10 +218,7 @@ def health():
         {
             "status": "ok",
             "model_available": MODEL_AVAILABLE,
-<<<<<<< HEAD
-=======
             "codecarbon_available": CODECARBON_AVAILABLE,
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
         }
     )
 
@@ -243,17 +229,11 @@ def analyze():
 
     source_code = payload.get("code", "")
     compiler = payload.get("compiler", "clang")
-<<<<<<< HEAD
-    warnings_enabled = bool(payload.get("warnings", True))
-    security_enabled = bool(payload.get("security", True))
-    prefer_model = bool(payload.get("prefer_model", True))
-=======
     warnings_enabled = True
     security_enabled = True
     prefer_model = True
     codecarbon_requested = True
     codecarbon_compare = True
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 
     if compiler not in {"clang", "gcc"}:
         return jsonify({"error": "Invalid compiler. Use clang or gcc."}), 400
@@ -268,21 +248,6 @@ def analyze():
     if warnings_enabled:
         flags.extend(["-Wall", "-Wextra", "-Wpedantic", "-Wformat-security"])
 
-<<<<<<< HEAD
-    started = time.perf_counter()
-    try:
-        result = explain_source_code(
-            source_code,
-            compiler=compiler,
-            compiler_flags=flags,
-            show_security=security_enabled,
-            prefer_model=prefer_model,
-        )
-    except RuntimeError as exc:
-        return jsonify({"error": str(exc)}), 500
-
-    elapsed_ms = round((time.perf_counter() - started) * 1000, 2)
-=======
     try:
         ignored_warning_count = 0
         codecarbon_summary = {
@@ -375,7 +340,6 @@ def analyze():
     except RuntimeError as exc:
         return jsonify({"error": str(exc)}), 500
 
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
     result["meta"] = {
         "compiler": compiler,
         "warnings_enabled": warnings_enabled,
@@ -383,11 +347,8 @@ def analyze():
         "prefer_model": prefer_model,
         "model_available": MODEL_AVAILABLE,
         "elapsed_ms": elapsed_ms,
-<<<<<<< HEAD
-=======
         "ignored_warning_count": ignored_warning_count,
         "codecarbon": codecarbon_summary,
->>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
     }
 
     return jsonify(result)
