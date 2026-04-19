@@ -35,3 +35,7 @@ artifacts/
 final_model/
 model_output/
 >>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
+
+# Large training/model artifacts
+model_output/
+final_model/
