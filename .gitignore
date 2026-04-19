@@ -26,4 +26,12 @@ unified_logs.txt
 compiler_ast/ast_output.txt
 
 # Dedicated generated outputs folder
+<<<<<<< HEAD
 artifacts/
+=======
+artifacts/
+
+# Local model checkpoints/weights (too large for standard Git hosting)
+final_model/
+model_output/
+>>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a

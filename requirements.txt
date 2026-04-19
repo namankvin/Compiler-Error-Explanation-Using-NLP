@@ -9,3 +9,7 @@ rouge-score
 pandas
 numpy
 tqdm
+<<<<<<< HEAD
+=======
+codecarbon
+>>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a

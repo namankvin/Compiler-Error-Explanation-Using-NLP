@@ -5,6 +5,11 @@ This module identifies compiler errors that are commonly linked to insecure fixe
 and provides security-aware explanations that warn against unsafe quick fixes.
 """
 
+<<<<<<< HEAD
+=======
+import re
+
+>>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 # Security-linked error patterns and their secure explanations
 SECURITY_ERROR_PATTERNS = {
     # Type Casting Issues
@@ -55,7 +60,11 @@ SECURITY_ERROR_PATTERNS = {
         "severity": "HIGH", 
         "insecure_fix": "Calling functions without proper declarations can cause incorrect calling conventions.",
         "secure_explanation": "Always include proper headers for functions. Implicit declarations assume int return type which is wrong for pointers. This can cause crashes or security issues on 64-bit systems.",
+<<<<<<< HEAD
         "cwe": "CWE-434: Unrestricted Upload of File with Dangerous Type",
+=======
+        "cwe": "CWE-628: Function Call with Incorrectly Specified Arguments",
+>>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
         "risk": "May cause stack corruption, incorrect parameter passing, or return value truncation."
     },
     "format specifies type": {
@@ -66,6 +75,17 @@ SECURITY_ERROR_PATTERNS = {
         "cwe": "CWE-134: Use of Externally-Controlled Format String",
         "risk": "Format string vulnerabilities can lead to information disclosure or arbitrary code execution."
     },
+<<<<<<< HEAD
+=======
+    "format string is not a string literal": {
+        "category": "Ignored Warnings",
+        "severity": "CRITICAL",
+        "insecure_fix": "Treating user-controlled input as the format string can create exploitable format string vulnerabilities.",
+        "secure_explanation": "Always keep format strings constant, for example printf('%s', user_input). Never pass external input as the first argument to printf-like functions.",
+        "cwe": "CWE-134: Use of Externally-Controlled Format String",
+        "risk": "Attackers may read memory or write memory via format tokens such as %x and %n."
+    },
+>>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
     
     # Disabling Checks
     "sign-compare": {
@@ -76,6 +96,17 @@ SECURITY_ERROR_PATTERNS = {
         "cwe": "CWE-190: Integer Overflow or Wraparound",
         "risk": "Sign mismatches can cause infinite loops or bypass security bounds checks."
     },
+<<<<<<< HEAD
+=======
+    "comparison of integers of different signs": {
+        "category": "Disabled Checks",
+        "severity": "MEDIUM",
+        "insecure_fix": "Ignoring signed/unsigned comparison warnings can hide boundary-check failures.",
+        "secure_explanation": "Use consistent integer types in comparisons, or cast safely after explicit range checks.",
+        "cwe": "CWE-190: Integer Overflow or Wraparound",
+        "risk": "Signed negatives may become large unsigned values, bypassing index and size checks."
+    },
+>>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
     "tautological comparison": {
         "category": "Disabled Checks",
         "severity": "MEDIUM",
@@ -136,6 +167,49 @@ SECURITY_ERROR_PATTERNS = {
         "cwe": "CWE-570: Expression Always False",
         "risk": "Indicates potential logic errors in input validation."
     },
+<<<<<<< HEAD
+=======
+    "call to undeclared library function": {
+        "category": "Ignored Warnings",
+        "severity": "HIGH",
+        "insecure_fix": "Calling undeclared library APIs can cause undefined behavior due to assumed signatures.",
+        "secure_explanation": "Include the correct header so the compiler knows the exact function signature and return type.",
+        "cwe": "CWE-628: Function Call with Incorrectly Specified Arguments",
+        "risk": "Incorrect calling conventions may corrupt stack/register state on some platforms."
+    },
+}
+
+
+CODE_SECURITY_PATTERNS = {
+    r"\bgets\s*\(": {
+        "category": "Buffer Security",
+        "severity": "CRITICAL",
+        "explanation": "Replace gets with fgets and enforce strict input length limits.",
+        "cwe": "CWE-242: Use of Inherently Dangerous Function",
+        "risk": "gets has no bounds checks and can be exploited for buffer overflow attacks.",
+    },
+    r"\bstrcpy\s*\(": {
+        "category": "Buffer Security",
+        "severity": "HIGH",
+        "explanation": "Use bounded APIs like snprintf/strlcpy and validate destination buffer size.",
+        "cwe": "CWE-120: Buffer Copy without Checking Size of Input",
+        "risk": "Unbounded copies may overflow buffers and enable arbitrary code execution.",
+    },
+    r"\bsprintf\s*\(": {
+        "category": "Buffer Security",
+        "severity": "HIGH",
+        "explanation": "Use snprintf with explicit buffer length to prevent overflow.",
+        "cwe": "CWE-120: Buffer Copy without Checking Size of Input",
+        "risk": "Unbounded formatted output can overrun stack/heap buffers.",
+    },
+    r"\bprintf\s*\(\s*[A-Za-z_]\w*\s*\)": {
+        "category": "Ignored Warnings",
+        "severity": "CRITICAL",
+        "explanation": "Never pass variable input as the format argument; use printf('%s', input).",
+        "cwe": "CWE-134: Use of Externally-Controlled Format String",
+        "risk": "User-controlled format strings can leak or overwrite memory.",
+    },
+>>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
 }
 
 # Insecure quick fixes to warn against
@@ -179,6 +253,22 @@ def analyze_security_implications(error_message, code_context):
                 "risk": security_info["risk"]
             }
     
+<<<<<<< HEAD
+=======
+    # Check for dangerous code patterns first.
+    for pattern, security_info in CODE_SECURITY_PATTERNS.items():
+        if re.search(pattern, code_lower):
+            return {
+                "pattern": pattern,
+                "category": security_info["category"],
+                "severity": security_info["severity"],
+                "explanation": security_info["explanation"],
+                "insecure_fix_warning": "Directly vulnerable code pattern detected.",
+                "cwe": security_info["cwe"],
+                "risk": security_info["risk"],
+            }
+
+>>>>>>> 9e4594b5766ca37b1d618f879725af1bfabd532a
     # Check for insecure patterns in code
     for insecure_pattern, warning in INSECURE_FIXES.items():
         if insecure_pattern.lower() in code_lower:
